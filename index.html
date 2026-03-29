@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行知学園 AI科研実践プログラム | Coach Academy AI Research Program</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ===== CSS Variables & Reset ===== */
+:root {
+  --primary: #1a3a5c;
+  --primary-dark: #0d2c4a;
+  --primary-light: #2c5f8a;
+  --accent: #7bab3b;
+  --accent-dark: #5e8a2a;
+  --accent-light: #a3d45c;
+  --brand-red: #c41e24;
+  --white: #ffffff;
+  --off-white: #f7f9fc;
+  --light-bg: #eef2f7;
+  --text-dark: #1a2a3a;
+  --text-medium: #4a5568;
+  --text-light: #718096;
+  --border: #e2e8f0;
+  --gold: #c8a45c;
+  --gold-light: #e8d5a0;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans TC', 'Inter', sans-serif;
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== Navigation ===== */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+
+.nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+.nav-logo img { height: 44px; width: auto; }
+
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  font-size: 14px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--primary);
+  transition: var(--transition); position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; width: 0;
+  height: 2px; background: var(--accent); transition: var(--transition);
+}
+.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex; align-items: center; gap: 2px;
+  background: var(--light-bg); border-radius: 8px; padding: 3px;
+}
+.lang-btn {
+  padding: 5px 10px; border: none; background: transparent;
+  font-size: 12px; font-weight: 500; color: var(--text-medium);
+  border-radius: 6px; cursor: pointer; transition: var(--transition);
+  white-space: nowrap;
+}
+.lang-btn.active {
+  background: var(--white); color: var(--primary);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1); font-weight: 700;
+}
+.lang-btn:hover:not(.active) { color: var(--primary); }
+
+/* ===== Hero Section ===== */
+.hero {
+  padding-top: 72px; min-height: 100vh;
+  display: flex; align-items: center;
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 50%, var(--light-bg) 100%);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(123,171,59,0.06) 0%, transparent 70%);
+}
+.hero::after {
+  content: ''; position: absolute; bottom: -150px; left: -150px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,58,92,0.04) 0%, transparent 70%);
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; align-items: center; gap: 80px; }
+.hero-text { flex: 1; }
+.hero-visual { flex: 1; display: flex; justify-content: center; align-items: center; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(123,171,59,0.12); color: var(--accent-dark);
+  padding: 10px 24px; border-radius: 24px; font-size: 18px; font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.hero-badge::before { content: '◆'; font-size: 8px; }
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 56px); font-weight: 900;
+  line-height: 1.15; color: var(--primary-dark); margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+.hero h1 .accent-text { color: var(--accent); }
+
+.hero-desc {
+  font-size: 20px; color: var(--text-medium); line-height: 1.8;
+  margin-bottom: 36px; max-width: 560px;
+}
+
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 36px; background: var(--accent); color: var(--white);
+  font-size: 16px; font-weight: 700; border-radius: 50px;
+  letter-spacing: 1px; text-transform: uppercase;
+  transition: var(--transition); border: none; cursor: pointer;
+}
+.hero-cta:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(123,171,59,0.3); }
+
+.hero-stats {
+  display: flex; gap: 40px; margin-top: 48px;
+  padding-top: 32px; border-top: 1px solid var(--border);
+}
+.hero-stat-item { text-align: center; }
+.hero-stat-num { font-size: 36px; font-weight: 900; color: var(--primary); }
+.hero-stat-label { font-size: 14px; color: var(--text-light); margin-top: 4px; }
+
+/* Hero visual - decorative academic card */
+.hero-card {
+  width: 400px; background: var(--white); border-radius: 16px;
+  box-shadow: var(--shadow-lg); overflow: hidden;
+  transform: rotate(2deg);
+}
+.hero-card-top {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 32px; color: var(--white);
+}
+.hero-card-top h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.hero-card-top p { font-size: 15px; opacity: 0.8; }
+.hero-card-body { padding: 24px; }
+.hero-card-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.hero-card-item:last-child { border: none; }
+.hero-card-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: var(--light-bg); display: flex; align-items: center;
+  justify-content: center; font-size: 16px; flex-shrink: 0;
+}
+.hero-card-label { font-size: 15px; color: var(--text-medium); }
+
+/* ===== Section Common ===== */
+.section { padding: 100px 0; }
+.section-dark { background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); }
+.section-light { background: var(--off-white); }
+
+.section-header { text-align: center; margin-bottom: 64px; }
+.section-label {
+  display: inline-block; font-size: 13px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--accent);
+  margin-bottom: 16px;
+}
+.section-dark .section-label { color: var(--accent-light); }
+.section-title {
+  font-size: clamp(28px, 3.5vw, 42px); font-weight: 800;
+  line-height: 1.3; margin-bottom: 16px;
+}
+.section-dark .section-title { color: var(--white); }
+.section-subtitle {
+  font-size: 18px; color: var(--text-medium); max-width: 680px;
+  margin: 0 auto; line-height: 1.7;
+}
+.section-dark .section-subtitle { color: rgba(255,255,255,0.7); }
+
+/* ===== Pain Points / Why Section ===== */
+.pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+.pain-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 32px; box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+  transition: var(--transition);
+}
+.pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.pain-card-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent); color: var(--white);
+  font-size: 14px; font-weight: 800; margin-bottom: 16px;
+}
+.pain-card h3 { font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+.pain-card p { font-size: 16px; color: var(--text-medium); line-height: 1.7; }
+
+/* ===== Solution / Advantages ===== */
+.advantage-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.advantage-card {
+  text-align: center; padding: 40px 24px;
+  background: rgba(255,255,255,0.06); border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);
+}
+.advantage-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); }
+
+.advantage-icon {
+  width: 64px; height: 64px; margin: 0 auto 20px;
+  background: rgba(123,171,59,0.15); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+}
+.advantage-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--white); }
+.advantage-card p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.7; }
+
+/* ===== Program Tiers ===== */
+.tier-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.tier-card {
+  background: var(--white); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+  transition: var(--transition); position: relative;
+}
+.tier-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.tier-card.featured { border: 2px solid var(--accent); }
+.tier-card.featured::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-light));
+}
+
+.tier-header {
+  padding: 28px 24px; color: var(--white); text-align: center;
+}
+.tier-header h3 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+.tier-header .tier-sub { font-size: 14px; opacity: 0.8; }
+.tier-h1 { background: linear-gradient(135deg, #5b8fb9, #4a7da8); }
+.tier-h2 { background: linear-gradient(135deg, #3a7ca5, #2a6a93); }
+.tier-h3 { background: linear-gradient(135deg, #1a5276, #0f3d5c); }
+.tier-h4 { background: linear-gradient(135deg, #0d2137, var(--primary)); }
+
+.tier-body { padding: 24px; }
+.tier-desc { font-size: 16px; color: var(--text-dark); font-weight: 500; margin-bottom: 12px; line-height: 1.6; }
+.tier-audience { font-size: 14px; color: var(--text-medium); padding-left: 12px; border-left: 3px solid var(--gold); margin-bottom: 16px; line-height: 1.5; }
+
+.tier-features { list-style: none; padding: 0; }
+.tier-features li {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 15px; color: var(--text-medium); padding: 6px 0;
+  line-height: 1.5;
+}
+.tier-features li::before {
+  content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px;
+}
+
+.tier-modules { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.tier-module-tag {
+  font-size: 13px; padding: 5px 12px; border-radius: 12px;
+  background: var(--light-bg); color: var(--primary); font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+/* ===== Research Topics ===== */
+.research-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+
+.research-card {
+  background: var(--white); border-radius: var(--radius); padding: 24px;
+  text-align: center; box-shadow: var(--shadow); transition: var(--transition);
+  border: 1px solid var(--border);
+}
+.research-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+.research-card-icon { font-size: 28px; margin-bottom: 12px; }
+.research-card h4 { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.research-card p { font-size: 14px; color: var(--text-light); line-height: 1.5; }
+
+/* ===== Process Flow ===== */
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.process-card {
+  text-align: center; padding: 32px 20px;
+  position: relative;
+}
+.process-card::after {
+  content: '→'; position: absolute; right: -16px; top: 50%;
+  transform: translateY(-50%); font-size: 24px; color: var(--accent);
+  font-weight: 700;
+}
+.process-card:nth-child(3)::after, .process-card:nth-child(6)::after { display: none; }
+
+.process-num {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--accent); color: var(--white);
+  font-size: 20px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+}
+.process-card h4 { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.process-card p { font-size: 16px; color: var(--text-medium); line-height: 1.6; }
+
+/* ===== Standards ===== */
+.standards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+.standard-card {
+  text-align: center; padding: 40px 24px;
+  background: rgba(255,255,255,0.06); border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.standard-icon { font-size: 40px; margin-bottom: 16px; }
+.standard-card h3 { font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.standard-card p { font-size: 16px; color: rgba(255,255,255,0.7); }
+
+/* ===== Professor Section ===== */
+.professor-bar {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white); padding: 48px 0;
+}
+.professor-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  text-align: center;
+}
+.professor-inner h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+.professor-inner p { font-size: 16px; opacity: 0.8; margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.uni-tags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.uni-tag {
+  padding: 8px 20px; border: 1px solid var(--gold);
+  border-radius: 24px; font-size: 15px; color: var(--gold-light);
+  font-weight: 500;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  padding: 80px 0; text-align: center;
+  background: var(--off-white);
+}
+.cta-section h2 { font-size: 36px; font-weight: 800; color: var(--primary); margin-bottom: 16px; }
+.cta-section p { font-size: 18px; color: var(--text-medium); margin-bottom: 32px; }
+
+/* QR Code Cards */
+.qr-grid {
+  display: flex; justify-content: center; gap: 48px;
+  margin: 40px 0 32px; flex-wrap: wrap;
+}
+.qr-card {
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 32px 36px;
+  text-align: center; transition: var(--transition);
+  max-width: 260px; width: 100%;
+}
+.qr-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.qr-card img {
+  width: 180px; height: 180px; object-fit: cover;
+  margin: 0 auto 16px; border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.qr-card-icon { font-size: 28px; margin-bottom: 8px; }
+.qr-card h4 {
+  font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 4px;
+}
+.qr-card .qr-sub {
+  font-size: 14px; color: var(--text-light);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--primary-dark); color: rgba(255,255,255,0.6);
+  padding: 40px 0; text-align: center; font-size: 13px;
+}
+.footer-logo { height: 36px; margin: 0 auto 16px; filter: brightness(0) invert(1); opacity: 0.8; }
+.footer a { color: rgba(255,255,255,0.8); }
+.footer a:hover { color: var(--white); }
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .hero-content { flex-direction: column; gap: 40px; padding: 60px 24px; }
+  .hero-card { display: none; }
+  .tier-grid { grid-template-columns: repeat(2, 1fr); }
+  .advantage-grid { grid-template-columns: repeat(2, 1fr); }
+  .research-grid { grid-template-columns: repeat(3, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-card:nth-child(2)::after, .process-card:nth-child(4)::after { display: none; }
+}
+
+@media (max-width: 768px) {
+  .nav-links a:not(.nav-contact) { display: none; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .tier-grid { grid-template-columns: 1fr; }
+  .advantage-grid { grid-template-columns: 1fr; }
+  .research-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-card::after { display: none !important; }
+  .hero-stats { flex-direction: column; gap: 16px; }
+  .hero h1 { font-size: 32px; }
+}
+
+/* ===== Language visibility ===== */
+[data-lang] { display: none; }
+[data-lang].active { display: block; }
+span[data-lang].active, a[data-lang].active { display: inline; }
+div.flex-lang[data-lang].active { display: flex; }
+li[data-lang].active { display: flex; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="行知学園 Coach Academy">
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <div class="nav-links" id="nav-links">
+        <!-- Nav links are generated by JS per language -->
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('ja')">日本語</button>
+        <button class="lang-btn" onclick="switchLang('zh-CN')">简体</button>
+        <button class="lang-btn" onclick="switchLang('zh-TW')">繁體</button>
+        <button class="lang-btn" onclick="switchLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-text">
+      <!-- JA -->
+      <div data-lang="ja">
+        <div class="hero-badge">AI科研実践プログラム</div>
+        <h1>研究する。<br>発見する。<br><span class="accent-text">証明する。</span></h1>
+        <p class="hero-desc">行知学園は、志望理由書に書け、面接で語れ、教授の追求にも耐えうる「本物のAI科研成果パッケージ」を提供します。</p>
+        <a href="#contact" class="hero-cta">お問い合わせ</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">10+</div><div class="hero-stat-label">分野横断テーマ</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">グレード体系</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">計算資源完備</div></div>
+        </div>
+      </div>
+      <!-- ZH-CN -->
+      <div data-lang="zh-CN">
+        <div class="hero-badge">AI科研实践项目</div>
+        <h1>研究。<br>发现。<br><span class="accent-text">证明。</span></h1>
+        <p class="hero-desc">行知学园帮你做出一套「能写进志望理由书、能在面试讲清楚、经得起教授追问」的AI科研实践成果包。</p>
+        <a href="#contact" class="hero-cta">立即咨询</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">10+</div><div class="hero-stat-label">跨学科课题方向</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">档位产品体系</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">算力全覆盖</div></div>
+        </div>
+      </div>
+      <!-- ZH-TW -->
+      <div data-lang="zh-TW">
+        <div class="hero-badge">AI科研實踐項目</div>
+        <h1>研究。<br>發現。<br><span class="accent-text">證明。</span></h1>
+        <p class="hero-desc">行知學園幫你做出一套「能寫進志望理由書、能在面試講清楚、經得起教授追問」的AI科研實踐成果包。</p>
+        <a href="#contact" class="hero-cta">立即諮詢</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">10+</div><div class="hero-stat-label">跨學科課題方向</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">檔位產品體系</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">算力全覆蓋</div></div>
+        </div>
+      </div>
+      <!-- EN -->
+      <div data-lang="en">
+        <div class="hero-badge">AI Research Program</div>
+        <h1>RESEARCH.<br>DISCOVER.<br><span class="accent-text">ACHIEVE.</span></h1>
+        <p class="hero-desc">Coach Academy helps you build a verifiable AI research portfolio — ready for your application essays, interviews, and professor scrutiny.</p>
+        <a href="#contact" class="hero-cta">CONTACT US</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Interdisciplinary Topics</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">Program Tiers</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">Full Computing Support</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <h3 data-lang="ja" style="display:none;">成果パッケージ</h3>
+          <h3 data-lang="zh-CN" style="display:none;">成果包</h3>
+          <h3 data-lang="zh-TW" style="display:none;">成果包</h3>
+          <h3 data-lang="en" style="display:none;">Deliverable Package</h3>
+          <p data-lang="ja" style="display:none;">展示可能・再現可能・説明可能</p>
+          <p data-lang="zh-CN" style="display:none;">可展示 · 可复现 · 可讲述</p>
+          <p data-lang="zh-TW" style="display:none;">可展示 · 可複現 · 可講述</p>
+          <p data-lang="en" style="display:none;">Presentable · Reproducible · Explainable</p>
+        </div>
+        <div class="hero-card-body">
+          <div class="hero-card-item"><div class="hero-card-icon">📊</div><span class="hero-card-label" data-lang="ja" style="display:none;">研究レポート + 図表パッケージ</span><span class="hero-card-label" data-lang="zh-CN" style="display:none;">研究报告 + 核心图表包</span><span class="hero-card-label" data-lang="zh-TW" style="display:none;">研究報告 + 核心圖表包</span><span class="hero-card-label" data-lang="en" style="display:none;">Research Report + Charts Package</span></div>
+          <div class="hero-card-item"><div class="hero-card-icon">💻</div><span class="hero-card-label" data-lang="ja" style="display:none;">コード + 環境 + 再現記録</span><span class="hero-card-label" data-lang="zh-CN" style="display:none;">代码 + 环境 + 复现记录</span><span class="hero-card-label" data-lang="zh-TW" style="display:none;">代碼 + 環境 + 複現記錄</span><span class="hero-card-label" data-lang="en" style="display:none;">Code + Environment + Reproduction Log</span></div>
+          <div class="hero-card-item"><div class="hero-card-icon">🎤</div><span class="hero-card-label" data-lang="ja" style="display:none;">面接スクリプト + Q&A対策</span><span class="hero-card-label" data-lang="zh-CN" style="display:none;">面试脚本 + 追问问答库</span><span class="hero-card-label" data-lang="zh-TW" style="display:none;">面試腳本 + 追問問答庫</span><span class="hero-card-label" data-lang="en" style="display:none;">Interview Script + Q&A Preparation</span></div>
+          <div class="hero-card-item"><div class="hero-card-icon">🎓</div><span class="hero-card-label" data-lang="ja" style="display:none;">展示PPT / ポスター</span><span class="hero-card-label" data-lang="zh-CN" style="display:none;">展示PPT / 海报</span><span class="hero-card-label" data-lang="zh-TW" style="display:none;">展示PPT / 海報</span><span class="hero-card-label" data-lang="en" style="display:none;">Presentation PPT / Poster</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY SECTION (Pain Points) ===== -->
+<section class="section section-light" id="why">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">なぜAI科研実践が必要か</div>
+      <div class="section-label" data-lang="zh-CN">为什么需要AI科研实践</div>
+      <div class="section-label" data-lang="zh-TW">為什麼需要AI科研實踐</div>
+      <div class="section-label" data-lang="en">WHY AI RESEARCH</div>
+      <h2 class="section-title" data-lang="ja">日本留学における4つのリアルな課題</h2>
+      <h2 class="section-title" data-lang="zh-CN">日本留学申请中的四大真实痛点</h2>
+      <h2 class="section-title" data-lang="zh-TW">日本留學申請中的四大真實痛點</h2>
+      <h2 class="section-title" data-lang="en">Four Real Challenges in Studying in Japan</h2>
+    </div>
+
+    <div class="pain-grid">
+      <!-- Pain 1 -->
+      <div class="pain-card">
+        <div class="pain-card-num">1</div>
+        <h3 data-lang="ja">背景が「平凡」、エビデンス不足</h3>
+        <h3 data-lang="zh-CN">背景太"平"，缺少证据链</h3>
+        <h3 data-lang="zh-TW">背景太「平」，缺少證據鏈</h3>
+        <h3 data-lang="en">Flat Background, Lacking Evidence</h3>
+        <p data-lang="ja">成績は良いが経歴が画一的で、書ける内容が主観的。客観的に追求できる証拠が不足し、面接で深く掘り下げられない。</p>
+        <p data-lang="zh-CN">成绩不错但经历同质化，能写的内容偏主观，缺少可被追问的客观证据。材料空泛，面试无法深入展开。</p>
+        <p data-lang="zh-TW">成績不錯但經歷同質化，能寫的內容偏主觀，缺少可被追問的客觀證據。材料空泛，面試無法深入展開。</p>
+        <p data-lang="en">Good grades but homogeneous experiences. Application materials lack objective evidence that can withstand scrutiny during interviews.</p>
+      </div>
+      <!-- Pain 2 -->
+      <div class="pain-card">
+        <div class="pain-card-num">2</div>
+        <h3 data-lang="ja">大学が研究経験を重視</h3>
+        <h3 data-lang="zh-CN">大学越来越重视研究经验</h3>
+        <h3 data-lang="zh-TW">大學越來越重視研究經驗</h3>
+        <h3 data-lang="en">Universities Increasingly Value Research Experience</h3>
+        <p data-lang="ja">AIの進歩により、日本の大学は研究能力と研究経験を持つ学生を好む傾向が強まっています。経済学・経営学・教育学・医学など多くの分野でAI活用が進み、文系でも「AI視点」で目標専攻との関連性を示すことが求められています。</p>
+        <p data-lang="zh-CN">AI的进步使日本的大学招生越来越倾向于具有研究能力和研究经验的学生。经济学、经营学、教育学、医学等方向都在使用AI与数据分析，文科也需要"AI视角"来建立与目标专业的强关联。</p>
+        <p data-lang="zh-TW">AI的進步使日本的大學招生越來越傾向於具有研究能力和研究經驗的學生。經濟學、經營學、教育學、醫學等方向都在使用AI與數據分析，文科也需要「AI視角」來建立與目標專業的強關聯。</p>
+        <p data-lang="en">Advances in AI are driving Japanese universities to favor students with research skills and experience. Economics, business, education, medicine — all fields now leverage AI, and even humanities students need an "AI perspective" to connect with their target programs.</p>
+      </div>
+      <!-- Pain 3 -->
+      <div class="pain-card">
+        <div class="pain-card-num">3</div>
+        <h3 data-lang="ja">面接で教授の前で緊張</h3>
+        <h3 data-lang="zh-CN">面试见教授就紧张</h3>
+        <h3 data-lang="zh-TW">面試見教授就緊張</h3>
+        <h3 data-lang="en">Interview Anxiety with Professors</h3>
+        <p data-lang="ja">能力不足ではなく、教授との初対面で緊張してしまう。「説明+質疑応答」の実戦訓練が不足し、表現がうまくいかない。</p>
+        <p data-lang="zh-CN">很多学生不是不会，而是第一次与教授对话就紧张。缺少"讲述+追问"的实战训练，表达容易崩。</p>
+        <p data-lang="zh-TW">很多學生不是不會，而是第一次與教授對話就緊張。缺少「講述+追問」的實戰訓練，表達容易崩。</p>
+        <p data-lang="en">Many students are capable but freeze in their first professor interview. Without practice in presenting and handling follow-up questions, communication breaks down.</p>
+      </div>
+      <!-- Pain 4 -->
+      <div class="pain-card">
+        <div class="pain-card-num">4</div>
+        <h3 data-lang="ja">研究能力の明らかな短所</h3>
+        <h3 data-lang="zh-CN">研究能力短板明显</h3>
+        <h3 data-lang="zh-TW">研究能力短板明顯</h3>
+        <h3 data-lang="en">Obvious Research Skill Gaps</h3>
+        <p data-lang="ja">高校生は学習時間が長いが研究のエビデンスチェーンが不足。大学生は卒業論文の期間が短く、大学院申請に必要な研究作品を十分に支えられない。</p>
+        <p data-lang="zh-CN">高中生学习时间长但缺乏研究证据链；本科生毕业论文周期短，难以支撑大学院申请所需的研究作品。</p>
+        <p data-lang="zh-TW">高中生學習時間長但缺乏研究證據鏈；本科生畢業論文週期短，難以支撐大學院申請所需的研究作品。</p>
+        <p data-lang="en">High school students study hard but lack research evidence chains. Undergraduates' thesis timelines are too short to produce work needed for graduate applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOLUTION / ADVANTAGES ===== -->
+<section class="section section-dark" id="solution">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">行知学園のソリューション</div>
+      <div class="section-label" data-lang="zh-CN">行知学园的解决方案</div>
+      <div class="section-label" data-lang="zh-TW">行知學園的解決方案</div>
+      <div class="section-label" data-lang="en">OUR SOLUTION</div>
+      <h2 class="section-title" data-lang="ja">4つのコア・アドバンテージ</h2>
+      <h2 class="section-title" data-lang="zh-CN">四大核心优势</h2>
+      <h2 class="section-title" data-lang="zh-TW">四大核心優勢</h2>
+      <h2 class="section-title" data-lang="en">Four Core Advantages</h2>
+    </div>
+
+    <div class="advantage-grid">
+      <div class="advantage-card">
+        <div class="advantage-icon">📊</div>
+        <h3 data-lang="ja">成果ドリブン</h3><h3 data-lang="zh-CN">成果驱动</h3><h3 data-lang="zh-TW">成果驅動</h3><h3 data-lang="en">Results-Driven</h3>
+        <p data-lang="ja">レポート+図表+再現記録+表現訓練を提供。教授の追求に耐えられる成果物。</p>
+        <p data-lang="zh-CN">交付报告+图表+复现记录+表达训练，经得起追问的成果包。</p>
+        <p data-lang="zh-TW">交付報告+圖表+複現記錄+表達訓練，經得起追問的成果包。</p>
+        <p data-lang="en">Deliver reports, charts, reproduction logs, and presentation training — a portfolio that stands up to scrutiny.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">🔗</div>
+        <h3 data-lang="ja">学際的パス</h3><h3 data-lang="zh-CN">跨学科路径</h3><h3 data-lang="zh-TW">跨學科路徑</h3><h3 data-lang="en">Interdisciplinary</h3>
+        <p data-lang="ja">AIで経済/経営/教育/医学/生物等を繋ぎ、志望理由書のロジックを完結させる。</p>
+        <p data-lang="zh-CN">AI连接经济/经营/教育/医学/生物等，让志望理由书逻辑更闭环。</p>
+        <p data-lang="zh-TW">AI連接經濟/經營/教育/醫學/生物等，讓志望理由書邏輯更閉環。</p>
+        <p data-lang="en">AI bridges economics, business, education, medicine & more — creating a coherent narrative for your application.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">🎓</div>
+        <h3 data-lang="ja">教授参加</h3><h3 data-lang="zh-CN">教授参与</h3><h3 data-lang="zh-TW">教授參與</h3><h3 data-lang="en">Professor-Led</h3>
+        <p data-lang="ja">東大・早稲田等の教授による審査と口頭試問訓練。</p>
+        <p data-lang="zh-CN">来自东大、早稻田等高校教授评审与答辩训练。</p>
+        <p data-lang="zh-TW">來自東大、早稻田等高校教授評審與答辯訓練。</p>
+        <p data-lang="en">Review and defense training led by professors from top universities like UTokyo and Waseda.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">⚡</div>
+        <h3 data-lang="ja">GPU計算力</h3><h3 data-lang="zh-CN">GPU算力</h3><h3 data-lang="zh-TW">GPU算力</h3><h3 data-lang="en">GPU Computing</h3>
+        <p data-lang="ja">学園独自のGPU計算資源プール。自費購入不要で深層学習訓練を完了。</p>
+        <p data-lang="zh-CN">学园自建GPU算力池，学生无需自购也能完成深度学习训练。</p>
+        <p data-lang="zh-TW">學園自建GPU算力池，學生無需自購也能完成深度學習訓練。</p>
+        <p data-lang="en">Our dedicated GPU pool means students can run deep learning experiments without purchasing their own hardware.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAM TIERS ===== -->
+<section class="section" id="programs">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">プログラム体系</div>
+      <div class="section-label" data-lang="zh-CN">产品体系</div>
+      <div class="section-label" data-lang="zh-TW">產品體系</div>
+      <div class="section-label" data-lang="en">PROGRAMS</div>
+      <h2 class="section-title" data-lang="ja">4つのグレード、あなたに合った選択</h2>
+      <h2 class="section-title" data-lang="zh-CN">四档产品，适配不同需求</h2>
+      <h2 class="section-title" data-lang="zh-TW">四檔產品，適配不同需求</h2>
+      <h2 class="section-title" data-lang="en">Four Tiers, Tailored to Your Needs</h2>
+      <p class="section-subtitle" data-lang="ja">基礎から個別カスタマイズまで、異なるレベル・目標・投入度に対応</p>
+      <p class="section-subtitle" data-lang="zh-CN">面向不同基础、不同目标、不同投入强度</p>
+      <p class="section-subtitle" data-lang="zh-TW">面向不同基礎、不同目標、不同投入強度</p>
+      <p class="section-subtitle" data-lang="en">Designed for different skill levels, goals, and commitment intensities</p>
+    </div>
+
+    <div class="tier-grid">
+      <!-- Tier 1: Foundation -->
+      <div class="tier-card">
+        <div class="tier-header tier-h1">
+          <h3 data-lang="ja">基礎グレード</h3><h3 data-lang="zh-CN">基础档</h3><h3 data-lang="zh-TW">基礎檔</h3><h3 data-lang="en">Foundation</h3>
+          <span class="tier-sub" data-lang="ja">約9週間</span><span class="tier-sub" data-lang="zh-CN">约9周</span><span class="tier-sub" data-lang="zh-TW">約9週</span><span class="tier-sub" data-lang="en">~9 Weeks</span>
+        </div>
+        <div class="tier-body">
+          <p class="tier-desc" data-lang="ja">AI入門 + 方向性解説 + 最小実践 + 経験まとめ</p>
+          <p class="tier-desc" data-lang="zh-CN">AI入门 + 方向科普 + 最小实践 + 经验汇总</p>
+          <p class="tier-desc" data-lang="zh-TW">AI入門 + 方向科普 + 最小實踐 + 經驗彙總</p>
+          <p class="tier-desc" data-lang="en">AI fundamentals + direction overview + minimal practice + experience summary</p>
+          <p class="tier-audience" data-lang="ja">ゼロベース/基礎が弱い、まずAI経験を作りたい方</p>
+          <p class="tier-audience" data-lang="zh-CN">零基础/基础薄弱，想先建立AI经历</p>
+          <p class="tier-audience" data-lang="zh-TW">零基礎/基礎薄弱，想先建立AI經歷</p>
+          <p class="tier-audience" data-lang="en">For beginners looking to establish their first AI experience</p>
+          <ul class="tier-features">
+            <li data-lang="ja">学習記録と過程証明</li><li data-lang="zh-CN">学习记录与过程证明</li><li data-lang="zh-TW">學習記錄與過程證明</li><li data-lang="en">Learning records & process documentation</li>
+            <li data-lang="ja">1ページプロジェクト概要</li><li data-lang="zh-CN">1页项目摘要（动机/方法/结果/反思）</li><li data-lang="zh-TW">1頁項目摘要（動機/方法/結果/反思）</li><li data-lang="en">One-page project summary</li>
+            <li data-lang="ja">GPU基礎利用</li><li data-lang="zh-CN">GPU基础使用</li><li data-lang="zh-TW">GPU基礎使用</li><li data-lang="en">Basic GPU access</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tier 2: Achievement -->
+      <div class="tier-card featured">
+        <div class="tier-header tier-h2">
+          <h3 data-lang="ja">成果グレード</h3><h3 data-lang="zh-CN">成果档</h3><h3 data-lang="zh-TW">成果檔</h3><h3 data-lang="en">Achievement</h3>
+          <span class="tier-sub" data-lang="ja">1年以内</span><span class="tier-sub" data-lang="zh-CN">1年以内</span><span class="tier-sub" data-lang="zh-TW">1年以內</span><span class="tier-sub" data-lang="en">Within 1 Year</span>
+        </div>
+        <div class="tier-body">
+          <p class="tier-desc" data-lang="ja">基礎 + 導師による研究クローズドループ、「提出可能・追求可能」な成果パッケージ</p>
+          <p class="tier-desc" data-lang="zh-CN">基础档 + 导师带做研究闭环，形成"可提交、可追问"成果包</p>
+          <p class="tier-desc" data-lang="zh-TW">基礎檔 + 導師帶做研究閉環，形成「可提交、可追問」成果包</p>
+          <p class="tier-desc" data-lang="en">Foundation + mentor-guided research loop, producing a submittable & defensible portfolio</p>
+          <p class="tier-audience" data-lang="ja">完全な成果パッケージが必要な積極的な学生向け</p>
+          <p class="tier-audience" data-lang="zh-CN">需要完整成果包支撑材料与面试的积极型学生</p>
+          <p class="tier-audience" data-lang="zh-TW">需要完整成果包支撐材料與面試的積極型學生</p>
+          <p class="tier-audience" data-lang="en">For motivated students who need a complete portfolio for applications</p>
+          <ul class="tier-features">
+            <li data-lang="ja">正式研究レポート</li><li data-lang="zh-CN">正式研究报告（可提交/可打印）</li><li data-lang="zh-TW">正式研究報告（可提交/可列印）</li><li data-lang="en">Formal research report</li>
+            <li data-lang="ja">コア図表パッケージ + 展示PPT/ポスター</li><li data-lang="zh-CN">核心图表包 + 展示PPT/海报</li><li data-lang="zh-TW">核心圖表包 + 展示PPT/海報</li><li data-lang="en">Core charts + presentation PPT/poster</li>
+            <li data-lang="ja">再現記録（コード+環境+ログ）</li><li data-lang="zh-CN">复现记录（代码+环境+日志）</li><li data-lang="zh-TW">複現記錄（代碼+環境+日誌）</li><li data-lang="en">Reproduction log (code + environment + logs)</li>
+            <li data-lang="ja">面接スクリプト + Q&A対策</li><li data-lang="zh-CN">面试讲述脚本 + 追问问答库</li><li data-lang="zh-TW">面試講述腳本 + 追問問答庫</li><li data-lang="en">Interview script + Q&A preparation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tier 3: Professional -->
+      <div class="tier-card">
+        <div class="tier-header tier-h3">
+          <h3 data-lang="ja">専門グレード</h3><h3 data-lang="zh-CN">专业档</h3><h3 data-lang="zh-TW">專業檔</h3><h3 data-lang="en">Professional</h3>
+          <span class="tier-sub" data-lang="ja">1年以内</span><span class="tier-sub" data-lang="zh-CN">1年以内</span><span class="tier-sub" data-lang="zh-TW">1年以內</span><span class="tier-sub" data-lang="en">Within 1 Year</span>
+        </div>
+        <div class="tier-body">
+          <p class="tier-desc" data-lang="ja">成果 + 教授/専門家審査と口頭試問式報告 + 反復改善</p>
+          <p class="tier-desc" data-lang="zh-CN">成果档 + 教授/专家评审与答辩式汇报 + 迭代优化</p>
+          <p class="tier-desc" data-lang="zh-TW">成果檔 + 教授/專家評審與答辯式匯報 + 迭代優化</p>
+          <p class="tier-desc" data-lang="en">Achievement + professor/expert review, defense-style presentations & iterative refinement</p>
+          <p class="tier-audience" data-lang="ja">成果を大学教授の評価基準に近づけたい方</p>
+          <p class="tier-audience" data-lang="zh-CN">目标更高，希望成果贴近高校教授评价维度</p>
+          <p class="tier-audience" data-lang="zh-TW">目標更高，希望成果貼近高校教授評價維度</p>
+          <p class="tier-audience" data-lang="en">For those aiming higher, aligning work with university professor evaluation standards</p>
+          <ul class="tier-features">
+            <li data-lang="ja">成果グレード全交付物</li><li data-lang="zh-CN">成果档全部交付物</li><li data-lang="zh-TW">成果檔全部交付物</li><li data-lang="en">All Achievement tier deliverables</li>
+            <li data-lang="ja">教授/専門家審査意見</li><li data-lang="zh-CN">教授/专家评审意见要点</li><li data-lang="zh-TW">教授/專家評審意見要點</li><li data-lang="en">Professor/expert review feedback</li>
+            <li data-lang="ja">修正記録と最終成果パッケージ</li><li data-lang="zh-CN">修改记录与迭代后最终成果包</li><li data-lang="zh-TW">修改記錄與迭代後最終成果包</li><li data-lang="en">Revision log & final portfolio</li>
+            <li data-lang="ja">模擬面接・口頭試問訓練</li><li data-lang="zh-CN">模拟学部/大学院面试答辩训练</li><li data-lang="zh-TW">模擬學部/大學院面試答辯訓練</li><li data-lang="en">Mock defense & interview training</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tier 4: Custom -->
+      <div class="tier-card">
+        <div class="tier-header tier-h4">
+          <h3 data-lang="ja">プライベートカスタム</h3><h3 data-lang="zh-CN">私人定制</h3><h3 data-lang="zh-TW">私人定制</h3><h3 data-lang="en">Custom</h3>
+          <span class="tier-sub" data-lang="ja">6ヶ月〜1.5年</span><span class="tier-sub" data-lang="zh-CN">6个月~1.5年</span><span class="tier-sub" data-lang="zh-TW">6個月~1.5年</span><span class="tier-sub" data-lang="en">6 Months ~ 1.5 Years</span>
+        </div>
+        <div class="tier-body">
+          <p class="tier-desc" data-lang="ja">専門グレード + 目標に応じたモジュールカスタマイズ</p>
+          <p class="tier-desc" data-lang="zh-CN">专业档 + 按目标定制模块</p>
+          <p class="tier-desc" data-lang="zh-TW">專業檔 + 按目標定制模組</p>
+          <p class="tier-desc" data-lang="en">Professional + custom modules tailored to your specific goals</p>
+          <p class="tier-audience" data-lang="ja">名門大学志望/目標研究室/論文/特許/PoC</p>
+          <p class="tier-audience" data-lang="zh-CN">冲刺名校/目标研究室/论文/专利/PoC转化</p>
+          <p class="tier-audience" data-lang="zh-TW">衝刺名校/目標研究室/論文/專利/PoC轉化</p>
+          <p class="tier-audience" data-lang="en">For elite school applicants / target labs / publications / patents / PoC</p>
+          <div class="tier-modules">
+            <span class="tier-module-tag" data-lang="ja">研究室志向</span><span class="tier-module-tag" data-lang="zh-CN">研究室导向</span><span class="tier-module-tag" data-lang="zh-TW">研究室導向</span><span class="tier-module-tag" data-lang="en">Lab-Oriented</span>
+            <span class="tier-module-tag" data-lang="ja">論文投稿</span><span class="tier-module-tag" data-lang="zh-CN">论文投稿</span><span class="tier-module-tag" data-lang="zh-TW">論文投稿</span><span class="tier-module-tag" data-lang="en">Paper Submission</span>
+            <span class="tier-module-tag" data-lang="ja">特許候補</span><span class="tier-module-tag" data-lang="zh-CN">专利候选</span><span class="tier-module-tag" data-lang="zh-TW">專利候選</span><span class="tier-module-tag" data-lang="en">Patent Candidate</span>
+            <span class="tier-module-tag" data-lang="ja">審査強化</span><span class="tier-module-tag" data-lang="zh-CN">评审增强</span><span class="tier-module-tag" data-lang="zh-TW">評審增強</span><span class="tier-module-tag" data-lang="en">Enhanced Review</span>
+            <span class="tier-module-tag" data-lang="ja">厳密検証</span><span class="tier-module-tag" data-lang="zh-CN">严谨验证</span><span class="tier-module-tag" data-lang="zh-TW">嚴謹驗證</span><span class="tier-module-tag" data-lang="en">Rigorous Validation</span>
+            <span class="tier-module-tag" data-lang="ja">PoC検証</span><span class="tier-module-tag" data-lang="zh-CN">PoC概念验证</span><span class="tier-module-tag" data-lang="zh-TW">PoC概念驗證</span><span class="tier-module-tag" data-lang="en">PoC Verification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEARCH TOPICS ===== -->
+<section class="section section-light" id="topics">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">学際的研究テーマ</div>
+      <div class="section-label" data-lang="zh-CN">跨学科课题方向</div>
+      <div class="section-label" data-lang="zh-TW">跨學科課題方向</div>
+      <div class="section-label" data-lang="en">INTERDISCIPLINARY TOPICS</div>
+      <h2 class="section-title" data-lang="ja">AIはあらゆる専攻と繋がる</h2>
+      <h2 class="section-title" data-lang="zh-CN">AI可连接多专业</h2>
+      <h2 class="section-title" data-lang="zh-TW">AI可連接多專業</h2>
+      <h2 class="section-title" data-lang="en">AI Connects Every Major</h2>
+    </div>
+    <div class="research-grid">
+      <div class="research-card"><div class="research-card-icon">📈</div><h4 data-lang="ja">経済学</h4><h4 data-lang="zh-CN">经济学</h4><h4 data-lang="zh-TW">經濟學</h4><h4 data-lang="en">Economics</h4><p data-lang="ja">LSTMで為替予測<br>イールドカーブなど</p><p data-lang="zh-CN">LSTM预测汇率<br>收益率曲线等</p><p data-lang="zh-TW">LSTM預測匯率<br>收益率曲線等</p><p data-lang="en">LSTM exchange rate prediction<br>Yield curves, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">🧬</div><h4 data-lang="ja">医薬生物</h4><h4 data-lang="zh-CN">医药生物</h4><h4 data-lang="zh-TW">醫藥生物</h4><h4 data-lang="en">Biomedical</h4><p data-lang="ja">AIがん幹細胞識別<br>画像分類など</p><p data-lang="zh-CN">AI识别癌干细胞<br>图像分类等</p><p data-lang="zh-TW">AI識別癌幹細胞<br>圖像分類等</p><p data-lang="en">AI cancer stem cell ID<br>Image classification, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">📚</div><h4 data-lang="ja">教育学</h4><h4 data-lang="zh-CN">教育学</h4><h4 data-lang="zh-TW">教育學</h4><h4 data-lang="en">Education</h4><p data-lang="ja">学生回答クラスタリング<br>個別最適化など</p><p data-lang="zh-CN">学生答题聚类<br>因材施教等</p><p data-lang="zh-TW">學生答題聚類<br>因材施教等</p><p data-lang="en">Student response clustering<br>Adaptive learning, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">💼</div><h4 data-lang="ja">経営学</h4><h4 data-lang="zh-CN">经营学</h4><h4 data-lang="zh-TW">經營學</h4><h4 data-lang="en">Business</h4><p data-lang="ja">ユーザーペルソナ分析<br>顧客識別など</p><p data-lang="zh-CN">用户画像分群<br>客户识别等</p><p data-lang="zh-TW">用戶畫像分群<br>客戶識別等</p><p data-lang="en">User persona segmentation<br>Customer profiling, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">🌐</div><h4 data-lang="ja">社会学</h4><h4 data-lang="zh-CN">社会学</h4><h4 data-lang="zh-TW">社會學</h4><h4 data-lang="en">Sociology</h4><p data-lang="ja">世論分析<br>感情傾向判断など</p><p data-lang="zh-CN">舆情分析<br>情感倾向判断等</p><p data-lang="zh-TW">輿情分析<br>情感傾向判斷等</p><p data-lang="en">Sentiment analysis<br>Opinion mining, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">🎨</div><h4 data-lang="ja">メディア/アート</h4><h4 data-lang="zh-CN">传媒/艺术</h4><h4 data-lang="zh-TW">傳媒/藝術</h4><h4 data-lang="en">Media/Art</h4><p data-lang="ja">Stable Diffusion<br>広告ポスター生成など</p><p data-lang="zh-CN">Stable Diffusion<br>广告海报生成等</p><p data-lang="zh-TW">Stable Diffusion<br>廣告海報生成等</p><p data-lang="en">Stable Diffusion<br>Ad poster generation, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">⚡</div><h4 data-lang="ja">電気電子</h4><h4 data-lang="zh-CN">电子电气</h4><h4 data-lang="zh-TW">電子電氣</h4><h4 data-lang="en">EE</h4><p data-lang="ja">波形異常検出<br>故障診断など</p><p data-lang="zh-CN">波形异常检测<br>故障诊断等</p><p data-lang="zh-TW">波形異常檢測<br>故障診斷等</p><p data-lang="en">Waveform anomaly detection<br>Fault diagnosis, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">🔧</div><h4 data-lang="ja">機械工学</h4><h4 data-lang="zh-CN">机械工程</h4><h4 data-lang="zh-TW">機械工程</h4><h4 data-lang="en">Mechanical Eng.</h4><p data-lang="ja">予測保全<br>故障確率予測など</p><p data-lang="zh-CN">预测性维护<br>故障概率预测等</p><p data-lang="zh-TW">預測性維護<br>故障概率預測等</p><p data-lang="en">Predictive maintenance<br>Failure probability, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">💻</div><h4 data-lang="ja">情報CS</h4><h4 data-lang="zh-CN">情报CS</h4><h4 data-lang="zh-TW">情報CS</h4><h4 data-lang="en">Computer Science</h4><p data-lang="ja">自然言語処理<br>画像認識・生成など</p><p data-lang="zh-CN">自然语言处理<br>图像识别·生成等</p><p data-lang="zh-TW">自然語言處理<br>圖像識別·生成等</p><p data-lang="en">NLP<br>Image recognition & generation, etc.</p></div>
+      <div class="research-card"><div class="research-card-icon">🧪</div><h4 data-lang="ja">化学</h4><h4 data-lang="zh-CN">化学</h4><h4 data-lang="zh-TW">化學</h4><h4 data-lang="en">Chemistry</h4><p data-lang="ja">分子特性予測<br>AI創薬スクリーニングなど</p><p data-lang="zh-CN">分子特性预测<br>AI创药筛选等</p><p data-lang="zh-TW">分子特性預測<br>AI創藥篩選等</p><p data-lang="en">Molecular property prediction<br>AI drug screening, etc.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">研究クローズドループ</div>
+      <div class="section-label" data-lang="zh-CN">研究闭环流程</div>
+      <div class="section-label" data-lang="zh-TW">研究閉環流程</div>
+      <div class="section-label" data-lang="en">RESEARCH PROCESS</div>
+      <h2 class="section-title" data-lang="ja">標準化SOP、マイルストーン検収</h2>
+      <h2 class="section-title" data-lang="zh-CN">标准化SOP，里程碑验收</h2>
+      <h2 class="section-title" data-lang="zh-TW">標準化SOP，里程碑驗收</h2>
+      <h2 class="section-title" data-lang="en">Standardized SOP with Milestone Reviews</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-card"><div class="process-num">1</div><h4 data-lang="ja">測評と目標確認</h4><h4 data-lang="zh-CN">测评与目标确认</h4><h4 data-lang="zh-TW">測評與目標確認</h4><h4 data-lang="en">Assessment & Goals</h4><p data-lang="ja">専攻目標 / タイムライン / 基礎評価</p><p data-lang="zh-CN">专业目标 / 时间线 / 基础评估</p><p data-lang="zh-TW">專業目標 / 時間線 / 基礎評估</p><p data-lang="en">Major goals / timeline / skill assessment</p></div>
+      <div class="process-card"><div class="process-num">2</div><h4 data-lang="ja">方向と選題</h4><h4 data-lang="zh-CN">方向与选题</h4><h4 data-lang="zh-TW">方向與選題</h4><h4 data-lang="en">Direction & Topic</h4><p data-lang="ja">目標専攻に合わせた研究課題の決定</p><p data-lang="zh-CN">结合目标专业确定研究问题</p><p data-lang="zh-TW">結合目標專業確定研究問題</p><p data-lang="en">Define research question aligned with your target</p></div>
+      <div class="process-card"><div class="process-num">3</div><h4 data-lang="ja">実験と検証</h4><h4 data-lang="zh-CN">实验与验证</h4><h4 data-lang="zh-TW">實驗與驗證</h4><h4 data-lang="en">Experiment & Validate</h4><p data-lang="ja">ベースライン→最適化→対照実験（GPU支援）</p><p data-lang="zh-CN">跑通基线→优化→对照实验（GPU支持）</p><p data-lang="zh-TW">跑通基線→優化→對照實驗（GPU支持）</p><p data-lang="en">Baseline → optimize → controlled experiments (GPU)</p></div>
+      <div class="process-card"><div class="process-num">4</div><h4 data-lang="ja">結果分析</h4><h4 data-lang="zh-CN">结果分析</h4><h4 data-lang="zh-TW">結果分析</h4><h4 data-lang="en">Result Analysis</h4><p data-lang="ja">指標解説、誤差分析、限界説明</p><p data-lang="zh-CN">指标解释、误差分析、局限性说明</p><p data-lang="zh-TW">指標解釋、誤差分析、局限性說明</p><p data-lang="en">Metrics interpretation, error analysis, limitations</p></div>
+      <div class="process-card"><div class="process-num">5</div><h4 data-lang="ja">執筆と表現</h4><h4 data-lang="zh-CN">写作与表达</h4><h4 data-lang="zh-TW">寫作與表達</h4><h4 data-lang="en">Writing & Presentation</h4><p data-lang="ja">レポート構造、図表ナラティブ、面接訓練</p><p data-lang="zh-CN">报告结构、图表叙事、面试训练</p><p data-lang="zh-TW">報告結構、圖表敘事、面試訓練</p><p data-lang="en">Report structure, data storytelling, interview prep</p></div>
+      <div class="process-card"><div class="process-num">6</div><h4 data-lang="ja">口頭試問とアーカイブ</h4><h4 data-lang="zh-CN">答辩与归档</h4><h4 data-lang="zh-TW">答辯與歸檔</h4><h4 data-lang="en">Defense & Archive</h4><p data-lang="ja">公開展示版 + 内部再現版の成果パッケージ</p><p data-lang="zh-CN">公开展示版 + 内部复现版成果包</p><p data-lang="zh-TW">公開展示版 + 內部複現版成果包</p><p data-lang="en">Public presentation + internal reproduction package</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STANDARDS + PROFESSOR ===== -->
+<section class="section section-dark" id="standards">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label" data-lang="ja">成果の3つのハード基準</div>
+      <div class="section-label" data-lang="zh-CN">成果的三个硬标准</div>
+      <div class="section-label" data-lang="zh-TW">成果的三個硬標準</div>
+      <div class="section-label" data-lang="en">THREE HARD STANDARDS</div>
+      <h2 class="section-title" data-lang="ja">過程は検収可能、成果は再現可能、表現は訓練可能</h2>
+      <h2 class="section-title" data-lang="zh-CN">过程可验收、成果可复现、表达可训练</h2>
+      <h2 class="section-title" data-lang="zh-TW">過程可驗收、成果可複現、表達可訓練</h2>
+      <h2 class="section-title" data-lang="en">Verifiable Process, Reproducible Results, Trainable Expression</h2>
+    </div>
+    <div class="standards-grid">
+      <div class="standard-card"><div class="standard-icon">📊</div>
+        <h3 data-lang="ja">展示可能</h3><h3 data-lang="zh-CN">可展示</h3><h3 data-lang="zh-TW">可展示</h3><h3 data-lang="en">Presentable</h3>
+        <p data-lang="ja">レポート、図表、海報、PPT</p><p data-lang="zh-CN">报告、图表、海报、PPT</p><p data-lang="zh-TW">報告、圖表、海報、PPT</p><p data-lang="en">Reports, charts, posters, PPT</p>
+      </div>
+      <div class="standard-card"><div class="standard-icon">🔬</div>
+        <h3 data-lang="ja">再現可能</h3><h3 data-lang="zh-CN">可复现</h3><h3 data-lang="zh-TW">可複現</h3><h3 data-lang="en">Reproducible</h3>
+        <p data-lang="ja">コード、日誌、環境説明</p><p data-lang="zh-CN">代码、日志、环境说明</p><p data-lang="zh-TW">代碼、日誌、環境說明</p><p data-lang="en">Code, logs, environment docs</p>
+      </div>
+      <div class="standard-card"><div class="standard-icon">🎤</div>
+        <h3 data-lang="ja">説明可能</h3><h3 data-lang="zh-CN">可讲述</h3><h3 data-lang="zh-TW">可講述</h3><h3 data-lang="en">Explainable</h3>
+        <p data-lang="ja">面接スクリプト、質疑応答訓練</p><p data-lang="zh-CN">面试脚本、追问训练</p><p data-lang="zh-TW">面試腳本、追問訓練</p><p data-lang="en">Interview scripts, Q&A training</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROFESSOR BAR ===== -->
+<section class="professor-bar">
+  <div class="professor-inner">
+    <h3 data-lang="ja">教授/専門家リソース</h3><h3 data-lang="zh-CN">教授/专家资源</h3><h3 data-lang="zh-TW">教授/專家資源</h3><h3 data-lang="en">Professor & Expert Resources</h3>
+    <p data-lang="ja">日本の国立大学・トップ私立大学の現職または元教授・准教授・研究員を招き、講座・審査・学術指導に参加</p>
+    <p data-lang="zh-CN">邀请日本国立与一流私立大学在职或前任教授、准教授、研究员参与讲座、评审与学术校准</p>
+    <p data-lang="zh-TW">邀請日本國立與一流私立大學在職或前任教授、准教授、研究員參與講座、評審與學術校準</p>
+    <p data-lang="en">We invite active and former professors, associate professors, and researchers from Japan's top national and private universities for lectures, reviews, and academic calibration.</p>
+    <div class="uni-tags">
+      <span class="uni-tag" data-lang="ja">東京大学</span><span class="uni-tag" data-lang="zh-CN">东京大学</span><span class="uni-tag" data-lang="zh-TW">東京大學</span><span class="uni-tag" data-lang="en">University of Tokyo</span>
+      <span class="uni-tag" data-lang="ja">早稲田大学</span><span class="uni-tag" data-lang="zh-CN">早稻田大学</span><span class="uni-tag" data-lang="zh-TW">早稻田大學</span><span class="uni-tag" data-lang="en">Waseda University</span>
+      <span class="uni-tag" data-lang="ja">順天堂大学</span><span class="uni-tag" data-lang="zh-CN">顺天堂大学</span><span class="uni-tag" data-lang="zh-TW">順天堂大學</span><span class="uni-tag" data-lang="en">Juntendo University</span>
+      <span class="uni-tag" data-lang="ja">その他（スケジュールに応じて）</span><span class="uni-tag" data-lang="zh-CN">更多高校（按排期）</span><span class="uni-tag" data-lang="zh-TW">更多高校（按排期）</span><span class="uni-tag" data-lang="en">More universities (by schedule)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2 data-lang="ja">お問い合わせ</h2><h2 data-lang="zh-CN">立即咨询</h2><h2 data-lang="zh-TW">立即諮詢</h2><h2 data-lang="en">Get Started</h2>
+    <p data-lang="ja">毎月無料AI講座を開催中。まずはお気軽にお問い合わせください。</p>
+    <p data-lang="zh-CN">每月举办免费AI讲座，欢迎咨询了解详情。</p>
+    <p data-lang="zh-TW">每月舉辦免費AI講座，歡迎諮詢了解詳情。</p>
+    <p data-lang="en">We host free monthly AI lectures. Contact us to learn more.</p>
+
+    <div class="qr-grid">
+      <div class="qr-card">
+        <div class="qr-card-icon">💬</div>
+        <h4 data-lang="ja">WeChat相談</h4><h4 data-lang="zh-CN">微信咨询</h4><h4 data-lang="zh-TW">微信諮詢</h4><h4 data-lang="en">WeChat</h4>
+        <img src="wechat_qr.jpg" alt="WeChat QR Code" style="padding: 10px; box-sizing: border-box;">
+        <p class="qr-sub" data-lang="ja">WeChatでスキャンしてご相談ください</p>
+        <p class="qr-sub" data-lang="zh-CN">扫码添加微信，一对一咨询</p>
+        <p class="qr-sub" data-lang="zh-TW">掃碼添加微信，一對一諮詢</p>
+        <p class="qr-sub" data-lang="en">Scan to chat with us on WeChat</p>
+      </div>
+      <div class="qr-card">
+        <div class="qr-card-icon">📕</div>
+        <h4 data-lang="ja">小紅書（RED）相談</h4><h4 data-lang="zh-CN">小红书咨询</h4><h4 data-lang="zh-TW">小紅書諮詢</h4><h4 data-lang="en">Xiaohongshu (RED)</h4>
+        <img src="xiaohongshu_qr.jpg" alt="Xiaohongshu QR Code">
+        <p class="qr-sub" data-lang="ja">小紅書でスキャンしてフォローしてください</p>
+        <p class="qr-sub" data-lang="zh-CN">扫码关注小红书，了解更多资讯</p>
+        <p class="qr-sub" data-lang="zh-TW">掃碼關注小紅書，了解更多資訊</p>
+        <p class="qr-sub" data-lang="en">Scan to follow us on Xiaohongshu</p>
+      </div>
+    </div>
+
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="ja">メールで問い合わせ</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="zh-CN">邮件咨询</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="zh-TW">郵件諮詢</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="en">Email Us</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <img src="logo.png" alt="Coach Academy" class="footer-logo">
+    <p data-lang="ja">&copy; 2026 行知学園（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="zh-CN">&copy; 2026 行知学园（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="zh-TW">&copy; 2026 行知學園（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="en">&copy; 2026 Coach Academy (KOYO CORPORATION) All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Language switching
+let currentLang = 'ja';
+
+const navData = {
+  'ja': [
+    {href:'#home', text:'ホーム'}, {href:'#why', text:'なぜ必要か'},
+    {href:'#solution', text:'ソリューション'}, {href:'#programs', text:'プログラム'},
+    {href:'#topics', text:'研究テーマ'}, {href:'#process', text:'プロセス'},
+    {href:'#contact', text:'お問い合わせ'}
+  ],
+  'zh-CN': [
+    {href:'#home', text:'首页'}, {href:'#why', text:'为什么需要'},
+    {href:'#solution', text:'解决方案'}, {href:'#programs', text:'产品体系'},
+    {href:'#topics', text:'课题方向'}, {href:'#process', text:'流程'},
+    {href:'#contact', text:'咨询'}
+  ],
+  'zh-TW': [
+    {href:'#home', text:'首頁'}, {href:'#why', text:'為什麼需要'},
+    {href:'#solution', text:'解決方案'}, {href:'#programs', text:'產品體系'},
+    {href:'#topics', text:'課題方向'}, {href:'#process', text:'流程'},
+    {href:'#contact', text:'諮詢'}
+  ],
+  'en': [
+    {href:'#home', text:'HOME'}, {href:'#why', text:'WHY'},
+    {href:'#solution', text:'SOLUTION'}, {href:'#programs', text:'PROGRAMS'},
+    {href:'#topics', text:'TOPICS'}, {href:'#process', text:'PROCESS'},
+    {href:'#contact', text:'CONTACT'}
+  ]
+};
+
+function switchLang(lang) {
+  currentLang = lang;
+  // Persist language in URL hash
+  if (window.location.hash !== '#' + lang) {
+    history.replaceState(null, '', '#' + lang);
+  }
+  // Update active button
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.textContent.trim() === {'ja':'日本語','zh-CN':'简体','zh-TW':'繁體','en':'EN'}[lang]) {
+      btn.classList.add('active');
+    }
+  });
+
+  // Show/hide lang elements
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.classList.add('active');
+      el.style.display = '';
+    } else {
+      el.classList.remove('active');
+      el.style.display = 'none';
+    }
+  });
+
+  // Update nav links
+  const navLinks = document.getElementById('nav-links');
+  navLinks.innerHTML = navData[lang].map(item =>
+    `<a href="${item.href}">${item.text}</a>`
+  ).join('');
+
+  // Update HTML lang
+  document.documentElement.lang = lang === 'zh-CN' ? 'zh-CN' : lang === 'zh-TW' ? 'zh-TW' : lang === 'ja' ? 'ja' : 'en';
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  const validLangs = ['ja', 'zh-CN', 'zh-TW', 'en'];
+  const hashLang = window.location.hash.replace('#', '');
+  const initLang = validLangs.includes(hashLang) ? hashLang : 'ja';
+  switchLang(initLang);
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Smooth scroll for nav links
+  document.addEventListener('click', (e) => {
+    if (e.target.matches('.nav-links a')) {
+      e.preventDefault();
+      const target = document.querySelector(e.target.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
