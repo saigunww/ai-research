@@ -253,10 +253,9 @@ a { text-decoration: none; color: inherit; }
   transition: var(--transition); position: relative;
 }
 .tier-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.tier-card.featured { border: 2px solid var(--accent); }
+.tier-card.featured { border: none; }
 .tier-card.featured::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0;
-  height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  content: none;
 }
 
 .tier-header {
@@ -395,7 +394,7 @@ a { text-decoration: none; color: inherit; }
   background: var(--primary-dark); color: rgba(255,255,255,0.6);
   padding: 40px 0; text-align: center; font-size: 13px;
 }
-.footer-logo { height: 36px; margin: 0 auto 16px; filter: brightness(0) invert(1); opacity: 0.8; }
+.footer-logo { height: 216px; margin: 0 auto 16px; opacity: 0.9; }
 .footer a { color: rgba(255,255,255,0.8); }
 .footer a:hover { color: var(--white); }
 
@@ -904,7 +903,7 @@ li[data-lang].active { display: flex; }
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
   <div class="container">
-    <img src="logo.png" alt="Coach Academy" class="footer-logo">
+    <img src="logo_white.png" alt="Coach Academy" class="footer-logo">
     <p data-lang="ja">&copy; 2026 行知学園（KOYO CORPORATION）All Rights Reserved.</p>
     <p data-lang="zh-CN">&copy; 2026 行知学园（KOYO CORPORATION）All Rights Reserved.</p>
     <p data-lang="zh-TW">&copy; 2026 行知學園（KOYO CORPORATION）All Rights Reserved.</p>
