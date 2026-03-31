@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行知学園 大学背景提升プログラム | Coach Academy University Programs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ===== CSS Variables & Reset ===== */
+:root {
+  --primary: #1a3a5c;
+  --primary-dark: #0d2c4a;
+  --primary-light: #2c5f8a;
+  --accent: #7bab3b;
+  --accent-dark: #5e8a2a;
+  --accent-light: #a3d45c;
+  --brand-red: #c41e24;
+  --white: #ffffff;
+  --off-white: #f7f9fc;
+  --light-bg: #eef2f7;
+  --text-dark: #1a2a3a;
+  --text-medium: #4a5568;
+  --text-light: #718096;
+  --border: #e2e8f0;
+  --gold: #c8a45c;
+  --gold-light: #e8d5a0;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans TC', 'Inter', sans-serif;
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== Navigation ===== */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+
+.nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+.nav-logo img { height: 44px; width: auto; }
+
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  font-size: 14px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--primary);
+  transition: var(--transition); position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; width: 0;
+  height: 2px; background: var(--accent); transition: var(--transition);
+}
+.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex; align-items: center; gap: 2px;
+  background: var(--light-bg); border-radius: 8px; padding: 3px;
+}
+.lang-btn {
+  padding: 5px 10px; border: none; background: transparent;
+  font-size: 12px; font-weight: 500; color: var(--text-medium);
+  border-radius: 6px; cursor: pointer; transition: var(--transition);
+  white-space: nowrap;
+}
+.lang-btn.active {
+  background: var(--white); color: var(--primary);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1); font-weight: 700;
+}
+.lang-btn:hover:not(.active) { color: var(--primary); }
+
+/* ===== Hero Section ===== */
+.hero {
+  padding-top: 72px; min-height: 100vh;
+  display: flex; align-items: center;
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 50%, var(--light-bg) 100%);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(123,171,59,0.06) 0%, transparent 70%);
+}
+.hero::after {
+  content: ''; position: absolute; bottom: -150px; left: -150px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,58,92,0.04) 0%, transparent 70%);
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; align-items: center; gap: 80px; }
+.hero-text { flex: 1; }
+.hero-visual { flex: 1; display: flex; justify-content: center; align-items: center; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(123,171,59,0.12); color: var(--accent-dark);
+  padding: 10px 24px; border-radius: 24px; font-size: 18px; font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.hero-badge::before { content: '◆'; font-size: 8px; }
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 56px); font-weight: 900;
+  line-height: 1.15; color: var(--primary-dark); margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+.hero h1 .accent-text { color: var(--accent); }
+
+.hero-desc {
+  font-size: 20px; color: var(--text-medium); line-height: 1.8;
+  margin-bottom: 36px; max-width: 560px;
+}
+
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 36px; background: var(--accent); color: var(--white);
+  font-size: 16px; font-weight: 700; border-radius: 50px;
+  letter-spacing: 1px; text-transform: uppercase;
+  transition: var(--transition); border: none; cursor: pointer;
+}
+.hero-cta:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(123,171,59,0.3); }
+
+.hero-stats {
+  display: flex; gap: 40px; margin-top: 48px;
+  padding-top: 32px; border-top: 1px solid var(--border);
+}
+.hero-stat-item { text-align: center; }
+.hero-stat-num { font-size: 36px; font-weight: 900; color: var(--primary); }
+.hero-stat-label { font-size: 14px; color: var(--text-light); margin-top: 4px; }
+
+/* Hero visual - decorative academic card */
+.hero-card {
+  width: 400px; background: var(--white); border-radius: 16px;
+  box-shadow: var(--shadow-lg); overflow: hidden;
+  transform: rotate(2deg);
+}
+.hero-card-top {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 32px; color: var(--white);
+  position: relative; overflow: hidden;
+}
+.hero-card-top::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='160'%3E%3Cdefs%3E%3Ccircle id='n' r='4' fill='rgba(255,255,255,0.12)'/%3E%3C/defs%3E%3C!-- nodes --%3E%3Cuse href='%23n' x='40' y='40'/%3E%3Cuse href='%23n' x='40' y='90'/%3E%3Cuse href='%23n' x='40' y='140'/%3E%3Cuse href='%23n' x='140' y='30'/%3E%3Cuse href='%23n' x='140' y='80'/%3E%3Cuse href='%23n' x='140' y='130'/%3E%3Cuse href='%23n' x='240' y='50'/%3E%3Cuse href='%23n' x='240' y='110'/%3E%3Cuse href='%23n' x='340' y='60'/%3E%3Cuse href='%23n' x='340' y='110'/%3E%3C!-- edges layer1-2 --%3E%3Cg stroke='rgba(255,255,255,0.08)' stroke-width='1'%3E%3Cline x1='40' y1='40' x2='140' y2='30'/%3E%3Cline x1='40' y1='40' x2='140' y2='80'/%3E%3Cline x1='40' y1='90' x2='140' y2='30'/%3E%3Cline x1='40' y1='90' x2='140' y2='80'/%3E%3Cline x1='40' y1='90' x2='140' y2='130'/%3E%3Cline x1='40' y1='140' x2='140' y2='80'/%3E%3Cline x1='40' y1='140' x2='140' y2='130'/%3E%3C!-- edges layer2-3 --%3E%3Cline x1='140' y1='30' x2='240' y2='50'/%3E%3Cline x1='140' y1='30' x2='240' y2='110'/%3E%3Cline x1='140' y1='80' x2='240' y2='50'/%3E%3Cline x1='140' y1='80' x2='240' y2='110'/%3E%3Cline x1='140' y1='130' x2='240' y2='50'/%3E%3Cline x1='140' y1='130' x2='240' y2='110'/%3E%3C!-- edges layer3-4 --%3E%3Cline x1='240' y1='50' x2='340' y2='60'/%3E%3Cline x1='240' y1='50' x2='340' y2='110'/%3E%3Cline x1='240' y1='110' x2='340' y2='60'/%3E%3Cline x1='240' y1='110' x2='340' y2='110'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  opacity: 1;
+  pointer-events: none;
+}
+.hero-card-top > * { position: relative; z-index: 1; }
+.hero-card-top h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.hero-card-top p { font-size: 15px; opacity: 0.8; }
+.hero-card-body { padding: 24px; }
+.hero-card-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.hero-card-item:last-child { border: none; }
+.hero-card-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: var(--light-bg); display: flex; align-items: center;
+  justify-content: center; font-size: 16px; flex-shrink: 0;
+}
+.hero-card-label { font-size: 15px; color: var(--text-medium); }
+
+/* ===== Section Common ===== */
+.section { padding: 100px 0; }
+.section-dark { background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); }
+.section-light { background: var(--off-white); }
+
+.section-header { text-align: center; margin-bottom: 64px; }
+.section-label {
+  display: inline-block; font-size: 13px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--accent);
+  margin-bottom: 16px;
+}
+.section-dark .section-label { color: var(--accent-light); }
+.section-title {
+  font-size: clamp(28px, 3.5vw, 42px); font-weight: 800;
+  line-height: 1.3; margin-bottom: 16px;
+}
+.section-dark .section-title { color: var(--white); }
+.section-subtitle {
+  font-size: 18px; color: var(--text-medium); max-width: 680px;
+  margin: 0 auto; line-height: 1.7;
+}
+.section-dark .section-subtitle { color: rgba(255,255,255,0.7); }
+
+/* ===== Pain Points / Why Section ===== */
+.pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+.pain-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 32px; box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+  transition: var(--transition);
+}
+.pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.pain-card-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent); color: var(--white);
+  font-size: 14px; font-weight: 800; margin-bottom: 16px;
+}
+.pain-card h3 { font-size: 20px; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+.pain-card p { font-size: 16px; color: var(--text-medium); line-height: 1.7; }
+
+/* ===== Solution / Advantages ===== */
+.advantage-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.advantage-card {
+  text-align: center; padding: 40px 24px;
+  background: rgba(255,255,255,0.06); border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);
+}
+.advantage-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); }
+
+.advantage-icon {
+  width: 64px; height: 64px; margin: 0 auto 20px;
+  background: rgba(123,171,59,0.15); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+}
+.advantage-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--white); }
+.advantage-card p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.7; }
+
+/* ===== Program Tiers ===== */
+.tier-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.tier-card {
+  background: var(--white); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+  transition: var(--transition); position: relative;
+}
+.tier-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.tier-card.featured { border: none; }
+.tier-card.featured::before {
+  content: none;
+}
+
+.tier-header {
+  padding: 28px 24px; color: var(--white); text-align: center;
+}
+.tier-header h3 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+.tier-header .tier-sub { font-size: 14px; opacity: 0.8; }
+.tier-h1 { background: linear-gradient(135deg, #5b8fb9, #4a7da8); }
+.tier-h2 { background: linear-gradient(135deg, #3a7ca5, #2a6a93); }
+.tier-h3 { background: linear-gradient(135deg, #1a5276, #0f3d5c); }
+.tier-h4 { background: linear-gradient(135deg, #0d2137, var(--primary)); }
+
+.tier-body { padding: 24px; }
+.tier-desc { font-size: 16px; color: var(--text-dark); font-weight: 500; margin-bottom: 12px; line-height: 1.6; }
+.tier-audience { font-size: 14px; color: var(--text-medium); padding-left: 12px; border-left: 3px solid var(--gold); margin-bottom: 16px; line-height: 1.5; }
+
+.tier-features { list-style: none; padding: 0; }
+.tier-features li {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 15px; color: var(--text-medium); padding: 6px 0;
+  line-height: 1.5;
+}
+.tier-features li::before {
+  content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px;
+}
+
+.tier-modules { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.tier-module-tag {
+  font-size: 13px; padding: 5px 12px; border-radius: 12px;
+  background: var(--light-bg); color: var(--primary); font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+/* ===== Research Topics ===== */
+.research-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+
+.research-card {
+  background: var(--white); border-radius: var(--radius); padding: 24px;
+  text-align: center; box-shadow: var(--shadow); transition: var(--transition);
+  border: 1px solid var(--border);
+}
+.research-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+.research-card-icon { font-size: 28px; margin-bottom: 12px; }
+.research-card h4 { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.research-card p { font-size: 14px; color: var(--text-light); line-height: 1.5; }
+
+/* ===== Process Flow ===== */
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.process-card {
+  text-align: center; padding: 32px 20px;
+  position: relative;
+}
+.process-card::after {
+  content: '→'; position: absolute; right: -16px; top: 50%;
+  transform: translateY(-50%); font-size: 24px; color: var(--accent);
+  font-weight: 700;
+}
+.process-card:nth-child(3)::after, .process-card:nth-child(6)::after { display: none; }
+
+.process-num {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--accent); color: var(--white);
+  font-size: 20px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+}
+.process-card h4 { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.process-card p { font-size: 16px; color: var(--text-medium); line-height: 1.6; }
+
+/* ===== Standards ===== */
+.standards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+.standard-card {
+  text-align: center; padding: 40px 24px;
+  background: rgba(255,255,255,0.06); border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.standard-icon { font-size: 40px; margin-bottom: 16px; }
+.standard-card h3 { font-size: 22px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.standard-card p { font-size: 16px; color: rgba(255,255,255,0.7); }
+
+/* ===== Professor Section ===== */
+.professor-bar {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white); padding: 48px 0;
+}
+.professor-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  text-align: center;
+}
+.professor-inner h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+.professor-inner p { font-size: 16px; opacity: 0.8; margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.uni-tags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.uni-tag {
+  padding: 8px 20px; border: 1px solid var(--gold);
+  border-radius: 24px; font-size: 15px; color: var(--gold-light);
+  font-weight: 500;
+}
+
+/* ===== Campus Programs Section ===== */
+.campus-programs {
+  padding: 80px 0; background: var(--light-bg);
+}
+.campus-programs .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.campus-programs h2 {
+  font-size: 36px; font-weight: 800; color: var(--primary); text-align: center;
+  margin-bottom: 12px;
+}
+.campus-programs > .container > p {
+  text-align: center; color: var(--text-medium); font-size: 16px; margin-bottom: 48px;
+}
+.campus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+
+.campus-card {
+  background: var(--white); border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow); transition: var(--transition);
+}
+.campus-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+
+.campus-card-header {
+  height: 240px; background-size: cover; background-position: center;
+  position: relative; overflow: hidden;
+}
+.campus-card-header::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.campus-card-body { padding: 32px; }
+.campus-card h3 { font-size: 24px; font-weight: 700; color: var(--primary); margin-bottom: 16px; }
+.campus-card-meta { font-size: 14px; color: var(--text-light); margin-bottom: 16px; line-height: 1.6; }
+.campus-card-slogan {
+  font-size: 16px; color: var(--brand-red); font-weight: 700;
+  margin-bottom: 20px; padding: 16px; background: rgba(196,30,36,0.08);
+  border-left: 4px solid var(--brand-red); border-radius: 4px;
+}
+.campus-highlights {
+  list-style: none; margin-bottom: 16px;
+}
+.campus-highlights li {
+  font-size: 14px; color: var(--text-medium); padding: 8px 0;
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.campus-highlights li::before {
+  content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 2px;
+}
+.campus-disclaimer { font-size: 12px; color: var(--text-light); font-style: italic; }
+
+/* ===== Course Detail Section ===== */
+.course-detail {
+  padding: 80px 0; background: var(--white);
+}
+.course-detail .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.course-detail > .container > h2 {
+  font-size: 36px; font-weight: 800; color: var(--primary); text-align: center;
+  margin-bottom: 12px;
+}
+.course-intro { margin-bottom: 60px; }
+.course-intro h3 {
+  font-size: 28px; font-weight: 700; color: var(--primary);
+  margin-bottom: 8px; display: flex; align-items: center; gap: 12px;
+}
+.course-intro .subtitle { font-size: 16px; color: var(--text-light); margin-bottom: 32px; }
+
+.course-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.course-feature {
+  background: var(--off-white); border-radius: var(--radius); overflow: hidden;
+  transition: var(--transition);
+}
+.course-feature:hover { box-shadow: var(--shadow); }
+.course-feature-images {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; height: 160px;
+}
+.course-feature-images img { width: 100%; height: 100%; object-fit: cover; }
+.course-feature-body { padding: 24px; }
+.course-feature h4 { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.course-feature p { font-size: 14px; color: var(--text-medium); line-height: 1.6; margin-bottom: 12px; }
+.course-voices { margin-top: 32px; padding-top: 32px; border-top: 2px solid var(--border); }
+.course-voices p {
+  font-size: 14px; color: var(--text-medium); font-style: italic;
+  padding: 8px 0; line-height: 1.6;
+}
+.course-voices p::before { content: '"'; color: var(--accent); font-weight: 700; margin-right: 4px; }
+.course-voices p::after { content: '"'; color: var(--accent); font-weight: 700; margin-left: 4px; }
+.education-values { margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.education-values-item {
+  text-align: center; padding: 12px; background: var(--light-bg);
+  border-radius: 8px; font-size: 13px; color: var(--text-medium); font-weight: 600;
+}
+
+.course-intro.blue h3 { color: var(--primary); }
+.course-intro.blue .course-feature-header { background: rgba(26,58,92,0.08); }
+.course-intro.blue h4 { color: var(--primary); }
+
+.course-intro.red h3 { color: var(--brand-red); }
+.course-intro.red .course-feature-header { background: rgba(196,30,36,0.08); }
+.course-intro.red h4 { color: var(--brand-red); }
+
+/* ===== Certificate Section ===== */
+.certificate-section {
+  padding: 80px 0; background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+}
+.certificate-section .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.certificate-section h2 {
+  font-size: 36px; font-weight: 800; text-align: center;
+  margin-bottom: 32px;
+}
+.cert-content { max-width: 900px; margin: 0 auto; }
+.cert-card {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius); padding: 40px; margin-bottom: 24px;
+}
+.cert-card p { font-size: 16px; line-height: 1.8; opacity: 0.9; margin-bottom: 16px; }
+.cert-card p:last-child { margin-bottom: 0; }
+.cert-reasons { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); }
+.cert-reasons h4 {
+  font-size: 16px; font-weight: 700; margin-bottom: 16px; opacity: 0.95;
+}
+.cert-reasons ol { margin-left: 24px; }
+.cert-reasons li { font-size: 15px; line-height: 1.7; opacity: 0.85; margin-bottom: 12px; }
+
+/* ===== CTA Section ===== */
+.cta-section {
+  padding: 80px 0; text-align: center;
+  background: var(--off-white);
+}
+.cta-section h2 { font-size: 36px; font-weight: 800; color: var(--primary); margin-bottom: 16px; }
+.cta-section p { font-size: 18px; color: var(--text-medium); margin-bottom: 32px; }
+
+/* QR Code Cards */
+.qr-grid {
+  display: flex; justify-content: center; gap: 48px;
+  margin: 40px 0 32px; flex-wrap: wrap;
+}
+.qr-card {
+  background: var(--white); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 32px 36px;
+  text-align: center; transition: var(--transition);
+  max-width: 260px; width: 100%;
+}
+.qr-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.qr-card img {
+  width: 180px; height: 180px; object-fit: cover;
+  margin: 0 auto 16px; border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.qr-card-icon { font-size: 28px; margin-bottom: 8px; }
+.qr-card h4 {
+  font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 4px;
+}
+.qr-card .qr-sub {
+  font-size: 14px; color: var(--text-light);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--primary-dark); color: rgba(255,255,255,0.6);
+  padding: 40px 0; text-align: center; font-size: 13px;
+}
+.footer-logo { height: 216px; margin: 0 auto 16px; opacity: 0.9; }
+.footer a { color: rgba(255,255,255,0.8); }
+.footer a:hover { color: var(--white); }
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .hero-content { flex-direction: column; gap: 40px; padding: 60px 24px; }
+  .hero-card { display: none; }
+  .tier-grid { grid-template-columns: repeat(2, 1fr); }
+  .advantage-grid { grid-template-columns: repeat(2, 1fr); }
+  .research-grid { grid-template-columns: repeat(3, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-card:nth-child(2)::after, .process-card:nth-child(4)::after { display: none; }
+  .campus-grid { grid-template-columns: 1fr; }
+  .course-features { grid-template-columns: repeat(2, 1fr); }
+  .education-values { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-links a:not(.nav-contact) { display: none; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .tier-grid { grid-template-columns: 1fr; }
+  .advantage-grid { grid-template-columns: 1fr; }
+  .research-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-card::after { display: none !important; }
+  .hero-stats { flex-direction: column; gap: 16px; }
+  .hero h1 { font-size: 32px; }
+  .campus-grid { grid-template-columns: 1fr; }
+  .course-features { grid-template-columns: 1fr; }
+  .course-feature-images { grid-template-columns: repeat(2, 1fr); }
+  .education-values { grid-template-columns: 1fr; }
+}
+
+/* ===== Language visibility ===== */
+[data-lang] { display: none; }
+[data-lang].active { display: block; }
+span[data-lang].active, a[data-lang].active { display: inline; }
+div.flex-lang[data-lang].active { display: flex; }
+li[data-lang].active { display: flex; }
+
+/* ===== Block Headers / Section Dividers ===== */
+.block-header {
+  padding: 60px 0 40px;
+  text-align: center;
+  position: relative;
+}
+.block-header.ai-block {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #3d6b1a 100%);
+  color: var(--white);
+}
+.block-header.campus-block {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+}
+.block-header h2 {
+  font-size: 36px; font-weight: 900; margin-bottom: 12px;
+}
+.block-header p {
+  font-size: 18px; opacity: 0.85; max-width: 680px; margin: 0 auto 24px;
+}
+
+/* Sub navigation within block headers */
+.sub-nav {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+  padding: 0 24px;
+}
+.sub-nav a {
+  padding: 8px 20px; border-radius: 24px; font-size: 14px; font-weight: 600;
+  color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.3);
+  transition: var(--transition); text-decoration: none;
+}
+.sub-nav a:hover {
+  background: rgba(255,255,255,0.15); color: var(--white);
+  border-color: rgba(255,255,255,0.6);
+}
+
+/* Dropdown nav */
+.nav-item { position: relative; }
+.nav-item > a { /* same as .nav-links a */ }
+.nav-dropdown {
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg);
+  padding: 8px 0; min-width: 180px; z-index: 1001;
+  border: 1px solid var(--border);
+}
+.nav-item:hover .nav-dropdown { display: block; }
+.nav-dropdown a {
+  display: block; padding: 8px 20px; font-size: 13px; font-weight: 500;
+  color: var(--text-medium); text-transform: none; letter-spacing: 0;
+  transition: var(--transition);
+}
+.nav-dropdown a:hover {
+  background: var(--light-bg); color: var(--accent);
+}
+
+/* Hero program cards */
+.hero-programs {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  margin-top: 48px; max-width: 800px;
+}
+.hero-program-card {
+  padding: 32px; border-radius: var(--radius); cursor: pointer;
+  transition: var(--transition); text-decoration: none; display: block;
+  position: relative; overflow: hidden;
+}
+.hero-program-card:hover { transform: translateY(-4px); }
+.hero-program-card.ai-card {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: var(--white); box-shadow: 0 8px 32px rgba(123,171,59,0.3);
+}
+.hero-program-card.campus-card {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white); box-shadow: 0 8px 32px rgba(26,58,92,0.3);
+}
+.hero-program-card h3 {
+  font-size: 22px; font-weight: 800; margin-bottom: 8px;
+}
+.hero-program-card p {
+  font-size: 15px; opacity: 0.9; line-height: 1.6; margin-bottom: 16px;
+}
+.hero-program-card .card-arrow {
+  font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 8px;
+}
+
+/* Responsive updates */
+@media (max-width: 768px) {
+  .hero-programs { grid-template-columns: 1fr; }
+  .nav-dropdown { position: static; transform: none; display: none; }
+  .nav-item:hover .nav-dropdown { display: block; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="行知学園 Coach Academy">
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <div class="nav-links" id="nav-links">
+        <!-- Nav links are generated by JS per language -->
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('ja')">日本語</button>
+        <button class="lang-btn" onclick="switchLang('zh-CN')">简体</button>
+        <button class="lang-btn" onclick="switchLang('zh-TW')">繁體</button>
+        <button class="lang-btn" onclick="switchLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ===== CAMPUS HERO (matching AI research hero style) ===== -->
+<section class="hero" id="campus-block">
+  <div class="hero-content">
+    <div class="hero-text">
+      <!-- JA -->
+      <div data-lang="ja">
+        <div class="hero-badge" style="background:rgba(26,58,92,0.12); color:var(--primary-dark);">大学背景提升プログラム</div>
+        <h1>体験する。<br>成長する。<br><span style="color:var(--primary-light);">証明する。</span></h1>
+        <p class="hero-desc">日本トップ大学の現地授業と企業研修を通じて、国際的な学習経験と公式認定証書を獲得し、大学院入試の競争力を高めます。</p>
+        <a href="#contact" class="hero-cta" style="background:var(--primary); color:var(--white);">お問い合わせ</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">プログラムコース</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">TOP</div><div class="hero-stat-label">大学教授が直接指導</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">C9</div><div class="hero-stat-label">レベル相当の大学</div></div>
+        </div>
+      </div>
+      <!-- ZH-CN -->
+      <div data-lang="zh-CN">
+        <div class="hero-badge" style="background:rgba(26,58,92,0.12); color:var(--primary-dark);">大学背景提升项目</div>
+        <h1>体验。<br>成长。<br><span style="color:var(--primary-light);">证明。</span></h1>
+        <p class="hero-desc">通过日本顶尖大学的实地课堂与企业研修，获取国际学习经历与官方认证书，全面强化大学院申请竞争力。</p>
+        <a href="#contact" class="hero-cta" style="background:var(--primary); color:var(--white);">立即咨询</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">项目课程</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">TOP</div><div class="hero-stat-label">大学教授直授</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">C9</div><div class="hero-stat-label">级院校对标</div></div>
+        </div>
+      </div>
+      <!-- ZH-TW -->
+      <div data-lang="zh-TW">
+        <div class="hero-badge" style="background:rgba(26,58,92,0.12); color:var(--primary-dark);">大學背景提升項目</div>
+        <h1>體驗。<br>成長。<br><span style="color:var(--primary-light);">證明。</span></h1>
+        <p class="hero-desc">通過日本頂尖大學的實地課堂與企業研修，獲取國際學習經歷與官方認證書，全面強化大學院申請競爭力。</p>
+        <a href="#contact" class="hero-cta" style="background:var(--primary); color:var(--white);">立即諮詢</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">項目課程</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">TOP</div><div class="hero-stat-label">大學教授直授</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">C9</div><div class="hero-stat-label">級院校對標</div></div>
+        </div>
+      </div>
+      <!-- EN -->
+      <div data-lang="en">
+        <div class="hero-badge" style="background:rgba(26,58,92,0.12); color:var(--primary-dark);">University Enhancement Programs</div>
+        <h1>EXPERIENCE.<br>GROW.<br><span style="color:var(--primary-light);">ACHIEVE.</span></h1>
+        <p class="hero-desc">Gain international learning experience and official certifications through on-campus classes and corporate seminars at Japan's top universities.</p>
+        <a href="#contact" class="hero-cta" style="background:var(--primary); color:var(--white);">CONTACT US</a>
+        <div class="hero-stats">
+          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">Program Courses</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">TOP</div><div class="hero-stat-label">University Professors</div></div>
+          <div class="hero-stat-item"><div class="hero-stat-num">C9</div><div class="hero-stat-label">Tier Universities</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="images/Image_20260331183643_24_192.jpg" alt="大学背景提升" style="border-radius:16px; box-shadow: var(--shadow-lg); max-width:500px; width:100%;">
+    </div>
+  </div>
+</section>
+
+
+<section class="campus-programs" id="campus-programs">
+  <div class="container">
+    <h2 data-lang="ja">大学背景提升プログラム</h2>
+    <h2 data-lang="zh-CN">大学背景提升项目</h2>
+    <h2 data-lang="zh-TW">大學背景提升項目</h2>
+    <h2 data-lang="en">University Enhancement Programs</h2>
+
+    <div class="campus-grid">
+      <!-- Program 1: TOP大学背景提升 -->
+      <div class="campus-card">
+        <div class="campus-card-header" style="background-image: url('images/Image_20260331183355_10_192.jpg');"></div>
+        <div class="campus-card-body">
+          <h3 data-lang="ja">TOP大学背景提升</h3>
+          <h3 data-lang="zh-CN">TOP大学背景提升</h3>
+          <h3 data-lang="zh-TW">TOP大學背景提升</h3>
+          <h3 data-lang="en">TOP University Enhancement</h3>
+
+          <div class="campus-card-meta">
+            <div data-lang="ja">
+              <strong>日程:</strong> 3日間（5月24日・30日・31日）/ 1日（5月24日）<br>
+              <strong>講師:</strong> TOP大学講師 / <strong>場所:</strong> TOP大学校内
+            </div>
+            <div data-lang="zh-CN">
+              <strong>日期:</strong> 3天（5月24日·30日·31日）/ 1天（5月24日）<br>
+              <strong>主讲:</strong> TOP大学讲师 / <strong>地点:</strong> TOP大学校内
+            </div>
+            <div data-lang="zh-TW">
+              <strong>日期:</strong> 3天（5月24日·30日·31日）/ 1天（5月24日）<br>
+              <strong>主講:</strong> TOP大學講師 / <strong>地點:</strong> TOP大學校內
+            </div>
+            <div data-lang="en">
+              <strong>Schedule:</strong> 3 days (May 24, 30, 31) / 1 day (May 24)<br>
+              <strong>Instructor:</strong> TOP University Faculty / <strong>Location:</strong> TOP University Campus
+            </div>
+          </div>
+
+          <div class="campus-card-slogan" data-lang="ja">限定席位、お申し込み終了次第、受付終了</div>
+          <div class="campus-card-slogan" data-lang="zh-CN">限量席位，报满即止</div>
+          <div class="campus-card-slogan" data-lang="zh-TW">限量席位，報滿即止</div>
+          <div class="campus-card-slogan" data-lang="en">Limited seats, first-come first-served</div>
+
+          <ul class="campus-highlights">
+            <li data-lang="ja">参加者全員が修了証を取得</li>
+            <li data-lang="zh-CN">参加者全员获颁修了证</li>
+            <li data-lang="zh-TW">參加者全員獲頒修了證</li>
+            <li data-lang="en">All participants receive completion certificate</li>
+
+            <li data-lang="ja">優秀学生向け表彰状</li>
+            <li data-lang="zh-CN">优秀学生颁发赏状</li>
+            <li data-lang="zh-TW">優秀學生頒發獎狀</li>
+            <li data-lang="en">Outstanding students receive commendation</li>
+          </ul>
+
+          <div class="campus-card-slogan" style="background: none; border: none; color: var(--brand-red); padding: 0; margin: 16px 0; font-size: 15px;">
+            <span data-lang="ja">EJU は単なるチケット。背景提升が、お子さんが選ばれるかどうかを決める</span>
+            <span data-lang="zh-CN">EJU，只是门票。背景提升，决定孩子会不会被选中</span>
+            <span data-lang="zh-TW">EJU，只是門票。背景提升，決定孩子會不會被選中</span>
+            <span data-lang="en">EJU is just a ticket. Background enhancement determines whether your child gets selected</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 2: 顶尖大学背景提升 -->
+      <div class="campus-card">
+        <div class="campus-card-header" style="background-image: url('images/Image_20260331183643_24_192.jpg');"></div>
+        <div class="campus-card-body">
+          <h3 data-lang="ja">顶尖大学背景提升</h3>
+          <h3 data-lang="zh-CN">顶尖大学背景提升</h3>
+          <h3 data-lang="zh-TW">頂尖大學背景提升</h3>
+          <h3 data-lang="en">Elite University Enhancement</h3>
+
+          <div class="campus-card-meta">
+            <div data-lang="ja">
+              <strong>開始:</strong> グループ化：15人<br>
+              <strong>日程:</strong> グループ化後に通知<br>
+              <strong>講師:</strong> 顶尖大学在籍教授 / <strong>場所:</strong> 顶尖大学校内
+            </div>
+            <div data-lang="zh-CN">
+              <strong>成团人数:</strong> 15人<br>
+              <strong>日期:</strong> 成团后通知<br>
+              <strong>主讲:</strong> 顶尖大学在籍教授 / <strong>地点:</strong> 顶尖大学校内
+            </div>
+            <div data-lang="zh-TW">
+              <strong>成團人數:</strong> 15人<br>
+              <strong>日期:</strong> 成團後通知<br>
+              <strong>主講:</strong> 頂尖大學在籍教授 / <strong>地點:</strong> 頂尖大學校內
+            </div>
+            <div data-lang="en">
+              <strong>Group Size:</strong> 15 students<br>
+              <strong>Schedule:</strong> Confirmed after group formation<br>
+              <strong>Instructor:</strong> Elite University Professor / <strong>Location:</strong> Elite University Campus
+            </div>
+          </div>
+
+          <ul class="campus-highlights">
+            <li data-lang="ja">国内C9級の院校基準に対応</li>
+            <li data-lang="zh-CN">对标国内C9级院校</li>
+            <li data-lang="zh-TW">對標國內C9級院校</li>
+            <li data-lang="en">Meets standards of China's C9 universities</li>
+
+            <li data-lang="ja">行知独占的なレアリソース</li>
+            <li data-lang="zh-CN">行知独家稀缺资源</li>
+            <li data-lang="zh-TW">行知獨家稀缺資源</li>
+            <li data-lang="en">Exclusive rare resources from Coach Academy</li>
+
+            <li data-lang="ja">公式認定証を発行</li>
+            <li data-lang="zh-CN">颁发官方认证书</li>
+            <li data-lang="zh-TW">頒發官方認證書</li>
+            <li data-lang="en">Official certification from university</li>
+          </ul>
+
+          <div class="campus-card-slogan" style="background: none; border: none; color: var(--brand-red); padding: 0; margin: 16px 0; font-size: 15px;">
+            <span data-lang="ja">高得点は単なる下限。教授による直接指導こそが、金字塔の頂上への「降维的打击」！</span>
+            <span data-lang="zh-CN">高分只是底线，教授直授，才是直通金字塔尖的"降维打击"！</span>
+            <span data-lang="zh-TW">高分只是底線，教授直授，才是直通金字塔尖的"降維打擊"！</span>
+            <span data-lang="en">High scores are just the baseline. Direct instruction from professors is the shortcut to the top!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="course-detail" id="course-detail">
+  <div class="container">
+    <h2 data-lang="ja">大学課程詳細</h2>
+    <h2 data-lang="zh-CN">大学课程详情</h2>
+    <h2 data-lang="zh-TW">大學課程詳情</h2>
+    <h2 data-lang="en">University Course Details</h2>
+
+    <!-- TOP级大学课程 -->
+    <div class="course-intro blue">
+      <h3 data-lang="ja">TOP级大学課程</h3>
+      <h3 data-lang="zh-CN">TOP级大学课程</h3>
+      <h3 data-lang="zh-TW">TOP級大學課程</h3>
+      <h3 data-lang="en">TOP University Program</h3>
+
+      <p class="subtitle" data-lang="ja">TOP级大学研究現場 × 探究式学習 × 思考成長</p>
+      <p class="subtitle" data-lang="zh-CN">TOP级大学研究现场 × 探究式学习 × 思维成长</p>
+      <p class="subtitle" data-lang="zh-TW">TOP級大學研究現場 × 探究式學習 × 思維成長</p>
+      <p class="subtitle" data-lang="en">TOP University Research × Inquiry-Based Learning × Critical Thinking Growth</p>
+
+      <div class="course-features">
+        <!-- Feature 1 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 1">
+            <img src="images/Image_20260331183626_15_192.jpg" alt="Feature 1">
+            <img src="images/Image_20260331183627_16_192.jpg" alt="Feature 1">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">大学資源直結、未来の学術方向を啓発</h4>
+            <h4 data-lang="zh-CN">大学资源直连，启发未来学术方向</h4>
+            <h4 data-lang="zh-TW">大學資源直連，啟發未來學術方向</h4>
+            <h4 data-lang="en">University Resources Direct, Inspire Future Academic Direction</h4>
+
+            <p data-lang="ja">大学教授主導の探究式学習で、小グループディスカッションと研究活動に直接参加。思考と表現が重視される学習環境を体験</p>
+            <p data-lang="zh-CN">由大学教授主导探究式学习，亲身参与小组讨论与研究活动，感受思考与表达并重的学习氛围。</p>
+            <p data-lang="zh-TW">由大學教授主導探究式學習，親身參與小組討論與研究活動，感受思考與表達並重的學習氛圍。</p>
+            <p data-lang="en">Professor-led inquiry learning with direct participation in small group discussions and research. Experience a learning environment where thinking and expression are equally valued.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183631_17_192.jpg" alt="Feature 2">
+            <img src="images/Image_20260331183632_18_192.jpg" alt="Feature 2">
+            <img src="images/Image_20260331183633_19_192.jpg" alt="Feature 2">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">日本学生との共学、グローバル思維を育成</h4>
+            <h4 data-lang="zh-CN">与日本学生共学共创，培养全球化思维</h4>
+            <h4 data-lang="zh-TW">與日本學生共學共創，培養全球化思維</h4>
+            <h4 data-lang="en">Co-learning with Japanese Students, Foster Global Thinking</h4>
+
+            <p data-lang="ja">在籍の大学生が学習と議論を通じてサポート。異文化協働で表現力とチームワークを磨き、国際的視点を拡げる</p>
+            <p data-lang="zh-CN">由在校大学生全程陪伴学习与讨论。跨文化协作中锻炼表达力与团队力，拓展国际视野。</p>
+            <p data-lang="zh-TW">由在校大學生全程陪伴學習與討論。跨文化協作中鍛鍊表達力與團隊力，拓展國際視野。</p>
+            <p data-lang="en">University students accompany learning and discussions. Cross-cultural collaboration develops expression and teamwork skills while expanding global perspectives.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183633_20_192.jpg" alt="Feature 3">
+            <img src="images/Image_20260331183634_21_192.jpg" alt="Feature 3">
+            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 3">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">自分の限界に挑戦、実務で成長</h4>
+            <h4 data-lang="zh-CN">挑战自我边界，在真实任务中成长</h4>
+            <h4 data-lang="zh-TW">挑戰自我邊界，在真實任務中成長</h4>
+            <h4 data-lang="en">Challenge Self, Grow Through Real Tasks</h4>
+
+            <p data-lang="ja">見知らぬ環境で積極的に役割を担当し、意見を表現し、問題を解決。実践と突破を通じて、独立思考と自信のある表現力を育成</p>
+            <p data-lang="zh-CN">在陌生环境中主动承担角色、表达观点、解决问题，通过实践与突破，培养独立思考与自信表达能力。</p>
+            <p data-lang="zh-TW">在陌生環境中主動承擔角色、表達觀點、解決問題，通過實踐與突破，培養獨立思考與自信表達能力。</p>
+            <p data-lang="en">Actively take on roles, express viewpoints, and solve problems in unfamiliar settings. Develop independent thinking and confident expression through practice and challenge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-voices">
+        <p data-lang="ja">課程は充実していて素晴らしく、多くの新しいテーマと可能性を発見しました。</p>
+        <p data-lang="zh-CN">课程充实又精彩，让我发现了很多新的课题和可能性。</p>
+        <p data-lang="zh-TW">課程充實又精彩，讓我發現了很多新的課題和可能性。</p>
+        <p data-lang="en">The course was enriching and wonderful, helping me discover many new topics and possibilities.</p>
+
+        <p data-lang="ja">全国から同年代の人たちに出会い、一緒に挑戦し、一緒に成長しました。</p>
+        <p data-lang="zh-CN">结识了来自各地的同龄人，一起挑战、一起成长。</p>
+        <p data-lang="zh-TW">結識了來自各地的同齡人，一起挑戰、一起成長。</p>
+        <p data-lang="en">Met peers from different places, challenged together and grew together.</p>
+
+        <p data-lang="ja">タスクを完成させるプロセスで、学習の楽しさを新たに発見しました。</p>
+        <p data-lang="zh-CN">合作完成任务的过程，让我重新发现学习的乐趣。</p>
+        <p data-lang="zh-TW">合作完成任務的過程，讓我重新發現學習的樂趣。</p>
+        <p data-lang="en">Through completing tasks collaboratively, I rediscovered the joy of learning.</p>
+
+        <p data-lang="ja">自分自身をより良く表現でき、母語以外の言語でも自信を持ってコミュニケーション取ることができるようになりました。</p>
+        <p data-lang="zh-CN">能更好地表达自己，也能自信地用母语外语言沟通。</p>
+        <p data-lang="zh-TW">能更好地表達自己，也能自信地用母語外語言溝通。</p>
+        <p data-lang="en">Better able to express myself and communicate confidently in languages other than my mother tongue.</p>
+      </div>
+
+      <div class="education-values">
+        <div class="education-values-item" data-lang="ja">主動的思考</div>
+        <div class="education-values-item" data-lang="zh-CN">主动思考</div>
+        <div class="education-values-item" data-lang="zh-TW">主動思考</div>
+        <div class="education-values-item" data-lang="en">Active Thinking</div>
+
+        <div class="education-values-item" data-lang="ja">能力向上</div>
+        <div class="education-values-item" data-lang="zh-CN">能力提升</div>
+        <div class="education-values-item" data-lang="zh-TW">能力提升</div>
+        <div class="education-values-item" data-lang="en">Capability Enhancement</div>
+
+        <div class="education-values-item" data-lang="ja">方向明確化</div>
+        <div class="education-values-item" data-lang="zh-CN">方向明确</div>
+        <div class="education-values-item" data-lang="zh-TW">方向明確</div>
+        <div class="education-values-item" data-lang="en">Clear Direction</div>
+
+        <div class="education-values-item" data-lang="ja">未来の基礎構築</div>
+        <div class="education-values-item" data-lang="zh-CN">未来铺垫</div>
+        <div class="education-values-item" data-lang="zh-TW">未來鋪墊</div>
+        <div class="education-values-item" data-lang="en">Future Foundation</div>
+      </div>
+    </div>
+
+    <!-- 顶尖大学课程 -->
+    <div class="course-intro red" style="margin-top: 60px;">
+      <h3 data-lang="ja">顶尖大学課程</h3>
+      <h3 data-lang="zh-CN">顶尖大学课程</h3>
+      <h3 data-lang="zh-TW">頂尖大學課程</h3>
+      <h3 data-lang="en">Elite University Program</h3>
+
+      <p class="subtitle" data-lang="ja">TOP级院校課室 × 日本企業への洞察 × 背景提升</p>
+      <p class="subtitle" data-lang="zh-CN">TOP级院校课堂 × 洞察日本企业 × 背景提升</p>
+      <p class="subtitle" data-lang="zh-TW">TOP級院校課堂 × 洞察日本企業 × 背景提升</p>
+      <p class="subtitle" data-lang="en">TOP University Classroom × Insight into Japanese Enterprises × Background Enhancement</p>
+
+      <div class="course-features">
+        <!-- Feature 1 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183644_25_192.jpg" alt="Feature 1">
+            <img src="images/Image_20260331183643_24_192.jpg" alt="Feature 1">
+            <img src="images/Image_20260331183644_28_192.jpg" alt="Feature 1">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">TOP级高校講義 × 現地研修を組み合わせ</h4>
+            <h4 data-lang="zh-CN">TOP级高校讲授 × 实地研学结合</h4>
+            <h4 data-lang="zh-TW">TOP級高校講授 × 實地研學結合</h4>
+            <h4 data-lang="en">TOP University Lectures × Hands-on Research Combined</h4>
+
+            <p data-lang="ja">日本トップ院校の教授が講義を担当し、企業事例と現地視察を組み合わせて、日本高等教育の真のキャンパス雰囲気を体験</p>
+            <p data-lang="zh-CN">课程由日本顶尖院校教授主讲，结合企业案例与现场参访，深度体验日本高等教育的真实课堂氛围。</p>
+            <p data-lang="zh-TW">課程由日本頂尖院校教授主講，結合企業案例與現場參訪，深度體驗日本高等教育的真實課堂氛圍。</p>
+            <p data-lang="en">Top university professors deliver lectures combined with company case studies and on-site visits, providing authentic experience of Japanese higher education.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183644_26_192.jpg" alt="Feature 2">
+            <img src="images/Image_20260331183644_27_192.jpg" alt="Feature 2">
+            <img src="images/Image_20260331183644_28_192.jpg" alt="Feature 2">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">日本企業の革新と持続可能性を総合的に理解</h4>
+            <h4 data-lang="zh-CN">全面洞察日本企业的创新与永续之道</h4>
+            <h4 data-lang="zh-TW">全面洞察日本企業的創新與永續之道</h4>
+            <h4 data-lang="en">Comprehensive Understanding of Japanese Enterprise Innovation and Sustainability</h4>
+
+            <p data-lang="ja">トヨタ、龍角散、稲盛和夫などの事例を中核に、日本企業の革新精神と持続可能な経営戦略を学習</p>
+            <p data-lang="zh-CN">以丰田、龙角散、稻盛和夫等案例为核心，学习日本企业的创新精神与永续经营之道。</p>
+            <p data-lang="zh-TW">以豐田、龍角散、稻盛和夫等案例為核心，學習日本企業的創新精神與永續經營之道。</p>
+            <p data-lang="en">Learn from cases like Toyota, Ryukakusan, and Kazuo Inamori about Japanese corporate innovation and sustainable management.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="course-feature">
+          <div class="course-feature-images">
+            <img src="images/Image_20260331183644_25_192.jpg" alt="Feature 3">
+            <img src="images/Image_20260331183643_24_192.jpg" alt="Feature 3">
+            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 3">
+          </div>
+          <div class="course-feature-body">
+            <h4 data-lang="ja">国際視野を広げ、昇学とキャリアを充実させ</h4>
+            <h4 data-lang="zh-CN">拓展国际视野与升学路径与未来职业</h4>
+            <h4 data-lang="zh-TW">拓展國際視野與升學路徑與未來職業</h4>
+            <h4 data-lang="en">Expand Global Perspective for Future Education and Career</h4>
+
+            <p data-lang="ja">日本TOP级院校と社会文化への深い理解を通じて、跨文化理解力を高めると共に、將来の昇学とキャリアに加点</p>
+            <p data-lang="zh-CN">深入了解日本TOP级院校与社会文化，提升跨文化理解力，为未来升学与职业发展加分。</p>
+            <p data-lang="zh-TW">深入了解日本TOP級院校與社會文化，提升跨文化理解力，為未來升學與職業發展加分。</p>
+            <p data-lang="en">Deep understanding of Japan's top universities and social culture enhances cross-cultural competence while adding value to future academic and career prospects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-values">
+        <div class="education-values-item">
+          <div data-lang="ja"><strong>学術価値</strong><br>日本TOP级院校の教授団による授業、革新経済と企業管理を対象とした内容、批判的思維の啓発</div>
+          <div data-lang="zh-CN"><strong>学术价值</strong><br>由日本TOP级院校知名教授团队授课，内容涵盖日本创新经济、企业管理与社会变迁，启发批判性思考</div>
+          <div data-lang="zh-TW"><strong>學術價值</strong><br>由日本TOP級院校知名教授團隊授課，內容涵蓋日本創新經濟、企業管理與社會變遷，啟發批判性思考</div>
+          <div data-lang="en"><strong>Academic Value</strong><br>Taught by renowned professors from Japan's top universities, covering innovation economy, business management and social change</div>
+        </div>
+
+        <div class="education-values-item">
+          <div data-lang="ja"><strong>文化価値</strong><br>日本社会と企業文化の本質への深い理解、学生の国際的素養と文化的共感力の向上</div>
+          <div data-lang="zh-CN"><strong>文化价值</strong><br>深入理解日本社会与企业文化的本质，提升学生国际素养与文化共情力</div>
+          <div data-lang="zh-TW"><strong>文化價值</strong><br>深入理解日本社會與企業文化的本質，提升學生國際素養與文化共情力</div>
+          <div data-lang="en"><strong>Cultural Value</strong><br>Deep understanding of Japanese society and corporate culture, enhancing international competence and cultural empathy</div>
+        </div>
+
+        <div class="education-values-item">
+          <div data-lang="ja"><strong>昇学価値</strong><br>日本大学のキャンパス文化を体験、修了証を取得、赴日学習に学術的なハイライトと履歴書の輝きを追加</div>
+          <div data-lang="zh-CN"><strong>升学价值</strong><br>体验日本大学课堂与校园文化，研修结业获证书，为赴日升学增添学术与履历亮点</div>
+          <div data-lang="zh-TW"><strong>升學價值</strong><br>體驗日本大學課堂與校園文化，研修結業獲證書，為赴日升學增添學術與履歷亮點</div>
+          <div data-lang="en"><strong>Academic Advancement Value</strong><br>Experience university campus culture, obtain completion certificate, add academic highlights and resume distinction</div>
+        </div>
+
+        <div class="education-values-item">
+          <div data-lang="ja"><strong>職業価値</strong><br>日本企業の管理方法と革新精神を学び、國際職場の高い重視を掌握する管理的思考とリーダーシップ</div>
+          <div data-lang="zh-CN"><strong>职业价值</strong><br>学习日本企业管理方式与创新精神，掌握未来国际职场高度重视的管理思维与领导力</div>
+          <div data-lang="zh-TW"><strong>職業價值</strong><br>學習日本企業管理方式與創新精神，掌握未來國際職場高度重視的管理思維與領導力</div>
+          <div data-lang="en"><strong>Career Value</strong><br>Learn Japanese business management and innovation, master management thinking and leadership skills vital in international workplaces</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="certificate-section" id="certificate">
+  <div class="container">
+    <h2 data-lang="ja">顶尖TOP大学認定證書を発行</h2>
+    <h2 data-lang="zh-CN">颁发顶尖TOP大学认证书</h2>
+    <h2 data-lang="zh-TW">頒發頂尖TOP大學認證書</h2>
+    <h2 data-lang="en">Official Certification from Elite Universities</h2>
+
+    <div class="cert-content">
+      <div class="cert-card">
+        <p data-lang="ja">課程を完了した学生は、日本の大学から「認定証」を受け取ります。</p>
+        <p data-lang="zh-CN">完成课程的学生，将由日本大学官方颁发「认定证书」。</p>
+        <p data-lang="zh-TW">完成課程的學生，將由日本大學官方頒發「認定證書」。</p>
+        <p data-lang="en">Students who complete the program will receive an official "Certificate of Recognition" from Japanese universities.</p>
+      </div>
+
+      <div class="cert-card">
+        <p data-lang="ja">これは単なる学習証明ではなく、学生の研究能力と国際学習経験の象徴であり、日本の大学が認めた学術体験と研究成果の記録です。</p>
+        <p data-lang="zh-CN">这不仅是一份学习证明，更是学生探究能力与国际学习经验的象征，更是日本大学认可的学术体验与探究成果记录。</p>
+        <p data-lang="zh-TW">這不僅是一份學習證明，更是學生探究能力與國際學習經驗的象徵，更是日本大學認可的學術體驗與探究成果記錄。</p>
+        <p data-lang="en">This is not merely a learning certificate, but a symbol of the student's research capability and international learning experience, and an official record of academic achievement recognized by Japanese universities.</p>
+      </div>
+
+      <div class="cert-card">
+        <h4 data-lang="ja">なぜ重要なのか</h4>
+        <h4 data-lang="zh-CN">为什么很重要</h4>
+        <h4 data-lang="zh-TW">為什麼很重要</h4>
+        <h4 data-lang="en">Why It Matters</h4>
+
+        <ol>
+          <li data-lang="ja">日本の大学の公式署名認定として、将来の昇学申請に学術背景と信頼性を加える</li>
+          <li data-lang="zh-CN">作为日本大学官方签发的认证，能为未来升学申请增添学术背景与信任度</li>
+          <li data-lang="zh-TW">作為日本大學官方簽發的認證，能為未來升學申請增添學術背景與信任度</li>
+          <li data-lang="en">As official certification from Japanese universities, it adds academic credibility and trust to future university applications</li>
+
+          <li data-lang="ja">学生が国際的な学習視点と研究能力を持つことを実証し、面接と申請書類における優位性を増す</li>
+          <li data-lang="zh-CN">体现学生具备国际化学习视野与探究能力，在面试与申请材料中更具亮点</li>
+          <li data-lang="zh-TW">體現學生具備國際化學習視野與探究能力，在面試與申請材料中更具亮點</li>
+          <li data-lang="en">Demonstrates that students possess international learning perspective and research capability, adding distinction to interviews and application materials</li>
+
+          <li data-lang="ja">学生が「学んだ、考えた、成長した」という学習力を実績で示し、将来への準備をアピール</li>
+          <li data-lang="zh-CN">让学生以实际成果，展现"学过、思考过、成长过"的学习力</li>
+          <li data-lang="zh-TW">讓學生以實際成果，展現"學過、思考過、成長過"的學習力</li>
+          <li data-lang="en">Allows students to demonstrate through tangible evidence that they have "learned, reflected, and grown" in their learning journey</li>
+        </ol>
+      </div>
+
+      <div class="cert-card" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+        <p data-lang="ja" style="font-size: 13px; opacity: 0.7;">* 具体的な活動安排は、赴日の時期によって異なる場合があります。</p>
+        <p data-lang="zh-CN" style="font-size: 13px; opacity: 0.7;">* 具体活动安排因赴日时间不同</p>
+        <p data-lang="zh-TW" style="font-size: 13px; opacity: 0.7;">* 具體活動安排因赴日時間不同</p>
+        <p data-lang="en" style="font-size: 13px; opacity: 0.7;">* Specific activity schedules may vary depending on your visit dates to Japan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2 data-lang="ja">お問い合わせ</h2><h2 data-lang="zh-CN">立即咨询</h2><h2 data-lang="zh-TW">立即諮詢</h2><h2 data-lang="en">Get Started</h2>
+    <p data-lang="ja">毎月無料AI講座を開催中。まずはお気軽にお問い合わせください。</p>
+    <p data-lang="zh-CN">每月举办免费AI讲座，欢迎咨询了解详情。</p>
+    <p data-lang="zh-TW">每月舉辦免費AI講座，歡迎諮詢了解詳情。</p>
+    <p data-lang="en">We host free monthly AI lectures. Contact us to learn more.</p>
+
+    <div class="qr-grid">
+      <div class="qr-card">
+        <div class="qr-card-icon">💬</div>
+        <h4 data-lang="ja">WeChat相談</h4><h4 data-lang="zh-CN">微信咨询</h4><h4 data-lang="zh-TW">微信諮詢</h4><h4 data-lang="en">WeChat</h4>
+        <img src="images/wechat_qr.jpg" alt="WeChat QR Code" style="padding: 10px; box-sizing: border-box;">
+        <p class="qr-sub" data-lang="ja">WeChatでスキャンしてご相談ください</p>
+        <p class="qr-sub" data-lang="zh-CN">扫码添加微信，一对一咨询</p>
+        <p class="qr-sub" data-lang="zh-TW">掃碼添加微信，一對一諮詢</p>
+        <p class="qr-sub" data-lang="en">Scan to chat with us on WeChat</p>
+      </div>
+      <div class="qr-card">
+        <div class="qr-card-icon">📕</div>
+        <h4 data-lang="ja">小紅書（RED）相談</h4><h4 data-lang="zh-CN">小红书咨询</h4><h4 data-lang="zh-TW">小紅書諮詢</h4><h4 data-lang="en">Xiaohongshu (RED)</h4>
+        <img src="images/xiaohongshu_qr.jpg" alt="Xiaohongshu QR Code">
+        <p class="qr-sub" data-lang="ja">小紅書でスキャンしてフォローしてください</p>
+        <p class="qr-sub" data-lang="zh-CN">扫码关注小红书，了解更多资讯</p>
+        <p class="qr-sub" data-lang="zh-TW">掃碼關注小紅書，了解更多資訊</p>
+        <p class="qr-sub" data-lang="en">Scan to follow us on Xiaohongshu</p>
+      </div>
+    </div>
+
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="ja">メールで問い合わせ</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="zh-CN">邮件咨询</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="zh-TW">郵件諮詢</a>
+    <a href="mailto:zhangzaijun@koyo-mail.com" class="hero-cta" data-lang="en">Email Us</a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <img src="images/logo_white.png" alt="Coach Academy" class="footer-logo">
+    <p data-lang="ja">&copy; 2026 行知学園（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="zh-CN">&copy; 2026 行知学园（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="zh-TW">&copy; 2026 行知學園（KOYO CORPORATION）All Rights Reserved.</p>
+    <p data-lang="en">&copy; 2026 Coach Academy (KOYO CORPORATION) All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+let currentLang = 'ja';
+
+const navData = {
+  'ja': [
+    {href:'index.html', text:'ホーム'},
+    {href:'ai-research.html', text:'AI科研実践', children: [
+      {href:'ai-research.html#why', text:'なぜ必要か'},
+      {href:'ai-research.html#solution', text:'ソリューション'},
+      {href:'ai-research.html#programs', text:'プログラム'},
+      {href:'ai-research.html#topics', text:'研究テーマ'},
+      {href:'ai-research.html#process', text:'プロセス'},
+    ]},
+    {href:'campus.html', text:'大学プログラム', children: [
+      {href:'campus.html#campus-programs', text:'プロジェクト概要'},
+      {href:'campus.html#course-detail', text:'コース詳細'},
+      {href:'campus.html#certificate', text:'認定証書'},
+    ]},
+    {href:'#contact', text:'お問い合わせ'}
+  ],
+  'zh-CN': [
+    {href:'index.html', text:'首页'},
+    {href:'ai-research.html', text:'AI科研实践', children: [
+      {href:'ai-research.html#why', text:'为什么需要'},
+      {href:'ai-research.html#solution', text:'解决方案'},
+      {href:'ai-research.html#programs', text:'产品体系'},
+      {href:'ai-research.html#topics', text:'课题方向'},
+      {href:'ai-research.html#process', text:'流程'},
+    ]},
+    {href:'campus.html', text:'大学项目', children: [
+      {href:'campus.html#campus-programs', text:'项目概览'},
+      {href:'campus.html#course-detail', text:'课程详情'},
+      {href:'campus.html#certificate', text:'认证书'},
+    ]},
+    {href:'#contact', text:'咨询'}
+  ],
+  'zh-TW': [
+    {href:'index.html', text:'首頁'},
+    {href:'ai-research.html', text:'AI科研實踐', children: [
+      {href:'ai-research.html#why', text:'為什麼需要'},
+      {href:'ai-research.html#solution', text:'解決方案'},
+      {href:'ai-research.html#programs', text:'產品體系'},
+      {href:'ai-research.html#topics', text:'課題方向'},
+      {href:'ai-research.html#process', text:'流程'},
+    ]},
+    {href:'campus.html', text:'大學項目', children: [
+      {href:'campus.html#campus-programs', text:'項目概覽'},
+      {href:'campus.html#course-detail', text:'課程詳情'},
+      {href:'campus.html#certificate', text:'認證書'},
+    ]},
+    {href:'#contact', text:'諮詢'}
+  ],
+  'en': [
+    {href:'index.html', text:'HOME'},
+    {href:'ai-research.html', text:'AI RESEARCH', children: [
+      {href:'ai-research.html#why', text:'WHY'},
+      {href:'ai-research.html#solution', text:'SOLUTION'},
+      {href:'ai-research.html#programs', text:'PROGRAMS'},
+      {href:'ai-research.html#topics', text:'TOPICS'},
+      {href:'ai-research.html#process', text:'PROCESS'},
+    ]},
+    {href:'campus.html', text:'CAMPUS', children: [
+      {href:'campus.html#campus-programs', text:'OVERVIEW'},
+      {href:'campus.html#course-detail', text:'COURSES'},
+      {href:'campus.html#certificate', text:'CERTIFICATE'},
+    ]},
+    {href:'#contact', text:'CONTACT'}
+  ]
+};
+
+function switchLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('selectedLang', lang);
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.textContent.trim() === {'ja':'日本語','zh-CN':'简体','zh-TW':'繁體','en':'EN'}[lang]) {
+      btn.classList.add('active');
+    }
+  });
+
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.classList.add('active');
+      el.style.display = '';
+    } else {
+      el.classList.remove('active');
+      el.style.display = 'none';
+    }
+  });
+
+  const navLinks = document.getElementById('nav-links');
+  navLinks.innerHTML = navData[lang].map(item => {
+    if (item.children) {
+      return `<div class="nav-item">
+        <a href="${item.href}">${item.text}</a>
+        <div class="nav-dropdown">
+          ${item.children.map(c => `<a href="${c.href}">${c.text}</a>`).join('')}
+        </div>
+      </div>`;
+    }
+    return `<a href="${item.href}">${item.text}</a>`;
+  }).join('');
+
+  document.documentElement.lang = lang === 'zh-CN' ? 'zh-CN' : lang === 'zh-TW' ? 'zh-TW' : lang === 'ja' ? 'ja' : 'en';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const validLangs = ['ja', 'zh-CN', 'zh-TW', 'en'];
+  const saved = localStorage.getItem('selectedLang');
+  const hashLang = window.location.hash.replace('#', '');
+  const initLang = validLangs.includes(saved) ? saved : validLangs.includes(hashLang) ? hashLang : 'ja';
+  switchLang(initLang);
+
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.nav-links a, .nav-dropdown a');
+    if (link) {
+      const href = link.getAttribute('href');
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+      // For external page links (ai-research.html etc.), let browser navigate normally
+    }
+  });
+});
+</script>
+
+</body>
+</html>
