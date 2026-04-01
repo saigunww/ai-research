@@ -64,8 +64,8 @@ a { text-decoration: none; color: inherit; }
   height: 72px;
 }
 
-.nav-logo { display: flex; align-items: center; gap: 12px; }
-.nav-logo img { height: 44px; width: auto; }
+.nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nav-logo img { height: 44px; width: auto; object-fit: contain; }
 
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a {
@@ -546,19 +546,43 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  .nav-links a:not(.nav-contact) { display: none; }
+  .nav-inner { height: 56px; padding: 0 12px; }
+  .nav-logo img { height: 36px; }
+  .nav-links { display: none; }
+  .lang-switcher { gap: 1px; padding: 2px; }
+  .lang-btn { padding: 4px 8px; font-size: 11px; }
+  .hero { padding-top: 56px; }
+  .hero-content { padding: 32px 16px; gap: 24px; }
+  .hero h1 { font-size: 28px; }
+  .hero-desc { font-size: 16px; }
+  .hero-stats { flex-direction: column; gap: 16px; }
   .pain-grid { grid-template-columns: 1fr; }
   .tier-grid { grid-template-columns: 1fr; }
   .advantage-grid { grid-template-columns: 1fr; }
   .research-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: 1fr; }
   .process-card::after { display: none !important; }
-  .hero-stats { flex-direction: column; gap: 16px; }
-  .hero h1 { font-size: 32px; }
   .campus-grid { grid-template-columns: 1fr; }
   .course-features { grid-template-columns: 1fr; }
   .course-feature-images { grid-template-columns: repeat(2, 1fr); }
   .education-values { grid-template-columns: 1fr; }
+  .container { padding: 0 16px; }
+  .qr-grid { grid-template-columns: 1fr; gap: 16px; }
+  .footer-logo { height: 120px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 24px; }
+  .hero-desc { font-size: 15px; }
+  .hero-badge { font-size: 14px; padding: 8px 16px; }
+  .course-feature-images { grid-template-columns: 1fr; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { padding-top: 56px; }
+  .hero-content { flex-direction: row; padding: 24px 16px; gap: 24px; }
+  .hero h1 { font-size: 24px; }
+  .hero-desc { font-size: 14px; }
 }
 
 /* ===== Language visibility ===== */
@@ -654,7 +678,6 @@ li[data-lang].active { display: flex; }
 
 /* Responsive updates */
 @media (max-width: 768px) {
-  .hero-programs { grid-template-columns: 1fr; }
   .nav-dropdown { position: static; transform: none; display: none; }
   .nav-item:hover .nav-dropdown { display: block; }
 }
@@ -1165,10 +1188,10 @@ li[data-lang].active { display: flex; }
 <section class="cta-section" id="contact">
   <div class="container">
     <h2 data-lang="ja">お問い合わせ</h2><h2 data-lang="zh-CN">立即咨询</h2><h2 data-lang="zh-TW">立即諮詢</h2><h2 data-lang="en">Get Started</h2>
-    <p data-lang="ja">毎月無料AI講座を開催中。まずはお気軽にお問い合わせください。</p>
-    <p data-lang="zh-CN">每月举办免费AI讲座，欢迎咨询了解详情。</p>
-    <p data-lang="zh-TW">每月舉辦免費AI講座，歡迎諮詢了解詳情。</p>
-    <p data-lang="en">We host free monthly AI lectures. Contact us to learn more.</p>
+    <p data-lang="ja">大学プログラムについて、お気軽にお問い合わせください。</p>
+    <p data-lang="zh-CN">欢迎咨询了解大学项目详情。</p>
+    <p data-lang="zh-TW">歡迎諮詢了解大學項目詳情。</p>
+    <p data-lang="en">Contact us to learn more about our campus programs.</p>
 
     <div class="qr-grid">
       <div class="qr-card">
@@ -1217,6 +1240,11 @@ let currentLang = 'ja';
 const navData = {
   'ja': [
     {href:'index.html', text:'ホーム'},
+    {href:'campus.html', text:'大学プログラム', children: [
+      {href:'campus.html#campus-programs', text:'プロジェクト概要'},
+      {href:'campus.html#course-detail', text:'コース詳細'},
+      {href:'campus.html#certificate', text:'認定証書'},
+    ]},
     {href:'ai-research.html', text:'AI科研実践', children: [
       {href:'ai-research.html#why', text:'なぜ必要か'},
       {href:'ai-research.html#solution', text:'ソリューション'},
@@ -1224,15 +1252,15 @@ const navData = {
       {href:'ai-research.html#topics', text:'研究テーマ'},
       {href:'ai-research.html#process', text:'プロセス'},
     ]},
-    {href:'campus.html', text:'大学プログラム', children: [
-      {href:'campus.html#campus-programs', text:'プロジェクト概要'},
-      {href:'campus.html#course-detail', text:'コース詳細'},
-      {href:'campus.html#certificate', text:'認定証書'},
-    ]},
     {href:'#contact', text:'お問い合わせ'}
   ],
   'zh-CN': [
     {href:'index.html', text:'首页'},
+    {href:'campus.html', text:'大学项目', children: [
+      {href:'campus.html#campus-programs', text:'项目概览'},
+      {href:'campus.html#course-detail', text:'课程详情'},
+      {href:'campus.html#certificate', text:'认证书'},
+    ]},
     {href:'ai-research.html', text:'AI科研实践', children: [
       {href:'ai-research.html#why', text:'为什么需要'},
       {href:'ai-research.html#solution', text:'解决方案'},
@@ -1240,15 +1268,15 @@ const navData = {
       {href:'ai-research.html#topics', text:'课题方向'},
       {href:'ai-research.html#process', text:'流程'},
     ]},
-    {href:'campus.html', text:'大学项目', children: [
-      {href:'campus.html#campus-programs', text:'项目概览'},
-      {href:'campus.html#course-detail', text:'课程详情'},
-      {href:'campus.html#certificate', text:'认证书'},
-    ]},
     {href:'#contact', text:'咨询'}
   ],
   'zh-TW': [
     {href:'index.html', text:'首頁'},
+    {href:'campus.html', text:'大學項目', children: [
+      {href:'campus.html#campus-programs', text:'項目概覽'},
+      {href:'campus.html#course-detail', text:'課程詳情'},
+      {href:'campus.html#certificate', text:'認證書'},
+    ]},
     {href:'ai-research.html', text:'AI科研實踐', children: [
       {href:'ai-research.html#why', text:'為什麼需要'},
       {href:'ai-research.html#solution', text:'解決方案'},
@@ -1256,26 +1284,21 @@ const navData = {
       {href:'ai-research.html#topics', text:'課題方向'},
       {href:'ai-research.html#process', text:'流程'},
     ]},
-    {href:'campus.html', text:'大學項目', children: [
-      {href:'campus.html#campus-programs', text:'項目概覽'},
-      {href:'campus.html#course-detail', text:'課程詳情'},
-      {href:'campus.html#certificate', text:'認證書'},
-    ]},
     {href:'#contact', text:'諮詢'}
   ],
   'en': [
     {href:'index.html', text:'HOME'},
+    {href:'campus.html', text:'CAMPUS', children: [
+      {href:'campus.html#campus-programs', text:'OVERVIEW'},
+      {href:'campus.html#course-detail', text:'COURSES'},
+      {href:'campus.html#certificate', text:'CERTIFICATE'},
+    ]},
     {href:'ai-research.html', text:'AI RESEARCH', children: [
       {href:'ai-research.html#why', text:'WHY'},
       {href:'ai-research.html#solution', text:'SOLUTION'},
       {href:'ai-research.html#programs', text:'PROGRAMS'},
       {href:'ai-research.html#topics', text:'TOPICS'},
       {href:'ai-research.html#process', text:'PROCESS'},
-    ]},
-    {href:'campus.html', text:'CAMPUS', children: [
-      {href:'campus.html#campus-programs', text:'OVERVIEW'},
-      {href:'campus.html#course-detail', text:'COURSES'},
-      {href:'campus.html#certificate', text:'CERTIFICATE'},
     ]},
     {href:'#contact', text:'CONTACT'}
   ]

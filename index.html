@@ -65,8 +65,8 @@ a { text-decoration: none; color: inherit; }
   height: 72px;
 }
 
-.nav-logo { display: flex; align-items: center; gap: 12px; }
-.nav-logo img { height: 44px; width: auto; }
+.nav-logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nav-logo img { height: 44px; width: auto; object-fit: contain; }
 
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a {
@@ -536,6 +536,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 1024px) {
   .hero-content { flex-direction: column; gap: 40px; padding: 60px 24px; }
   .hero-card { display: none; }
+  .hero-visual img { max-width: 400px !important; }
   .tier-grid { grid-template-columns: repeat(2, 1fr); }
   .advantage-grid { grid-template-columns: repeat(2, 1fr); }
   .research-grid { grid-template-columns: repeat(3, 1fr); }
@@ -547,7 +548,20 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 768px) {
-  .nav-links a:not(.nav-contact) { display: none; }
+  .nav-inner { height: 56px; padding: 0 12px; }
+  .nav-logo img { height: 36px; }
+  .nav-links { display: none; }
+  .lang-switcher { gap: 1px; padding: 2px; }
+  .lang-btn { padding: 4px 8px; font-size: 11px; }
+  .hero { padding-top: 56px; }
+  .hero-content { padding: 32px 16px; gap: 24px; }
+  .hero h1 { font-size: 28px; }
+  .hero-desc { font-size: 16px; margin-bottom: 24px; }
+  .hero-visual img { max-width: 100% !important; }
+  .hero-programs { grid-template-columns: 1fr; gap: 16px; margin-top: 32px; max-width: 100%; }
+  .hero-program-card { padding: 24px; }
+  .hero-program-card h3 { font-size: 18px; }
+  .hero-program-card p { font-size: 14px; }
   .pain-grid { grid-template-columns: 1fr; }
   .tier-grid { grid-template-columns: 1fr; }
   .advantage-grid { grid-template-columns: 1fr; }
@@ -555,11 +569,34 @@ a { text-decoration: none; color: inherit; }
   .process-grid { grid-template-columns: 1fr; }
   .process-card::after { display: none !important; }
   .hero-stats { flex-direction: column; gap: 16px; }
-  .hero h1 { font-size: 32px; }
   .campus-grid { grid-template-columns: 1fr; }
   .course-features { grid-template-columns: 1fr; }
   .course-feature-images { grid-template-columns: repeat(2, 1fr); }
   .education-values { grid-template-columns: 1fr; }
+  .container { padding: 0 16px; }
+  .qr-grid { grid-template-columns: 1fr; gap: 16px; }
+  .footer-logo { height: 120px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 24px; }
+  .hero-desc { font-size: 15px; }
+  .hero-badge { font-size: 14px; padding: 8px 16px; }
+  .hero-program-card { padding: 20px; }
+  .hero-program-card h3 { font-size: 16px; }
+  .hero-program-card p { font-size: 13px; }
+  .hero-program-card .card-arrow { font-size: 16px; }
+  .course-feature-images { grid-template-columns: 1fr; }
+}
+
+/* Landscape phone */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { padding-top: 56px; }
+  .hero-content { flex-direction: row; padding: 24px 16px; gap: 24px; }
+  .hero h1 { font-size: 24px; }
+  .hero-desc { font-size: 14px; margin-bottom: 16px; }
+  .hero-programs { margin-top: 16px; gap: 12px; }
+  .hero-program-card { padding: 16px; }
 }
 
 /* ===== Language visibility ===== */
@@ -655,7 +692,6 @@ li[data-lang].active { display: flex; }
 
 /* Responsive updates */
 @media (max-width: 768px) {
-  .hero-programs { grid-template-columns: 1fr; }
   .nav-dropdown { position: static; transform: none; display: none; }
   .nav-item:hover .nav-dropdown { display: block; }
 }
@@ -698,23 +734,18 @@ li[data-lang].active { display: flex; }
         <p class="hero-desc">行知学園は、AI科研実践と大学背景提升という2つの主要なプログラムトラックを通じて、学生の総合的な背景を高めます。</p>
 
         <div class="hero-programs">
-          <a href="ai-research.html" class="hero-program-card ai-card">
-            <h3>AI科研実践プログラム</h3>
-            <p>本物のAI研究成果パッケージで、志望理由書と面接で語れる実績を構築</p>
-            <div class="card-arrow">詳しく → </div>
-          </a>
           <a href="campus.html" class="hero-program-card campus-card">
             <h3>大学プログラム</h3>
             <p>海外経験と国際化学習視野で、大学院入試の競争力を強化</p>
             <div class="card-arrow">詳しく → </div>
           </a>
+          <a href="ai-research.html" class="hero-program-card ai-card">
+            <h3>AI科研実践プログラム</h3>
+            <p>本物のAI研究成果パッケージで、志望理由書と面接で語れる実績を構築</p>
+            <div class="card-arrow">詳しく → </div>
+          </a>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">主要プログラム</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">グレード体系</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">計算資源完備</div></div>
-        </div>
       </div>
       <!-- ZH-CN -->
       <div data-lang="zh-CN">
@@ -723,23 +754,18 @@ li[data-lang].active { display: flex; }
         <p class="hero-desc">行知学园通过AI科研实践和大学背景提升两个主要项目轨道，帮助学生全面提升竞争力。</p>
 
         <div class="hero-programs">
-          <a href="ai-research.html" class="hero-program-card ai-card">
-            <h3>AI科研实践项目</h3>
-            <p>打造真实的AI研究成果包，在志望理由书和面试中有据可说</p>
-            <div class="card-arrow">了解更多 → </div>
-          </a>
           <a href="campus.html" class="hero-program-card campus-card">
             <h3>大学项目</h3>
             <p>海外实践与国际学习视野，强化学部和大学院申请竞争力</p>
             <div class="card-arrow">了解更多 → </div>
           </a>
+          <a href="ai-research.html" class="hero-program-card ai-card">
+            <h3>AI科研实践项目</h3>
+            <p>打造真实的AI研究成果包，在志望理由书和面试中有据可说</p>
+            <div class="card-arrow">了解更多 → </div>
+          </a>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">主要项目</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">档位产品</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">算力全覆盖</div></div>
-        </div>
       </div>
       <!-- ZH-TW -->
       <div data-lang="zh-TW">
@@ -748,23 +774,18 @@ li[data-lang].active { display: flex; }
         <p class="hero-desc">行知學園通過AI科研實踐和大學背景提升兩個主要項目軌道，幫助學生全面提升競爭力。</p>
 
         <div class="hero-programs">
+          <a href="campus.html" class="hero-program-card campus-card">
+            <h3>大學項目</h3>
+            <p>海外實踐與國際學習視野，強化學部和大學院申請競爭力</p>
+            <div class="card-arrow">了解更多 → </div>
+          </a>
           <a href="ai-research.html" class="hero-program-card ai-card">
             <h3>AI科研實踐項目</h3>
             <p>打造真實的AI研究成果包，在志望理由書和面試中有據可說</p>
             <div class="card-arrow">了解更多 → </div>
           </a>
-          <a href="campus.html" class="hero-program-card campus-card">
-            <h3>大學項目</h3>
-            <p>海外實踐與國際學習視野，強化大學院申請競爭力</p>
-            <div class="card-arrow">了解更多 → </div>
-          </a>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">主要項目</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">檔位產品</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">算力全覆蓋</div></div>
-        </div>
       </div>
       <!-- EN -->
       <div data-lang="en">
@@ -773,23 +794,18 @@ li[data-lang].active { display: flex; }
         <p class="hero-desc">Coach Academy offers two main program tracks: AI Research Practice and University Background Enhancement, designed to strengthen your overall competitiveness.</p>
 
         <div class="hero-programs">
-          <a href="ai-research.html" class="hero-program-card ai-card">
-            <h3>AI Research Program</h3>
-            <p>Build a verifiable AI research portfolio you can discuss in essays and interviews</p>
-            <div class="card-arrow">Learn More → </div>
-          </a>
           <a href="campus.html" class="hero-program-card campus-card">
             <h3>Campus Program</h3>
             <p>International experience and global perspective to strengthen graduate applications</p>
             <div class="card-arrow">Learn More → </div>
           </a>
+          <a href="ai-research.html" class="hero-program-card ai-card">
+            <h3>AI Research Program</h3>
+            <p>Build a verifiable AI research portfolio you can discuss in essays and interviews</p>
+            <div class="card-arrow">Learn More → </div>
+          </a>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat-item"><div class="hero-stat-num">2</div><div class="hero-stat-label">Main Programs</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">4</div><div class="hero-stat-label">Program Tiers</div></div>
-          <div class="hero-stat-item"><div class="hero-stat-num">GPU</div><div class="hero-stat-label">Full Computing Support</div></div>
-        </div>
       </div>
     </div>
     <div class="hero-visual">
@@ -854,6 +870,11 @@ let currentLang = 'ja';
 const navData = {
   'ja': [
     {href:'index.html', text:'ホーム'},
+    {href:'campus.html', text:'大学プログラム', children: [
+      {href:'campus.html#campus-programs', text:'プロジェクト概要'},
+      {href:'campus.html#course-detail', text:'コース詳細'},
+      {href:'campus.html#certificate', text:'認定証書'},
+    ]},
     {href:'ai-research.html', text:'AI科研実践', children: [
       {href:'ai-research.html#why', text:'なぜ必要か'},
       {href:'ai-research.html#solution', text:'ソリューション'},
@@ -861,15 +882,15 @@ const navData = {
       {href:'ai-research.html#topics', text:'研究テーマ'},
       {href:'ai-research.html#process', text:'プロセス'},
     ]},
-    {href:'campus.html', text:'大学プログラム', children: [
-      {href:'campus.html#campus-programs', text:'プロジェクト概要'},
-      {href:'campus.html#course-detail', text:'コース詳細'},
-      {href:'campus.html#certificate', text:'認定証書'},
-    ]},
     {href:'#contact', text:'お問い合わせ'}
   ],
   'zh-CN': [
     {href:'index.html', text:'首页'},
+    {href:'campus.html', text:'大学项目', children: [
+      {href:'campus.html#campus-programs', text:'项目概览'},
+      {href:'campus.html#course-detail', text:'课程详情'},
+      {href:'campus.html#certificate', text:'认证书'},
+    ]},
     {href:'ai-research.html', text:'AI科研实践', children: [
       {href:'ai-research.html#why', text:'为什么需要'},
       {href:'ai-research.html#solution', text:'解决方案'},
@@ -877,15 +898,15 @@ const navData = {
       {href:'ai-research.html#topics', text:'课题方向'},
       {href:'ai-research.html#process', text:'流程'},
     ]},
-    {href:'campus.html', text:'大学项目', children: [
-      {href:'campus.html#campus-programs', text:'项目概览'},
-      {href:'campus.html#course-detail', text:'课程详情'},
-      {href:'campus.html#certificate', text:'认证书'},
-    ]},
     {href:'#contact', text:'咨询'}
   ],
   'zh-TW': [
     {href:'index.html', text:'首頁'},
+    {href:'campus.html', text:'大學項目', children: [
+      {href:'campus.html#campus-programs', text:'項目概覽'},
+      {href:'campus.html#course-detail', text:'課程詳情'},
+      {href:'campus.html#certificate', text:'認證書'},
+    ]},
     {href:'ai-research.html', text:'AI科研實踐', children: [
       {href:'ai-research.html#why', text:'為什麼需要'},
       {href:'ai-research.html#solution', text:'解決方案'},
@@ -893,26 +914,21 @@ const navData = {
       {href:'ai-research.html#topics', text:'課題方向'},
       {href:'ai-research.html#process', text:'流程'},
     ]},
-    {href:'campus.html', text:'大學項目', children: [
-      {href:'campus.html#campus-programs', text:'項目概覽'},
-      {href:'campus.html#course-detail', text:'課程詳情'},
-      {href:'campus.html#certificate', text:'認證書'},
-    ]},
     {href:'#contact', text:'諮詢'}
   ],
   'en': [
     {href:'index.html', text:'HOME'},
+    {href:'campus.html', text:'CAMPUS', children: [
+      {href:'campus.html#campus-programs', text:'OVERVIEW'},
+      {href:'campus.html#course-detail', text:'COURSES'},
+      {href:'campus.html#certificate', text:'CERTIFICATE'},
+    ]},
     {href:'ai-research.html', text:'AI RESEARCH', children: [
       {href:'ai-research.html#why', text:'WHY'},
       {href:'ai-research.html#solution', text:'SOLUTION'},
       {href:'ai-research.html#programs', text:'PROGRAMS'},
       {href:'ai-research.html#topics', text:'TOPICS'},
       {href:'ai-research.html#process', text:'PROCESS'},
-    ]},
-    {href:'campus.html', text:'CAMPUS', children: [
-      {href:'campus.html#campus-programs', text:'OVERVIEW'},
-      {href:'campus.html#course-detail', text:'COURSES'},
-      {href:'campus.html#certificate', text:'CERTIFICATE'},
     ]},
     {href:'#contact', text:'CONTACT'}
   ]
