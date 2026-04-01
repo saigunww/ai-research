@@ -491,6 +491,20 @@ a { text-decoration: none; color: inherit; }
 }
 .cert-reasons ol { margin-left: 24px; }
 .cert-reasons li { font-size: 15px; line-height: 1.7; opacity: 0.85; margin-bottom: 12px; }
+.cert-images {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+  max-width: 900px; margin: 0 auto 40px;
+}
+.cert-images img {
+  width: 100%; aspect-ratio: 7/10; object-fit: contain;
+  background: #fff; border-radius: var(--radius);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: var(--transition);
+}
+.cert-images img:hover { transform: scale(1.02); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+@media (max-width: 768px) {
+  .cert-images { grid-template-columns: 1fr; gap: 16px; max-width: 400px; }
+}
 
 /* ===== CTA Section ===== */
 .cta-section {
@@ -838,7 +852,7 @@ li[data-lang].active { display: flex; }
 
       <!-- Program 2: 顶尖大学背景提升 -->
       <div class="campus-card">
-        <div class="campus-card-header" style="background-image: url('images/Image_20260331183643_24_192.jpg');"></div>
+        <div class="campus-card-header" style="background-image: url('images/Image_20260331183106_9_192.jpg');"></div>
         <div class="campus-card-body">
           <h3 data-lang="ja">顶尖大学背景提升</h3>
           <h3 data-lang="zh-CN">顶尖大学背景提升</h3>
@@ -921,9 +935,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 1 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 1">
-            <img src="images/Image_20260331183626_15_192.jpg" alt="Feature 1">
-            <img src="images/Image_20260331183627_16_192.jpg" alt="Feature 1">
+            <img src="images/pdf_p2_redshirts.jpg" alt="Feature 1">
+            <img src="images/pdf_p2_classroom.jpg" alt="Feature 1">
+            <img src="images/pdf_p2_tablework.jpg" alt="Feature 1">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">大学資源直結、未来の学術方向を啓発</h4>
@@ -941,9 +955,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 2 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183631_17_192.jpg" alt="Feature 2">
-            <img src="images/Image_20260331183632_18_192.jpg" alt="Feature 2">
-            <img src="images/Image_20260331183633_19_192.jpg" alt="Feature 2">
+            <img src="images/Image_20260331183355_11_192.jpg" alt="Feature 2">
+            <img src="images/pdf_p2_tablet.jpg" alt="Feature 2">
+            <img src="images/pdf_p2_whiteboard.jpg" alt="Feature 2">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">日本学生との共学、グローバル思維を育成</h4>
@@ -961,9 +975,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 3 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183633_20_192.jpg" alt="Feature 3">
-            <img src="images/Image_20260331183634_21_192.jpg" alt="Feature 3">
-            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 3">
+            <img src="images/pdf_p2_disney.jpg" alt="Feature 3">
+            <img src="images/pdf_p2_classroom2.jpg" alt="Feature 3">
+            <img src="images/pdf_p2_girlmic.jpg" alt="Feature 3">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">自分の限界に挑戦、実務で成長</h4>
@@ -1040,9 +1054,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 1 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183644_25_192.jpg" alt="Feature 1">
-            <img src="images/Image_20260331183643_24_192.jpg" alt="Feature 1">
-            <img src="images/Image_20260331183644_28_192.jpg" alt="Feature 1">
+            <img src="images/pdf_p4_lecturehall.jpg" alt="Feature 1">
+            <img src="images/pdf_p4_womanpresent.jpg" alt="Feature 1">
+            <img src="images/pdf_p4_proflecture.jpg" alt="Feature 1">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">TOP级高校講義 × 現地研修を組み合わせ</h4>
@@ -1060,9 +1074,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 2 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183644_26_192.jpg" alt="Feature 2">
-            <img src="images/Image_20260331183644_27_192.jpg" alt="Feature 2">
-            <img src="images/Image_20260331183644_28_192.jpg" alt="Feature 2">
+            <img src="images/pdf_p4_toyota.jpg" alt="Feature 2">
+            <img src="images/pdf_p4_ryukakusan.jpg" alt="Feature 2">
+            <img src="images/pdf_p4_inamori.jpg" alt="Feature 2">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">日本企業の革新と持続可能性を総合的に理解</h4>
@@ -1080,9 +1094,9 @@ li[data-lang].active { display: flex; }
         <!-- Feature 3 -->
         <div class="course-feature">
           <div class="course-feature-images">
-            <img src="images/Image_20260331183644_25_192.jpg" alt="Feature 3">
-            <img src="images/Image_20260331183643_24_192.jpg" alt="Feature 3">
-            <img src="images/Image_20260331183553_14_192.jpg" alt="Feature 3">
+            <img src="images/pdf_p4_intlstudents.jpg" alt="Feature 3">
+            <img src="images/Image_20260331183644_26_192.jpg" alt="Feature 3">
+            <img src="images/pdf_p4_business.jpg" alt="Feature 3">
           </div>
           <div class="course-feature-body">
             <h4 data-lang="ja">国際視野を広げ、昇学とキャリアを充実させ</h4>
@@ -1138,6 +1152,11 @@ li[data-lang].active { display: flex; }
     <h2 data-lang="zh-CN">颁发顶尖TOP大学认证书</h2>
     <h2 data-lang="zh-TW">頒發頂尖TOP大學認證書</h2>
     <h2 data-lang="en">Official Certification from Elite Universities</h2>
+
+    <div class="cert-images">
+      <img src="images/Image_20260401171129_60_3.jpg" alt="認定証 - Certificate of Recognition">
+      <img src="images/Image_20260401171136_61_3.jpg" alt="修了証書 - Certificate of Completion">
+    </div>
 
     <div class="cert-content">
       <div class="cert-card">
