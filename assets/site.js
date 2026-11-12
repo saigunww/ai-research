@@ -39,6 +39,221 @@
       contactLine1:'Your next question',contactLine2:'can start here.',contactDescription:'Tell us about your academic background and research interests. Let’s discuss a direction that fits your learning goals.',emailUs:'Get in touch',wechat:'WeChat',wechatNote:'Scan to ask about research',rednote:'RED / Xiaohongshu',rednoteNote:'Learning and research updates',wechatAlt:'WeChat contact QR code',rednoteAlt:'Xiaohongshu QR code',footerProgram:'AI Research Program',backTop:'Back to top'
     }
   };
+  const applicationCopy = {
+  "zh-CN": {
+    "navApplications": "升学应用",
+    "navAdmissions": "招生要求",
+    "applicationsTitle": "科研经历，如何连接升学申请？",
+    "applicationsDescription": "从真实参与出发，说明你发现了什么、做过什么，以及希望继续探索什么。",
+    "undergraduateLabel": "学部申请",
+    "undergraduateTitle": "高中生：让经历体现思考与成长。",
+    "undergraduateLead": "把自己真正参与的 AI 科研经历，转化为有事实支撑的申请表达。",
+    "undergraduateUse1Title": "志望理由书",
+    "undergraduateUse1": "依照学校格式，说明兴趣如何形成、经历带来的认识，以及与志望专业的联系。",
+    "undergraduateUse2Title": "校内考小论文",
+    "undergraduateUse2": "先回应考试题目，再选择相关经历或思考作为论据；不把科研故事硬套进所有题目。",
+    "undergraduateUse3Title": "面试交流",
+    "undergraduateUse3": "讲清研究问题、本人贡献、支持结论的证据与反思，展示科研思维和学习经验。",
+    "undergraduateNote": "科研经历用于支持申请和展示成长，不能替代学校要求，也不保证录取。",
+    "graduateLabel": "大学院申请",
+    "graduateTitle": "本科生：让研究设想更具体。",
+    "graduateLead": "将研究经历整理为清晰的问题意识与研究计划，帮助导师理解你的准备和兴趣。",
+    "graduateUse1Title": "形成研究计划",
+    "graduateUse1": "结合已有阅读与实践，说明研究问题、拟探索的方向及与目标研究室的契合度。",
+    "graduateUse2Title": "联系教授",
+    "graduateUse2": "先核对是否允许提前联系、发送计划书或附件；仅在允许时提供可公开的数据或结果摘要，并说明本人贡献及局限。",
+    "graduateUse3Title": "沟通研究设想",
+    "graduateUse3": "用具体经历支撑讨论，回应导师的问题；按选考规则沟通接收意向或争取内诺。",
+    "graduateNote": "并非所有导师都要求已有科研经历。是否需要事前联系、内诺或同意书依具体选考规定，内诺不等于最终录取。",
+    "admissionsTitle": "官方招生要求动态",
+    "admissionsDescription": "按学部与大学院查看相关选考要求，理解科研经历与申请材料的具体关系。",
+    "admissionsFrequency": "每小时核对官网变化",
+    "admissionsAll": "全部",
+    "admissionsFilterLabel": "按申请阶段筛选",
+    "admissionsFallback": "具体要求因学校、项目和选考方式而异。暂未载入核对记录时，可先查看下方申请指导，并以学校当年度募集要项为准。",
+    "applicationGuide": "查看科研经历的申请用途",
+    "admissionsNote": "以下摘要仅适用于标注的项目、年度与选考方式；提交材料前，请打开官方来源确认。",
+    "admissionsVerified": "已核对",
+    "admissionsChanged": "新版本待核对",
+    "admissionsUnavailable": "本次检查未成功",
+    "admissionsChangedMessage": "官方页面已发生变化，旧摘要暂不展示。新版本核对完成前，请直接查看官方来源。",
+    "admissionsUnavailableMessage": "本次官网检查未成功，以下保留上次核对的摘要，请打开官方来源确认。",
+    "admissionsScope": "适用范围",
+    "admissionsRoute": "选考方式",
+    "admissionsYear": "适用年度",
+    "admissionsVerifiedAt": "摘要核对日期",
+    "admissionsCheckedAt": "最近检查",
+    "admissionsSource": "查看官方来源",
+    "admissionsCount": "条要求",
+    "admissionsEmpty": "这一申请阶段暂未收录核对记录。",
+    "admissionsLoadError": "暂时无法载入招生要求。可重试，或先查看科研经历的申请用途。",
+    "admissionsRefreshError": "最新核对记录暂时无法载入，当前显示上次载入的内容；请以官方来源为准。",
+    "admissionsRetry": "重新载入要求",
+    "topicUpdated": "课题更新",
+    "admissionsNewTab": "在新窗口打开官方来源"
+  },
+  "zh-TW": {
+    "navApplications": "升學應用",
+    "navAdmissions": "招生要求",
+    "applicationsTitle": "科研經歷，如何連結升學申請？",
+    "applicationsDescription": "從真實參與出發，說明你發現了什麼、做過什麼，以及希望繼續探索什麼。",
+    "undergraduateLabel": "學部申請",
+    "undergraduateTitle": "高中生：讓經歷體現思考與成長。",
+    "undergraduateLead": "把自己真正參與的 AI 科研經歷，轉化為有事實支持的申請表達。",
+    "undergraduateUse1Title": "志望理由書",
+    "undergraduateUse1": "依照學校格式，說明興趣如何形成、經歷帶來的認識，以及與志望專業的聯繫。",
+    "undergraduateUse2Title": "校內考小論文",
+    "undergraduateUse2": "先回應考試題目，再選擇相關經歷或思考作為論據；不把科研故事硬套進所有題目。",
+    "undergraduateUse3Title": "面試交流",
+    "undergraduateUse3": "講清研究問題、本人貢獻、支持結論的證據與反思，展示科研思維和學習經驗。",
+    "undergraduateNote": "科研經歷用於支持申請和展示成長，不能替代學校要求，也不保證錄取。",
+    "graduateLabel": "大學院申請",
+    "graduateTitle": "本科生：讓研究構想更具體。",
+    "graduateLead": "將研究經歷整理為清晰的問題意識與研究計畫，幫助導師理解你的準備和興趣。",
+    "graduateUse1Title": "形成研究計畫",
+    "graduateUse1": "結合已有閱讀與實踐，說明研究問題、擬探索的方向及與目標研究室的契合度。",
+    "graduateUse2Title": "聯繫教授",
+    "graduateUse2": "先核對是否允許提前聯繫、傳送計畫書或附件；僅在允許時提供可公開的資料或結果摘要，並說明本人貢獻及局限。",
+    "graduateUse3Title": "溝通研究構想",
+    "graduateUse3": "用具體經歷支持討論，回應導師的問題；按選考規則溝通接收意向或爭取內諾。",
+    "graduateNote": "並非所有導師都要求已有科研經歷。是否需要事前聯繫、內諾或同意書依具體選考規定，內諾不等於最終錄取。",
+    "admissionsTitle": "官方招生要求動態",
+    "admissionsDescription": "按學部與大學院查看相關選考要求，理解科研經歷與申請材料的具體關係。",
+    "admissionsFrequency": "每小時核對官網變化",
+    "admissionsAll": "全部",
+    "admissionsFilterLabel": "按申請階段篩選",
+    "admissionsFallback": "具體要求因學校、項目和選考方式而異。暫未載入核對記錄時，可先查看下方申請指引，並以學校當年度募集要項為準。",
+    "applicationGuide": "查看科研經歷的申請用途",
+    "admissionsNote": "以下摘要僅適用於標註的項目、年度與選考方式；提交材料前，請開啟官方來源確認。",
+    "admissionsVerified": "已核對",
+    "admissionsChanged": "新版本待核對",
+    "admissionsUnavailable": "本次檢查未成功",
+    "admissionsChangedMessage": "官方頁面已發生變化，舊摘要暫不展示。新版本核對完成前，請直接查看官方來源。",
+    "admissionsUnavailableMessage": "本次官網檢查未成功，以下保留上次核對的摘要，請開啟官方來源確認。",
+    "admissionsScope": "適用範圍",
+    "admissionsRoute": "選考方式",
+    "admissionsYear": "適用年度",
+    "admissionsVerifiedAt": "摘要核對日期",
+    "admissionsCheckedAt": "最近檢查",
+    "admissionsSource": "查看官方來源",
+    "admissionsCount": "條要求",
+    "admissionsEmpty": "這一申請階段暫未收錄核對記錄。",
+    "admissionsLoadError": "暫時無法載入招生要求。可重試，或先查看科研經歷的申請用途。",
+    "admissionsRefreshError": "最新核對記錄暫時無法載入，目前顯示上次載入的內容；請以官方來源為準。",
+    "admissionsRetry": "重新載入要求",
+    "topicUpdated": "課題更新",
+    "admissionsNewTab": "在新視窗開啟官方來源"
+  },
+  "ja": {
+    "navApplications": "出願への活用",
+    "navAdmissions": "募集要項",
+    "applicationsTitle": "研究経験を、進学への準備に。",
+    "applicationsDescription": "実際に取り組んだことを出発点に、発見、役割、これから探究したい問いを伝えます。",
+    "undergraduateLabel": "学部出願",
+    "undergraduateTitle": "高校生：経験から思考と成長を伝える。",
+    "undergraduateLead": "自分が参加したAI研究の経験を、事実に基づく出願時の説明につなげます。",
+    "undergraduateUse1Title": "志望理由書",
+    "undergraduateUse1": "大学指定の形式に沿って、関心のきっかけ、経験から学んだこと、志望分野とのつながりを説明します。",
+    "undergraduateUse2Title": "小論文試験",
+    "undergraduateUse2": "設問に答えることを優先し、関連する経験や考察を論拠にします。研究の話をすべての設問に当てはめるものではありません。",
+    "undergraduateUse3Title": "面接",
+    "undergraduateUse3": "研究の問い、自分の貢献、結論を支える根拠と振り返りを説明し、科学的な思考と学びの経験を伝えます。",
+    "undergraduateNote": "研究経験は出願を支える材料です。大学の要件に代わるものではなく、合格を保証するものでもありません。",
+    "graduateLabel": "大学院出願",
+    "graduateTitle": "大学生：研究の構想を具体的に。",
+    "graduateLead": "研究経験を問題意識と研究計画に整理し、指導教員に自分の準備と関心を伝えます。",
+    "graduateUse1Title": "研究計画を組み立てる",
+    "graduateUse1": "文献や実践を踏まえ、研究課題、探究したい方向、志望研究室との接点を説明します。",
+    "graduateUse2Title": "教員に連絡する",
+    "graduateUse2": "事前連絡、研究計画書や添付資料の送付が認められるかを先に確認します。認められる場合に限り、公開可能なデータや結果の要約を示し、自分の貢献と限界を説明します。",
+    "graduateUse3Title": "研究構想を話し合う",
+    "graduateUse3": "経験をもとに議論し、教員の質問に答えます。選考規定に従って受入れの意向や内諾について相談します。",
+    "graduateNote": "研究経験を必須としない教員もいます。事前連絡・内諾・同意書の要否は各選考の規定によります。内諾は最終的な合格ではありません。",
+    "admissionsTitle": "公式募集要項の更新情報",
+    "admissionsDescription": "学部・大学院別に選考要件を確認し、研究経験と出願書類の関係を理解しましょう。",
+    "admissionsFrequency": "公式情報の変更を毎時確認",
+    "admissionsAll": "すべて",
+    "admissionsFilterLabel": "出願区分で絞り込む",
+    "admissionsFallback": "要件は大学・課程・選考によって異なります。記録を読み込めない場合は出願への活用例をご覧のうえ、当該年度の公式募集要項を確認してください。",
+    "applicationGuide": "研究経験の活用例を見る",
+    "admissionsNote": "要約は記載の課程・年度・選考にのみ適用されます。出願前に必ず公式資料を確認してください。",
+    "admissionsVerified": "確認済み",
+    "admissionsChanged": "新版の確認待ち",
+    "admissionsUnavailable": "今回の確認に失敗",
+    "admissionsChangedMessage": "公式ページの変更を検出したため、旧要約は表示していません。新版の確認が完了するまでは公式資料をご覧ください。",
+    "admissionsUnavailableMessage": "今回は公式ページを確認できませんでした。以下は前回確認時の要約です。公式資料も確認してください。",
+    "admissionsScope": "対象範囲",
+    "admissionsRoute": "選考区分",
+    "admissionsYear": "対象年度",
+    "admissionsVerifiedAt": "要約の確認日",
+    "admissionsCheckedAt": "最終確認",
+    "admissionsSource": "公式資料を見る",
+    "admissionsCount": "件の要件",
+    "admissionsEmpty": "この出願区分の確認記録はまだありません。",
+    "admissionsLoadError": "募集情報を読み込めませんでした。再試行するか、研究経験の活用例をご覧ください。",
+    "admissionsRefreshError": "最新の確認記録を読み込めませんでした。前回取得した情報を表示しています。公式資料をご確認ください。",
+    "admissionsRetry": "募集情報を再読み込み",
+    "topicUpdated": "テーマ更新",
+    "admissionsNewTab": "公式資料を新しいウィンドウで開く"
+  },
+  "en": {
+    "navTopics": "Research",
+    "navPath": "Journey",
+    "navHonors": "Results",
+    "navContact": "Contact",
+    "navApplications": "Applications",
+    "navAdmissions": "Requirements",
+    "applicationsTitle": "Connecting research with your application.",
+    "applicationsDescription": "Start with work you actually participated in. Explain what you discovered, what you contributed and what you want to explore next.",
+    "undergraduateLabel": "Undergraduate",
+    "undergraduateTitle": "High school students: show how you think and grow.",
+    "undergraduateLead": "Turn your own AI research experience into an application narrative grounded in what you have done.",
+    "undergraduateUse1Title": "Statement of purpose",
+    "undergraduateUse1": "Follow the university’s format. Explain how your interest developed, what you learned and how it connects to your chosen field.",
+    "undergraduateUse2Title": "Entrance-exam essays",
+    "undergraduateUse2": "Answer the actual question first. Use relevant experience as evidence rather than forcing a research story into every prompt.",
+    "undergraduateUse3Title": "Interviews",
+    "undergraduateUse3": "Explain the research question, your contribution, the evidence and your reflections to demonstrate scientific thinking and learning.",
+    "undergraduateNote": "Research experience can support an application. It does not replace university requirements or guarantee admission.",
+    "graduateLabel": "Graduate",
+    "graduateTitle": "University students: make your research ideas concrete.",
+    "graduateLead": "Organize your experience into a clear research question and plan to help a prospective supervisor understand your preparation and interests.",
+    "graduateUse1Title": "Develop a research plan",
+    "graduateUse1": "Connect your reading and practice to a research question, a possible direction and the interests of your target laboratory.",
+    "graduateUse2Title": "Contact a professor",
+    "graduateUse2": "First check whether advance contact, research plans or attachments are permitted. Only when allowed, share public data or a results summary and explain your contribution and limitations.",
+    "graduateUse3Title": "Discuss your proposal",
+    "graduateUse3": "Ground the discussion in your experience and respond to questions. Follow the selection rules when seeking supervisory interest or preliminary acceptance.",
+    "graduateNote": "Not every professor requires prior research. Requirements for contact, preliminary acceptance or written consent depend on the selection process. Preliminary acceptance is not final admission.",
+    "admissionsTitle": "Official admissions requirements",
+    "admissionsDescription": "Browse undergraduate and graduate requirements to understand how research experience relates to application materials.",
+    "admissionsFrequency": "Official sources checked hourly",
+    "admissionsAll": "All levels",
+    "admissionsFilterLabel": "Filter by application level",
+    "admissionsFallback": "Requirements vary by university, program and selection route. If records are unavailable, explore the application guidance and consult the official guidelines for the relevant year.",
+    "applicationGuide": "Explore how research supports applications",
+    "admissionsNote": "Each summary applies only to the named program, year and selection route. Open the official source before submitting an application.",
+    "admissionsVerified": "Verified",
+    "admissionsChanged": "New version awaiting review",
+    "admissionsUnavailable": "Latest check unsuccessful",
+    "admissionsChangedMessage": "The official page has changed, so the previous summary is hidden. Please consult the official source while the new version is reviewed.",
+    "admissionsUnavailableMessage": "The latest source check was unsuccessful. The last verified summary is shown below; please also consult the official source.",
+    "admissionsScope": "Applies to",
+    "admissionsRoute": "Selection route",
+    "admissionsYear": "Academic year",
+    "admissionsVerifiedAt": "Summary verified",
+    "admissionsCheckedAt": "Last checked",
+    "admissionsSource": "View official source",
+    "admissionsCount": "requirements",
+    "admissionsEmpty": "No verified records are listed for this application level yet.",
+    "admissionsLoadError": "Admissions records could not be loaded. Retry or explore the research application guidance.",
+    "admissionsRefreshError": "The latest records could not be loaded. Previously loaded information remains visible; please consult the official sources.",
+    "admissionsRetry": "Reload requirements",
+    "topicUpdated": "Topic updated",
+    "admissionsNewTab": "Open official source in a new window"
+  }
+};
+  languages.forEach(language => Object.assign(copy[language], applicationCopy[language]));
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   let catalog = null;
@@ -46,6 +261,11 @@
   let selectedCategory = 'all';
   let currentLanguage = 'zh-CN';
   let pendingRequest = null;
+  let admissionsData = null;
+  let admissionsLoadFailed = false;
+  let pendingAdmissions = null;
+  let selectedLevel = 'all';
+  let lastAdmissionsLoad = 0;
   const readStorage = key => { try { return localStorage.getItem(key); } catch (_) { return null; } };
   const writeStorage = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
   function fromHash() {
@@ -79,6 +299,7 @@
     $$('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
     $('#main-nav').setAttribute('aria-label', t('mainNavigation'));
     $('#topic-filters').setAttribute('aria-label', t('filterLabel'));
+    $('#admissions-filters').setAttribute('aria-label', t('admissionsFilterLabel'));
     $('#topic-search').placeholder = t('searchPlaceholder');
     $('.hero-bottom>a').setAttribute('aria-label', t('heroExplore'));
     $('.qr-card img[src*="wechat"]').alt = t('wechatAlt');
@@ -88,6 +309,8 @@
     if (changeHash) history.replaceState(null, '', '#' + language);
     if (catalog) renderCatalog();
     else if (loadFailed) renderLoadError();
+    if (admissionsData) renderAdmissions();
+    else if (admissionsLoadFailed) renderAdmissionsError();
   }
   function icon(index) {
     const node = element('span', 'topic-icon');
@@ -157,6 +380,7 @@
       const tagList = localized(topic.tags);
       if (Array.isArray(tagList)) tagList.forEach(tag => tags.append(element('span', 'topic-tag', tag)));
       card.append(tags, element('div', 'topic-card-category', categoryLabel(topic.category)));
+      if (topic.updatedAt) card.append(element('p', 'topic-updated', `${t('topicUpdated')} ${formatRecordDate(topic.updatedAt)}`));
       grid.append(card);
     });
   }
@@ -245,12 +469,136 @@
     })();
     return pendingRequest;
   }
+  function formatRecordDate(value) {
+    if (!value) return '';
+    const text = String(value);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(text)) return text;
+    const date = new Date(text);
+    if (Number.isNaN(date.getTime())) return text;
+    return new Intl.DateTimeFormat(currentLanguage, {timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(date) + ' JST';
+  }
+  function sourceLink(url) {
+    try {
+      const parsed = new URL(url);
+      if (!['https:', 'http:'].includes(parsed.protocol)) return null;
+      const link = element('a', 'admission-source');
+      link.href = parsed.href;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.setAttribute('aria-label', t('admissionsNewTab'));
+      const arrow = element('span', '', '↗');
+      arrow.setAttribute('aria-hidden', 'true');
+      link.append(element('span', '', t('admissionsSource')), arrow);
+      return link;
+    } catch (_) { return null; }
+  }
+  function admissionDetail(list, label, value) {
+    if (!value) return;
+    const row = element('div', 'admission-detail');
+    row.append(element('dt', '', label), element('dd', '', value));
+    list.append(row);
+  }
+  function renderAdmissions() {
+    const grid = $('#admissions-grid');
+    grid.replaceChildren();
+    const records = admissionsData.items.filter(item => selectedLevel === 'all' || item.level === selectedLevel);
+    const status = $('#admissions-status');
+    status.replaceChildren(element('span', '', admissionsLoadFailed ? t('admissionsRefreshError') : `${records.length} ${t('admissionsCount')}`));
+    status.classList.toggle('has-error', admissionsLoadFailed);
+    if (admissionsLoadFailed) {
+      const retry = element('button', 'admissions-retry', t('admissionsRetry'));
+      retry.type = 'button';
+      retry.addEventListener('click', loadAdmissions);
+      status.append(retry);
+    }
+    $('#admissions-checked').textContent = admissionsData.checkedAt ? `${t('admissionsCheckedAt')} ${formatRecordDate(admissionsData.checkedAt)}` : '';
+    $('#admissions-updated').textContent = admissionsData.updatedAt ? `${t('updated')} ${formatRecordDate(admissionsData.updatedAt)}` : '';
+    if (!records.length) grid.append(element('p', 'empty-state', t('admissionsEmpty')));
+    records.forEach(item => {
+      const recordStatus = ['verified','changed','unavailable'].includes(item.status) ? item.status : 'unavailable';
+      const card = element('article', `admission-card admission-${recordStatus}`);
+      card.dataset.admissionId = item.id;
+      card.dataset.status = recordStatus;
+      const top = element('div', 'admission-card-top');
+      top.append(element('span', 'admission-level', t(item.level === 'undergraduate' ? 'undergraduateLabel' : 'graduateLabel')));
+      const statusKey = {verified:'admissionsVerified',changed:'admissionsChanged',unavailable:'admissionsUnavailable'}[recordStatus];
+      top.append(element('span', `admission-status-badge ${recordStatus}`, t(statusKey)));
+      card.append(top, element('h3', '', localized(item.university)));
+      if (localized(item.program)) card.append(element('h4', 'admission-program', localized(item.program)));
+      if (recordStatus !== 'verified') card.append(element('p', 'admission-notice', t(recordStatus === 'changed' ? 'admissionsChangedMessage' : 'admissionsUnavailableMessage')));
+      // A changed source has no current verified summary. Hide old requirements,
+      // scope and tags until editorial review confirms the new version.
+      if (recordStatus !== 'changed') {
+        const details = element('dl', 'admission-details');
+        admissionDetail(details, t('admissionsYear'), item.academicYear);
+        admissionDetail(details, t('admissionsRoute'), localized(item.route));
+        admissionDetail(details, t('admissionsScope'), localized(item.scope));
+        card.append(details);
+        if (localized(item.summary)) card.append(element('p', 'admission-summary', localized(item.summary)));
+        const tags = localized(item.tags);
+        if (Array.isArray(tags) && tags.length) {
+          const tagList = element('div', 'admission-tags');
+          tags.forEach(tag => tagList.append(element('span', 'topic-tag', tag)));
+          card.append(tagList);
+        }
+      }
+      const bottom = element('div', 'admission-card-bottom');
+      const dates = element('div', 'admission-dates');
+      if (item.verifiedAt) dates.append(element('p', '', `${t('admissionsVerifiedAt')} ${formatRecordDate(item.verifiedAt)}`));
+      if (item.checkedAt) dates.append(element('p', '', `${t('admissionsCheckedAt')} ${formatRecordDate(item.checkedAt)}`));
+      bottom.append(dates);
+      const official = sourceLink(item.sourceUrl);
+      if (official) bottom.append(official);
+      card.append(bottom);
+      grid.append(card);
+    });
+  }
+  function renderAdmissionsError() {
+    $('#admissions-status').textContent = t('admissionsLoadError');
+    $('#admissions-status').classList.add('has-error');
+    const fallback = element('div', 'admissions-fallback');
+    fallback.append(element('p', '', t('admissionsFallback')));
+    const actions = element('div', 'admissions-fallback-actions');
+    const retry = element('button', 'button button-dark', t('admissionsRetry'));
+    retry.type = 'button';
+    retry.addEventListener('click', loadAdmissions);
+    const guide = element('a', 'text-link', t('applicationGuide'));
+    guide.href = '#applications';
+    actions.append(retry, guide);
+    fallback.append(actions);
+    $('#admissions-grid').replaceChildren(fallback);
+  }
+  async function loadAdmissions() {
+    if (pendingAdmissions) return pendingAdmissions;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 12000);
+    pendingAdmissions = (async () => {
+      try {
+        const response = await fetch('data/admissions.json', {cache:'no-cache', signal:controller.signal});
+        if (!response.ok) throw new Error('Admissions unavailable');
+        const data = await response.json();
+        if (!data || !Array.isArray(data.items) || !data.items.every(item => item && typeof item.id === 'string' && ['undergraduate','graduate'].includes(item.level))) throw new Error('Invalid admissions data');
+        admissionsData = data;
+        admissionsLoadFailed = false;
+        lastAdmissionsLoad = Date.now();
+        renderAdmissions();
+      } catch (_) {
+        admissionsLoadFailed = true;
+        if (admissionsData) renderAdmissions();
+        else renderAdmissionsError();
+      } finally {
+        clearTimeout(timeout);
+        pendingAdmissions = null;
+      }
+    })();
+    return pendingAdmissions;
+  }
   $$('[data-language]').forEach(button => button.addEventListener('click', () => applyLanguage(button.dataset.language, true)));
   $('.menu-toggle').addEventListener('click', () => setMenu($('.menu-toggle').getAttribute('aria-expanded') !== 'true'));
   $$('#main-nav a').forEach(link => link.addEventListener('click', () => setMenu(false)));
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && $('.menu-toggle').getAttribute('aria-expanded') === 'true') { setMenu(false); $('.menu-toggle').focus(); } });
   document.addEventListener('click', event => { if (!event.target.closest('.site-header')) setMenu(false); });
-  const wideScreen = matchMedia('(min-width:1101px)');
+  const wideScreen = matchMedia('(min-width:1201px)');
   if (wideScreen.addEventListener) wideScreen.addEventListener('change', () => setMenu(false));
   $('#topic-search').addEventListener('input', () => { if (catalog) renderTopics(); });
   window.addEventListener('hashchange', () => { const language = fromHash(); if (language) applyLanguage(language); });
@@ -258,8 +606,19 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => { if (entry.isIntersecting) $$('#main-nav a').forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`)); });
     }, {rootMargin:'-15% 0px -55% 0px',threshold:0});
-    ['topics','pathway','honors','contact'].forEach(id => observer.observe(document.getElementById(id)));
+    ['topics','pathway','applications','admissions','honors','contact'].forEach(id => observer.observe(document.getElementById(id)));
   }
+  $$('#admissions-filters [data-level]').forEach(button => button.addEventListener('click', () => {
+    selectedLevel = button.dataset.level;
+    $$('#admissions-filters [data-level]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.level === selectedLevel)));
+    if (admissionsData) renderAdmissions();
+  }));
+  const admissionsRefreshInterval = 60 * 60 * 1000;
+  setInterval(() => { if (!document.hidden) loadAdmissions(); }, admissionsRefreshInterval);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && Date.now() - lastAdmissionsLoad >= admissionsRefreshInterval) loadAdmissions();
+  });
   applyLanguage(currentLanguage);
   loadCatalog();
+  loadAdmissions();
 })();

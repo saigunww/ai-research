@@ -1,0 +1,15 @@
+[Unit]
+Description=Update Coach Academy research topics, acceptance posters and official admission requirements
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Documents/AI科研背景提升网页/github
+ExecStart=%h/Documents/大学院生化网页/.sync-venv/bin/python scripts/sync_and_publish.py --publish
+Environment=PYTHONUNBUFFERED=1
+Environment=GIT_TERMINAL_PROMPT=0
+UMask=0077
+TimeoutStartSec=15min
+
+[Install]
+WantedBy=default.target

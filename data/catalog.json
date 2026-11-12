@@ -4,46 +4,46 @@
     {
       "id": "life",
       "label": {
-        "zh-CN": "生命科学",
-        "zh-TW": "生命科學",
+        "en": "Life science",
         "ja": "生命科学",
-        "en": "Life science"
+        "zh-CN": "生命科学",
+        "zh-TW": "生命科學"
       }
     },
     {
       "id": "materials",
       "label": {
-        "zh-CN": "材料科学",
-        "zh-TW": "材料科學",
+        "en": "Materials science",
         "ja": "材料科学",
-        "en": "Materials science"
+        "zh-CN": "材料科学",
+        "zh-TW": "材料科學"
       }
     },
     {
       "id": "robotics",
       "label": {
-        "zh-CN": "机器人与工程",
-        "zh-TW": "機器人與工程",
+        "en": "Robotics & engineering",
         "ja": "ロボット・工学",
-        "en": "Robotics & engineering"
+        "zh-CN": "机器人与工程",
+        "zh-TW": "機器人與工程"
       }
     },
     {
       "id": "society",
       "label": {
-        "zh-CN": "社会与行为",
-        "zh-TW": "社會與行為",
+        "en": "Society & behavior",
         "ja": "社会・行動",
-        "en": "Society & behavior"
+        "zh-CN": "社会与行为",
+        "zh-TW": "社會與行為"
       }
     },
     {
       "id": "health",
       "label": {
-        "zh-CN": "健康与医学",
-        "zh-TW": "健康與醫學",
+        "en": "Health & medicine",
         "ja": "健康・医療",
-        "en": "Health & medicine"
+        "zh-CN": "健康与医学",
+        "zh-TW": "健康與醫學"
       }
     }
   ],
@@ -53,18 +53,28 @@
       "category": "life",
       "stage": "practice",
       "title": {
-        "zh-CN": "RNA 与生物信息学",
-        "zh-TW": "RNA 與生物資訊學",
+        "en": "RNA & bioinformatics",
         "ja": "RNA・バイオインフォマティクス",
-        "en": "RNA & bioinformatics"
+        "zh-CN": "RNA 与生物信息学",
+        "zh-TW": "RNA 與生物資訊學"
       },
       "summary": {
-        "zh-CN": "围绕生命信息学方向，训练生物数据理解、结果判读与科研表达能力。",
-        "zh-TW": "圍繞生命資訊學方向，訓練生物資料理解、結果判讀與科研表達能力。",
+        "en": "Build skills in understanding biological data, interpreting findings and communicating research through bioinformatics.",
         "ja": "生命情報学を題材に、生物データの理解、結果の読み取り、研究を伝える力を養います。",
-        "en": "Build skills in understanding biological data, interpreting findings and communicating research through bioinformatics."
+        "zh-CN": "围绕生命信息学方向，训练生物数据理解、结果判读与科研表达能力。",
+        "zh-TW": "圍繞生命資訊學方向，訓練生物資料理解、結果判讀與科研表達能力。"
       },
       "tags": {
+        "en": [
+          "Life science",
+          "Data literacy",
+          "Research communication"
+        ],
+        "ja": [
+          "生命科学",
+          "データ理解",
+          "研究発表"
+        ],
         "zh-CN": [
           "生命科学",
           "数据理解",
@@ -74,36 +84,37 @@
           "生命科學",
           "資料理解",
           "科研表達"
-        ],
-        "ja": [
-          "生命科学",
-          "データ理解",
-          "研究発表"
-        ],
-        "en": [
-          "Life science",
-          "Data literacy",
-          "Research communication"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "immunoinformatics",
       "category": "life",
       "stage": "practice",
       "title": {
-        "zh-CN": "免疫信息学",
-        "zh-TW": "免疫資訊學",
+        "en": "Immunoinformatics",
         "ja": "免疫情報学",
-        "en": "Immunoinformatics"
+        "zh-CN": "免疫信息学",
+        "zh-TW": "免疫資訊學"
       },
       "summary": {
-        "zh-CN": "结合免疫学与数据科学，学习提出问题、审视证据与说明分析边界。",
-        "zh-TW": "結合免疫學與資料科學，學習提出問題、審視證據與說明分析邊界。",
+        "en": "Connect immunology and data science while learning to frame questions, assess evidence and explain analytical limitations.",
         "ja": "免疫学とデータ科学を結び、問いを立て、根拠と分析の限界を説明する力を養います。",
-        "en": "Connect immunology and data science while learning to frame questions, assess evidence and explain analytical limitations."
+        "zh-CN": "结合免疫学与数据科学，学习提出问题、审视证据与说明分析边界。",
+        "zh-TW": "結合免疫學與資料科學，學習提出問題、審視證據與說明分析邊界。"
       },
       "tags": {
+        "en": [
+          "Immunology",
+          "Evidence",
+          "Critical thinking"
+        ],
+        "ja": [
+          "免疫学",
+          "根拠の分析",
+          "批判的思考"
+        ],
         "zh-CN": [
           "免疫学",
           "证据分析",
@@ -113,36 +124,37 @@
           "免疫學",
           "證據分析",
           "批判思考"
-        ],
-        "ja": [
-          "免疫学",
-          "根拠の分析",
-          "批判的思考"
-        ],
-        "en": [
-          "Immunology",
-          "Evidence",
-          "Critical thinking"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "single-cell-data",
       "category": "life",
       "stage": "practice",
       "title": {
-        "zh-CN": "单细胞与细胞数据",
-        "zh-TW": "單細胞與細胞資料",
+        "en": "Single-cell & cellular data",
         "ja": "シングルセル・細胞データ",
-        "en": "Single-cell & cellular data"
+        "zh-CN": "单细胞与细胞数据",
+        "zh-TW": "單細胞與細胞資料"
       },
       "summary": {
-        "zh-CN": "从细胞数据认识生命科学问题，培养数据阅读、比较分析与清晰汇报能力。",
-        "zh-TW": "從細胞資料認識生命科學問題，培養資料閱讀、比較分析與清晰彙報能力。",
+        "en": "Explore life-science questions through cellular data and develop data-reading, comparison and reporting skills.",
         "ja": "細胞データから生命科学の問いに触れ、データ読解、比較、明確な報告を学びます。",
-        "en": "Explore life-science questions through cellular data and develop data-reading, comparison and reporting skills."
+        "zh-CN": "从细胞数据认识生命科学问题，培养数据阅读、比较分析与清晰汇报能力。",
+        "zh-TW": "從細胞資料認識生命科學問題，培養資料閱讀、比較分析與清晰彙報能力。"
       },
       "tags": {
+        "en": [
+          "Cell biology",
+          "Data literacy",
+          "Comparison"
+        ],
+        "ja": [
+          "細胞生物学",
+          "データ読解",
+          "比較分析"
+        ],
         "zh-CN": [
           "细胞生物学",
           "数据阅读",
@@ -152,36 +164,37 @@
           "細胞生物學",
           "資料閱讀",
           "比較分析"
-        ],
-        "ja": [
-          "細胞生物学",
-          "データ読解",
-          "比較分析"
-        ],
-        "en": [
-          "Cell biology",
-          "Data literacy",
-          "Comparison"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "biomedical-materials",
       "category": "materials",
       "stage": "practice",
       "title": {
-        "zh-CN": "生物医用材料与 AI",
-        "zh-TW": "生物醫用材料與 AI",
+        "en": "AI & biomedical materials",
         "ja": "生体医用材料と AI",
-        "en": "AI & biomedical materials"
+        "zh-CN": "生物医用材料与 AI",
+        "zh-TW": "生物醫用材料與 AI"
       },
       "summary": {
-        "zh-CN": "连接材料科学与生命健康，学习整理研究证据、理解材料数据与表达研究结论。",
-        "zh-TW": "連結材料科學與生命健康，學習整理研究證據、理解材料資料與表達研究結論。",
+        "en": "Connect materials science with health while learning to organize evidence, understand materials data and explain conclusions.",
         "ja": "材料科学と生命・健康を結び、研究の根拠整理、材料データの理解、結論の説明を学びます。",
-        "en": "Connect materials science with health while learning to organize evidence, understand materials data and explain conclusions."
+        "zh-CN": "连接材料科学与生命健康，学习整理研究证据、理解材料数据与表达研究结论。",
+        "zh-TW": "連結材料科學與生命健康，學習整理研究證據、理解材料資料與表達研究結論。"
       },
       "tags": {
+        "en": [
+          "Materials science",
+          "Interdisciplinary",
+          "Evidence"
+        ],
+        "ja": [
+          "材料科学",
+          "学際研究",
+          "根拠整理"
+        ],
         "zh-CN": [
           "材料科学",
           "交叉学科",
@@ -191,36 +204,37 @@
           "材料科學",
           "跨領域",
           "證據整理"
-        ],
-        "ja": [
-          "材料科学",
-          "学際研究",
-          "根拠整理"
-        ],
-        "en": [
-          "Materials science",
-          "Interdisciplinary",
-          "Evidence"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "ai-society-fairness",
       "category": "society",
       "stage": "practice",
       "title": {
-        "zh-CN": "AI 公平性与社会",
-        "zh-TW": "AI 公平性與社會",
+        "en": "AI fairness & society",
         "ja": "AI の公平性と社会",
-        "en": "AI fairness & society"
+        "zh-CN": "AI 公平性与社会",
+        "zh-TW": "AI 公平性與社會"
       },
       "summary": {
-        "zh-CN": "从社会议题理解 AI 的影响，练习问题定义、证据辨析与负责任的研究表达。",
-        "zh-TW": "從社會議題理解 AI 的影響，練習問題定義、證據辨析與負責任的研究表達。",
+        "en": "Examine AI through social questions while practicing problem definition, evidence assessment and responsible research communication.",
         "ja": "社会の課題から AI の影響を考え、問いの設定、根拠の吟味、責任ある研究発信を学びます。",
-        "en": "Examine AI through social questions while practicing problem definition, evidence assessment and responsible research communication."
+        "zh-CN": "从社会议题理解 AI 的影响，练习问题定义、证据辨析与负责任的研究表达。",
+        "zh-TW": "從社會議題理解 AI 的影響，練習問題定義、證據辨析與負責任的研究表達。"
       },
       "tags": {
+        "en": [
+          "Social science",
+          "AI literacy",
+          "Research ethics"
+        ],
+        "ja": [
+          "社会科学",
+          "AI リテラシー",
+          "研究倫理"
+        ],
         "zh-CN": [
           "社会科学",
           "AI 素养",
@@ -230,36 +244,37 @@
           "社會科學",
           "AI 素養",
           "研究倫理"
-        ],
-        "ja": [
-          "社会科学",
-          "AI リテラシー",
-          "研究倫理"
-        ],
-        "en": [
-          "Social science",
-          "AI literacy",
-          "Research ethics"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "animal-ai",
       "category": "society",
       "stage": "pilot",
       "title": {
-        "zh-CN": "动物行为与 AI",
-        "zh-TW": "動物行為與 AI",
+        "en": "Animal behavior & AI",
         "ja": "動物行動と AI",
-        "en": "Animal behavior & AI"
+        "zh-CN": "动物行为与 AI",
+        "zh-TW": "動物行為與 AI"
       },
       "summary": {
-        "zh-CN": "以人与动物的关系为入口，培养跨学科阅读、数据意识与审视技术宣传的能力。",
-        "zh-TW": "以人與動物的關係為入口，培養跨領域閱讀、資料意識與審視技術宣傳的能力。",
+        "en": "Use human–animal relationships to develop interdisciplinary reading, data awareness and critical understanding of technology claims.",
         "ja": "人と動物の関わりを入口に、学際的な読解、データへの意識、技術の宣伝を吟味する力を養います。",
-        "en": "Use human–animal relationships to develop interdisciplinary reading, data awareness and critical understanding of technology claims."
+        "zh-CN": "以人与动物的关系为入口，培养跨学科阅读、数据意识与审视技术宣传的能力。",
+        "zh-TW": "以人與動物的關係為入口，培養跨領域閱讀、資料意識與審視技術宣傳的能力。"
       },
       "tags": {
+        "en": [
+          "Animal behavior",
+          "Interdisciplinary",
+          "AI literacy"
+        ],
+        "ja": [
+          "動物行動",
+          "学際研究",
+          "AI リテラシー"
+        ],
         "zh-CN": [
           "动物行为",
           "跨学科",
@@ -269,36 +284,37 @@
           "動物行為",
           "跨領域",
           "AI 素養"
-        ],
-        "ja": [
-          "動物行動",
-          "学際研究",
-          "AI リテラシー"
-        ],
-        "en": [
-          "Animal behavior",
-          "Interdisciplinary",
-          "AI literacy"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "robotics-vision",
       "category": "robotics",
       "stage": "pilot",
       "title": {
-        "zh-CN": "机器人视觉与交互",
-        "zh-TW": "機器人視覺與互動",
+        "en": "Robot vision & interaction",
         "ja": "ロボット視覚とインタラクション",
-        "en": "Robot vision & interaction"
+        "zh-CN": "机器人视觉与交互",
+        "zh-TW": "機器人視覺與互動"
       },
       "summary": {
-        "zh-CN": "围绕智能机器人的感知与交互，训练工程问题拆解、观察分析与技术沟通能力。",
-        "zh-TW": "圍繞智慧機器人的感知與互動，訓練工程問題拆解、觀察分析與技術溝通能力。",
+        "en": "Explore robotic perception and interaction while developing engineering problem-framing, observation and technical communication skills.",
         "ja": "ロボットの認識と相互作用を題材に、工学的な問題整理、観察、技術の説明を学びます。",
-        "en": "Explore robotic perception and interaction while developing engineering problem-framing, observation and technical communication skills."
+        "zh-CN": "围绕智能机器人的感知与交互，训练工程问题拆解、观察分析与技术沟通能力。",
+        "zh-TW": "圍繞智慧機器人的感知與互動，訓練工程問題拆解、觀察分析與技術溝通能力。"
       },
       "tags": {
+        "en": [
+          "Robotics",
+          "Engineering thinking",
+          "Observation"
+        ],
+        "ja": [
+          "ロボット",
+          "工学的思考",
+          "観察と分析"
+        ],
         "zh-CN": [
           "机器人",
           "工程思维",
@@ -308,36 +324,37 @@
           "機器人",
           "工程思維",
           "觀察分析"
-        ],
-        "ja": [
-          "ロボット",
-          "工学的思考",
-          "観察と分析"
-        ],
-        "en": [
-          "Robotics",
-          "Engineering thinking",
-          "Observation"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "synthetic-biology",
       "category": "life",
       "stage": "proposal",
       "title": {
-        "zh-CN": "合成生物学与计算",
-        "zh-TW": "合成生物學與計算",
+        "en": "Synthetic biology & computing",
         "ja": "合成生物学と計算",
-        "en": "Synthetic biology & computing"
+        "zh-CN": "合成生物学与计算",
+        "zh-TW": "合成生物學與計算"
       },
       "summary": {
-        "zh-CN": "面向生物系统的计算研究，学习连接学科概念、组织证据与提出可讨论的问题。",
-        "zh-TW": "面向生物系統的計算研究，學習連結學科概念、組織證據與提出可討論的問題。",
+        "en": "Explore computational research on biological systems while learning to connect concepts, organize evidence and formulate questions.",
         "ja": "生体システムの計算研究を通じて、分野の概念を結び、根拠を整理し、問いを立てることを学びます。",
-        "en": "Explore computational research on biological systems while learning to connect concepts, organize evidence and formulate questions."
+        "zh-CN": "面向生物系统的计算研究，学习连接学科概念、组织证据与提出可讨论的问题。",
+        "zh-TW": "面向生物系統的計算研究，學習連結學科概念、組織證據與提出可討論的問題。"
       },
       "tags": {
+        "en": [
+          "Synthetic biology",
+          "Computational thinking",
+          "Question framing"
+        ],
+        "ja": [
+          "合成生物学",
+          "計算的思考",
+          "問いの設定"
+        ],
         "zh-CN": [
           "合成生物学",
           "计算思维",
@@ -347,36 +364,37 @@
           "合成生物學",
           "計算思維",
           "問題意識"
-        ],
-        "ja": [
-          "合成生物学",
-          "計算的思考",
-          "問いの設定"
-        ],
-        "en": [
-          "Synthetic biology",
-          "Computational thinking",
-          "Question framing"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "rna-design",
       "category": "life",
       "stage": "proposal",
       "title": {
-        "zh-CN": "RNA 设计与生命工程",
-        "zh-TW": "RNA 設計與生命工程",
+        "en": "RNA design & bioengineering",
         "ja": "RNA 設計と生命工学",
-        "en": "RNA design & bioengineering"
+        "zh-CN": "RNA 设计与生命工程",
+        "zh-TW": "RNA 設計與生命工程"
       },
       "summary": {
-        "zh-CN": "从生命工程方向了解计算研究，培养学科阅读、科学判断与研究讨论能力。",
-        "zh-TW": "從生命工程方向了解計算研究，培養學科閱讀、科學判斷與研究討論能力。",
+        "en": "Approach computational research through bioengineering and develop scientific reading, judgment and discussion skills.",
         "ja": "生命工学を入口に計算研究に触れ、専門文献の読解、科学的判断、研究討論の力を養います。",
-        "en": "Approach computational research through bioengineering and develop scientific reading, judgment and discussion skills."
+        "zh-CN": "从生命工程方向了解计算研究，培养学科阅读、科学判断与研究讨论能力。",
+        "zh-TW": "從生命工程方向了解計算研究，培養學科閱讀、科學判斷與研究討論能力。"
       },
       "tags": {
+        "en": [
+          "Bioengineering",
+          "Scientific judgment",
+          "Literature reading"
+        ],
+        "ja": [
+          "生命工学",
+          "科学的判断",
+          "文献読解"
+        ],
         "zh-CN": [
           "生命工程",
           "科学判断",
@@ -386,36 +404,37 @@
           "生命工程",
           "科學判斷",
           "文獻閱讀"
-        ],
-        "ja": [
-          "生命工学",
-          "科学的判断",
-          "文献読解"
-        ],
-        "en": [
-          "Bioengineering",
-          "Scientific judgment",
-          "Literature reading"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "language-robotics",
       "category": "robotics",
       "stage": "proposal",
       "title": {
-        "zh-CN": "语言与智能机器人",
-        "zh-TW": "語言與智慧機器人",
+        "en": "Language & intelligent robots",
         "ja": "言語と知能ロボット",
-        "en": "Language & intelligent robots"
+        "zh-CN": "语言与智能机器人",
+        "zh-TW": "語言與智慧機器人"
       },
       "summary": {
-        "zh-CN": "探索语言与机器人之间的联系，练习理解 AI 能力边界和清晰陈述工程问题。",
-        "zh-TW": "探索語言與機器人之間的連結，練習理解 AI 能力邊界和清晰陳述工程問題。",
+        "en": "Explore the link between language and robotics while learning to explain AI limitations and frame engineering questions.",
         "ja": "言語とロボットのつながりを考え、AI の能力の限界と工学的な問いを説明する力を養います。",
-        "en": "Explore the link between language and robotics while learning to explain AI limitations and frame engineering questions."
+        "zh-CN": "探索语言与机器人之间的联系，练习理解 AI 能力边界和清晰陈述工程问题。",
+        "zh-TW": "探索語言與機器人之間的連結，練習理解 AI 能力邊界和清晰陳述工程問題。"
       },
       "tags": {
+        "en": [
+          "Language & AI",
+          "Robotics",
+          "Question framing"
+        ],
+        "ja": [
+          "言語と AI",
+          "ロボット",
+          "問いの説明"
+        ],
         "zh-CN": [
           "语言与 AI",
           "机器人",
@@ -425,36 +444,37 @@
           "語言與 AI",
           "機器人",
           "問題表達"
-        ],
-        "ja": [
-          "言語と AI",
-          "ロボット",
-          "問いの説明"
-        ],
-        "en": [
-          "Language & AI",
-          "Robotics",
-          "Question framing"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "health-data",
       "category": "health",
       "stage": "proposal",
       "title": {
-        "zh-CN": "健康数据与医学 AI",
-        "zh-TW": "健康資料與醫學 AI",
+        "en": "Health data & medical AI",
         "ja": "健康データと医療 AI",
-        "en": "Health data & medical AI"
+        "zh-CN": "健康数据与医学 AI",
+        "zh-TW": "健康資料與醫學 AI"
       },
       "summary": {
-        "zh-CN": "以健康与医学议题为背景，学习数据素养、文献理解与谨慎解释研究结论。",
-        "zh-TW": "以健康與醫學議題為背景，學習資料素養、文獻理解與謹慎解釋研究結論。",
+        "en": "Use health and medical questions to develop data literacy, literature understanding and careful interpretation of findings.",
         "ja": "健康・医療の課題を背景に、データリテラシー、文献理解、慎重な結果の説明を学びます。",
-        "en": "Use health and medical questions to develop data literacy, literature understanding and careful interpretation of findings."
+        "zh-CN": "以健康与医学议题为背景，学习数据素养、文献理解与谨慎解释研究结论。",
+        "zh-TW": "以健康與醫學議題為背景，學習資料素養、文獻理解與謹慎解釋研究結論。"
       },
       "tags": {
+        "en": [
+          "Health science",
+          "Medical AI",
+          "Literature reading"
+        ],
+        "ja": [
+          "健康科学",
+          "医療 AI",
+          "文献理解"
+        ],
         "zh-CN": [
           "健康科学",
           "医学 AI",
@@ -464,36 +484,37 @@
           "健康科學",
           "醫學 AI",
           "文獻理解"
-        ],
-        "ja": [
-          "健康科学",
-          "医療 AI",
-          "文献理解"
-        ],
-        "en": [
-          "Health science",
-          "Medical AI",
-          "Literature reading"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "economics-data",
       "category": "society",
       "stage": "proposal",
       "title": {
-        "zh-CN": "经济与社会数据",
-        "zh-TW": "經濟與社會資料",
+        "en": "Economic & social data",
         "ja": "経済・社会データ",
-        "en": "Economic & social data"
+        "zh-CN": "经济与社会数据",
+        "zh-TW": "經濟與社會資料"
       },
       "summary": {
-        "zh-CN": "把经济与社会问题转化为研究兴趣，培养资料整理、数据阅读与有依据的表达能力。",
-        "zh-TW": "把經濟與社會問題轉化為研究興趣，培養資料整理、資料閱讀與有依據的表達能力。",
+        "en": "Turn economic and social questions into research interests while building information-organizing, data-reading and evidence-based communication skills.",
         "ja": "経済・社会の課題から研究の問いを考え、資料整理、データ読解、根拠に基づく説明を学びます。",
-        "en": "Turn economic and social questions into research interests while building information-organizing, data-reading and evidence-based communication skills."
+        "zh-CN": "把经济与社会问题转化为研究兴趣，培养资料整理、数据阅读与有依据的表达能力。",
+        "zh-TW": "把經濟與社會問題轉化為研究興趣，培養資料整理、資料閱讀與有依據的表達能力。"
       },
       "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence-based communication"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠ある説明"
+        ],
         "zh-CN": [
           "经济学",
           "社会数据",
@@ -503,18 +524,9 @@
           "經濟學",
           "社會資料",
           "證據表達"
-        ],
-        "ja": [
-          "経済学",
-          "社会データ",
-          "根拠ある説明"
-        ],
-        "en": [
-          "Economics",
-          "Social data",
-          "Evidence-based communication"
         ]
-      }
+      },
+      "updatedAt": "2026-11-12"
     }
   ],
   "honors": [

@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh AI research topics and admissions hourly
+
+[Timer]
+OnCalendar=*-*-* *:40:00 Asia/Tokyo
+Persistent=true
+RandomizedDelaySec=60
+Unit=ai-research-update.service
+
+[Install]
+WantedBy=timers.target
