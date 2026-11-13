@@ -1,11 +1,17 @@
 {
   "updatedAt": "2026-11-14",
-  "checkedAt": "2026-11-14T05:41:28+09:00",
+  "checkedAt": "2026-11-14T06:41:28+09:00",
   "items": [
     {
       "id": "kyoto-iup-activities-2027",
       "level": "undergraduate",
       "status": "verified",
+      "route": {
+        "en": "October 2027 admission",
+        "ja": "2027年10月入学者選抜",
+        "zh-CN": "2027年10月入学选考",
+        "zh-TW": "2027年10月入學選考"
+      },
       "summary": {
         "en": "Awards and extracurricular evidence may be submitted, but consideration is not guaranteed. This is not a mandatory research-experience requirement.",
         "ja": "学術表彰・課外活動の追加資料は提出可能。ただし審査対象となる保証はなく、研究実績の必須条件ではありません。",
@@ -30,16 +36,10 @@
         "zh-CN": "符合学历条件的非日本籍申请者；入学时须满足留学在留资格等规定。",
         "zh-TW": "符合學歷條件的非日本籍申請者；入學時須滿足留學在留資格等規定。"
       },
-      "route": {
-        "en": "October 2027 admission",
-        "ja": "2027年10月入学者選抜",
-        "zh-CN": "2027年10月入学选考",
-        "zh-TW": "2027年10月入學選考"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://www.iup.kyoto-u.ac.jp/faq/application-documents/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Optional evidence",
@@ -63,6 +63,12 @@
       "id": "tohoku-gateway-research-2027",
       "level": "undergraduate",
       "status": "verified",
+      "route": {
+        "en": "Term II fall admission: STEM / Humanities & Social Sciences",
+        "ja": "Ⅱ期・秋入学（STEM／人文社会）",
+        "zh-CN": "Term II 秋季入学（STEM／人文社会）",
+        "zh-TW": "Term II 秋季入學（STEM／人文社會）"
+      },
       "summary": {
         "en": "Research enthusiasm and independent inquiry are valued. Interviews assess creativity, communication and motivation; these aims are not a universal prior-publication prerequisite.",
         "ja": "研究への意欲、自ら問いを立てる姿勢を重視。面接では創造性・対話力・学習意欲を評価し、論文実績を一律の出願資格にはしていません。",
@@ -87,16 +93,10 @@
         "zh-CN": "符合要项资格者；该通道主要面向日本高中体系以外教育背景，含国际学生。",
         "zh-TW": "符合要項資格者；該通道主要面向日本高中體系以外教育背景，含國際學生。"
       },
-      "route": {
-        "en": "Term II fall admission: STEM / Humanities & Social Sciences",
-        "ja": "Ⅱ期・秋入学（STEM／人文社会）",
-        "zh-CN": "Term II 秋季入学（STEM／人文社会）",
-        "zh-TW": "Term II 秋季入學（STEM／人文社會）"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://admissions.tohoku.ac.jp/en/adcms/wp-content/uploads/2026/08/ApplicationGuideGWC2027Fall.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Selection policy",
@@ -120,6 +120,12 @@
       "id": "tsukuba-bpgi-studyplan-2027",
       "level": "undergraduate",
       "status": "verified",
+      "route": {
+        "en": "General Track / optional combined MEXT track",
+        "ja": "一般枠・国費併願枠",
+        "zh-CN": "General Track／可并申MEXT通道",
+        "zh-TW": "General Track／可並申MEXT通道"
+      },
       "summary": {
         "en": "All applicants submit a self-researched study plan explaining an issue and their intended learning approach, with citations. This demonstrates inquiry planning rather than completed research achievements.",
         "ja": "全員が学習計画書を提出し、関心のある地球規模課題と学び方を説明。自ら調査・執筆し出典を示すことが必要です。",
@@ -144,16 +150,10 @@
         "zh-CN": "满足海外中等教育或指定资格等要求者；日本籍、永住者及奖学金另有条件。",
         "zh-TW": "滿足海外中等教育或指定資格等要求者；日本籍、永住者及獎學金另有條件。"
       },
-      "route": {
-        "en": "General Track / optional combined MEXT track",
-        "ja": "一般枠・国費併願枠",
-        "zh-CN": "General Track／可并申MEXT通道",
-        "zh-TW": "General Track／可並申MEXT通道"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://bpgi.tsukuba.ac.jp/en/wp-content/uploads/2026/07/500c89d22064ed5262b38e2f9037440c.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Required study plan",
@@ -177,6 +177,12 @@
       "id": "waseda-taisi-experience-2027",
       "level": "undergraduate",
       "status": "verified",
+      "route": {
+        "en": "English-based September 2027 admission",
+        "ja": "英語学位プログラム・2027年9月入学",
+        "zh-CN": "英语学位课程 2027年9月入学",
+        "zh-TW": "英語學位課程 2027年9月入學"
+      },
       "summary": {
         "en": "Applicants connect personal experience to a social issue they wish to address and may document up to three related achievements. These need not be research achievements.",
         "ja": "志望説明では自身の経験と取り組みたい社会課題を関連づけます。関連実績は最大3件、証明資料を提出可能。研究歴に限定されません。",
@@ -201,16 +207,10 @@
         "zh-CN": "面向满足要项学历条件的各国申请者；日本和非日本教育体系各有资格规定。",
         "zh-TW": "面向滿足要項學歷條件的各國申請者；日本和非日本教育體系各有資格規定。"
       },
-      "route": {
-        "en": "English-based September 2027 admission",
-        "ja": "英語学位プログラム・2027年9月入学",
-        "zh-CN": "英语学位课程 2027年9月入学",
-        "zh-TW": "英語學位課程 2027年9月入學"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://www.waseda.jp/fsss/sss/assets/uploads/2026/09/01_2027_Application_Guidelines_v1.0.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Experience narrative",
@@ -234,6 +234,12 @@
       "id": "utokyo-cbms-masters-plan-2027",
       "level": "graduate",
       "status": "verified",
+      "route": {
+        "en": "Master’s general selection (Schedules A / B)",
+        "ja": "修士課程・一般選抜（A／B日程）",
+        "zh-CN": "修士 一般选拔（A／B日程）",
+        "zh-TW": "修士 一般選拔（A／B日程）"
+      },
       "summary": {
         "en": "A research plan is assessed; field-switchers may describe relevant knowledge and skills. Consult the intended supervisor, but do not send this plan to them before applying.",
         "ja": "研究計画書を提出・審査。分野変更時は既習内容・技能の記述も可能。教員に事前相談しつつ、出願前に当該計画書を送付することは禁止。",
@@ -258,16 +264,10 @@
         "zh-CN": "符合修士资格者，含外国籍；本专攻不实施外国人等特别选考。海外外国籍者另核对入学时期。",
         "zh-TW": "符合修士資格者，含外國籍；本專攻不實施外國人等特別選考。海外外國籍者另核對入學時期。"
       },
-      "route": {
-        "en": "Master’s general selection (Schedules A / B)",
-        "ja": "修士課程・一般選抜（A／B日程）",
-        "zh-CN": "修士 一般选拔（A／B日程）",
-        "zh-TW": "修士 一般選拔（A／B日程）"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://www.cbms.k.u-tokyo.ac.jp/media/files/admission/2027_CBMS_Guidelines_J.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Required research plan",
@@ -291,6 +291,12 @@
       "id": "utokyo-integrated-biosciences-2027b",
       "level": "graduate",
       "status": "verified",
+      "route": {
+        "en": "AY2027 Schedule B: special master’s selection for international applicants and others",
+        "ja": "2027年度B日程・修士外国人等特別選考",
+        "zh-CN": "2027年度B日程 修士外国人等特别选考",
+        "zh-TW": "2027年度B日程 修士外國人等特別選考"
+      },
       "summary": {
         "en": "Consult the intended supervisor and obtain a completed contact certificate before applying. Oral assessment covers subject understanding, knowledge, originality and communication.",
         "ja": "出願前に希望教員へ研究内容を相談し、連絡証明への記入を依頼。口述では専門理解・知識・独創性・対話力などを評価します。",
@@ -315,16 +321,10 @@
         "zh-CN": "仅符合外国人等特别选考资格的修士申请者；B日程不招一般选拔修士。",
         "zh-TW": "僅符合外國人等特別選考資格的修士申請者；B日程不招一般選拔修士。"
       },
-      "route": {
-        "en": "AY2027 Schedule B: special master’s selection for international applicants and others",
-        "ja": "2027年度B日程・修士外国人等特別選考",
-        "zh-CN": "2027年度B日程 修士外国人等特别选考",
-        "zh-TW": "2027年度B日程 修士外國人等特別選考"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://www.ib.k.u-tokyo.ac.jp/admission/2027information/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Required contact certificate",
@@ -348,6 +348,12 @@
       "id": "science-tokyo-igpa-consent-2027",
       "level": "graduate",
       "status": "verified",
+      "route": {
+        "en": "Fall 2027 master’s / integrated doctoral admission",
+        "ja": "2027年秋入学・修士／修博一貫",
+        "zh-CN": "2027秋季 修士／修博一贯课程",
+        "zh-TW": "2027秋季 修士／修博一貫課程"
+      },
       "summary": {
         "en": "Contact a listed supervisor and obtain consent before applying. Applications without supervisor consent are not considered; consent is distinct from a blanket prior-publication requirement.",
         "ja": "出願前に希望教員へ直接連絡し、受入同意書を取得。教員の同意がない出願は審査対象外です。既存論文の一律要件とは別です。",
@@ -372,16 +378,10 @@
         "zh-CN": "符合IGP(A)学历资格者；日本籍另有海外居留等条件，课程和导师须属指定名单。",
         "zh-TW": "符合IGP(A)學歷資格者；日本籍另有海外居留等條件，課程和導師須屬指定名單。"
       },
-      "route": {
-        "en": "Fall 2027 master’s / integrated doctoral admission",
-        "ja": "2027年秋入学・修士／修博一貫",
-        "zh-CN": "2027秋季 修士／修博一贯课程",
-        "zh-TW": "2027秋季 修士／修博一貫課程"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Supervisor consent required",
@@ -405,6 +405,12 @@
       "id": "tohoku-life-masters-consent-2027",
       "level": "graduate",
       "status": "verified",
+      "route": {
+        "en": "Third-term selection for April 2027 entry",
+        "ja": "2027年4月入学・Ⅲ期募集",
+        "zh-CN": "2027年4月入学 第III期",
+        "zh-TW": "2027年4月入學 第III期"
+      },
       "summary": {
         "en": "Submit an email or document confirming supervisor consent. Early discussion of research fit is recommended; selection uses document screening and an interview.",
         "ja": "受入予定教員の同意を示すメール・書面の写しが必要。早期に研究関心を相談し、書類審査と面接で選考します。",
@@ -429,16 +435,10 @@
         "zh-CN": "一般及社会人、归国学生、外国人特别选拔；须满足所选类别资格并确认当期募集领域。",
         "zh-TW": "一般及社會人、歸國學生、外國人特別選拔；須滿足所選類別資格並確認當期募集領域。"
       },
-      "route": {
-        "en": "Third-term selection for April 2027 entry",
-        "ja": "2027年4月入学・Ⅲ期募集",
-        "zh-CN": "2027年4月入学 第III期",
-        "zh-TW": "2027年4月入學 第III期"
-      },
       "academicYear": "2027",
       "sourceUrl": "https://www.lifesci.tohoku.ac.jp/en/admission/schedule/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-14T05:41:28+09:00",
+      "checkedAt": "2026-11-14T06:41:28+09:00",
       "tags": {
         "en": [
           "Evidence of consent",
