@@ -1,6 +1,6 @@
 # 行知学园 · AI 科研背景提升
 
-公开网站：https://saigunww.github.io/ai-research/
+公开网站：https://ai-research.coach-ai-assist.com/
 
 单页网站提供研究方向目录、科研实践路径、升学申请中的经历表达、官方大学招生要求动态、合格成果和咨询方式，支持简体中文、繁体中文、日语与英语。
 
