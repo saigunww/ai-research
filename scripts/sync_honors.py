@@ -157,7 +157,7 @@ def _new_honor(row: dict) -> dict:
         "id": "ai-admission-" + row["source_id"][:20],
         "year": row["year"], "student": row["student"],
         "university": label, "school": empty.copy(), "department": empty.copy(),
-        "program": {"zh-CN": "AI科研背景提升", "zh-TW": "AI科研背景提升", "ja": "AI研究実践プログラム", "en": "AI Research Program"},
+        "program": {"zh-CN": "科研背景提升", "zh-TW": "科研背景提升", "ja": "研究実践プログラム", "en": "Research Program"},
     }
 
 

@@ -1,4 +1,4 @@
-# 行知学园 · AI 科研背景提升
+# 行知学园 · 科研背景提升
 
 公开网站：https://ai-research.coach-ai-assist.com/
 
