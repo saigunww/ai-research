@@ -347,7 +347,6 @@ html[lang] .topic-card h3{font-size:23px;line-height:1.55;margin-bottom:15px}
 .program-2{--program-accent:#557fa8}.program-3{--program-accent:#897fae}.program-4{--program-accent:#ab8c62}
 .program-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:24px}
 .program-number{font:14px monospace;color:var(--program-accent);padding-top:3px}
-.program-period{font-size:13px;line-height:1.6;color:#557084;background:#f1f5f8;border:1px solid #e4ebf0;border-radius:4px;padding:3px 8px;text-align:right}
 .program-label{font-size:10px;line-height:1.6;letter-spacing:.08em;font-weight:600;color:var(--program-accent);margin-bottom:10px}
 .program-card h3{font-size:26px;line-height:1.5;letter-spacing:-.02em;font-weight:650;min-height:39px}
 .program-lead{font-size:17px;color:#3a566d;line-height:1.85;margin:13px 0 12px;min-height:63px}
