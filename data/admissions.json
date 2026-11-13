@@ -1,34 +1,22 @@
 {
   "updatedAt": "2026-11-13",
-  "checkedAt": "2026-11-13T11:01:31+09:00",
+  "checkedAt": "2026-11-13T11:17:59+09:00",
   "items": [
     {
       "id": "kyoto-iup-activities-2027",
       "level": "undergraduate",
       "status": "verified",
-      "scope": {
-        "en": "Eligible non-Japanese applicants; residence-status and educational conditions apply.",
-        "ja": "学歴要件を満たす外国籍志願者。在留資格等の条件あり。",
-        "zh-CN": "符合学历条件的非日本籍申请者；入学时须满足留学在留资格等规定。",
-        "zh-TW": "符合學歷條件的非日本籍申請者；入學時須滿足留學在留資格等規定。"
-      },
-      "summary": {
-        "en": "Awards and extracurricular evidence may be submitted, but consideration is not guaranteed. This is not a mandatory research-experience requirement.",
-        "ja": "学術表彰・課外活動の追加資料は提出可能。ただし審査対象となる保証はなく、研究実績の必須条件ではありません。",
-        "zh-CN": "可补充学术获奖和课外活动证明；官方明确不保证这些补充材料会被纳入审查，不能视为必备科研条件。",
-        "zh-TW": "可補充學術獲獎和課外活動證明；官方明確不保證這些補充材料會被納入審查，不能視為必備科研條件。"
-      },
       "route": {
         "en": "October 2027 admission",
         "ja": "2027年10月入学者選抜",
         "zh-CN": "2027年10月入学选考",
         "zh-TW": "2027年10月入學選考"
       },
-      "program": {
-        "en": "Kyoto iUP",
-        "ja": "Kyoto iUP（学部）",
-        "zh-CN": "Kyoto iUP 国际本科项目",
-        "zh-TW": "Kyoto iUP 國際本科項目"
+      "scope": {
+        "en": "Eligible non-Japanese applicants; residence-status and educational conditions apply.",
+        "ja": "学歴要件を満たす外国籍志願者。在留資格等の条件あり。",
+        "zh-CN": "符合学历条件的非日本籍申请者；入学时须满足留学在留资格等规定。",
+        "zh-TW": "符合學歷條件的非日本籍申請者；入學時須滿足留學在留資格等規定。"
       },
       "university": {
         "en": "Kyoto University",
@@ -36,10 +24,22 @@
         "zh-CN": "京都大学",
         "zh-TW": "京都大學"
       },
+      "program": {
+        "en": "Kyoto iUP",
+        "ja": "Kyoto iUP（学部）",
+        "zh-CN": "Kyoto iUP 国际本科项目",
+        "zh-TW": "Kyoto iUP 國際本科項目"
+      },
+      "summary": {
+        "en": "Awards and extracurricular evidence may be submitted, but consideration is not guaranteed. This is not a mandatory research-experience requirement.",
+        "ja": "学術表彰・課外活動の追加資料は提出可能。ただし審査対象となる保証はなく、研究実績の必須条件ではありません。",
+        "zh-CN": "可补充学术获奖和课外活动证明；官方明确不保证这些补充材料会被纳入审查，不能视为必备科研条件。",
+        "zh-TW": "可補充學術獲獎和課外活動證明；官方明確不保證這些補充材料會被納入審查，不能視為必備科研條件。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://www.iup.kyoto-u.ac.jp/faq/application-documents/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Optional evidence",
@@ -63,29 +63,17 @@
       "id": "tohoku-gateway-research-2027",
       "level": "undergraduate",
       "status": "verified",
-      "scope": {
-        "en": "Primarily applicants educated outside Japan’s high-school system, including international students; eligibility rules apply.",
-        "ja": "主に日本の高校制度以外で学んだ志願者。留学生を含み、出願資格の確認が必要。",
-        "zh-CN": "符合要项资格者；该通道主要面向日本高中体系以外教育背景，含国际学生。",
-        "zh-TW": "符合要項資格者；該通道主要面向日本高中體系以外教育背景，含國際學生。"
-      },
-      "summary": {
-        "en": "Research enthusiasm and independent inquiry are valued. Interviews assess creativity, communication and motivation; these aims are not a universal prior-publication prerequisite.",
-        "ja": "研究への意欲、自ら問いを立てる姿勢を重視。面接では創造性・対話力・学習意欲を評価し、論文実績を一律の出願資格にはしていません。",
-        "zh-CN": "重视研究热情、自主提出问题和跨领域学习意愿；面试评价创造力、沟通与学习动机。招生方针并非已有论文的资格门槛。",
-        "zh-TW": "重視研究熱情、自主提出問題和跨領域學習意願；面試評價創造力、溝通與學習動機。招生方針並非已有論文的資格門檻。"
-      },
       "route": {
         "en": "Term II fall admission: STEM / Humanities & Social Sciences",
         "ja": "Ⅱ期・秋入学（STEM／人文社会）",
         "zh-CN": "Term II 秋季入学（STEM／人文社会）",
         "zh-TW": "Term II 秋季入學（STEM／人文社會）"
       },
-      "program": {
-        "en": "Gateway College",
-        "ja": "ゲートウェイカレッジ",
-        "zh-CN": "Gateway College",
-        "zh-TW": "Gateway College"
+      "scope": {
+        "en": "Primarily applicants educated outside Japan’s high-school system, including international students; eligibility rules apply.",
+        "ja": "主に日本の高校制度以外で学んだ志願者。留学生を含み、出願資格の確認が必要。",
+        "zh-CN": "符合要项资格者；该通道主要面向日本高中体系以外教育背景，含国际学生。",
+        "zh-TW": "符合要項資格者；該通道主要面向日本高中體系以外教育背景，含國際學生。"
       },
       "university": {
         "en": "Tohoku University",
@@ -93,10 +81,22 @@
         "zh-CN": "东北大学",
         "zh-TW": "東北大學"
       },
+      "program": {
+        "en": "Gateway College",
+        "ja": "ゲートウェイカレッジ",
+        "zh-CN": "Gateway College",
+        "zh-TW": "Gateway College"
+      },
+      "summary": {
+        "en": "Research enthusiasm and independent inquiry are valued. Interviews assess creativity, communication and motivation; these aims are not a universal prior-publication prerequisite.",
+        "ja": "研究への意欲、自ら問いを立てる姿勢を重視。面接では創造性・対話力・学習意欲を評価し、論文実績を一律の出願資格にはしていません。",
+        "zh-CN": "重视研究热情、自主提出问题和跨领域学习意愿；面试评价创造力、沟通与学习动机。招生方针并非已有论文的资格门槛。",
+        "zh-TW": "重視研究熱情、自主提出問題和跨領域學習意願；面試評價創造力、溝通與學習動機。招生方針並非已有論文的資格門檻。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://admissions.tohoku.ac.jp/en/adcms/wp-content/uploads/2026/08/ApplicationGuideGWC2027Fall.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Selection policy",
@@ -120,29 +120,17 @@
       "id": "tsukuba-bpgi-studyplan-2027",
       "level": "undergraduate",
       "status": "verified",
-      "scope": {
-        "en": "Eligible overseas-school or designated-qualification applicants; extra conditions apply to Japanese nationals, permanent residents and MEXT applicants.",
-        "ja": "海外中等教育・指定資格等の要件を満たす者。日本国籍・永住者や国費併願には追加条件あり。",
-        "zh-CN": "满足海外中等教育或指定资格等要求者；日本籍、永住者及奖学金另有条件。",
-        "zh-TW": "滿足海外中等教育或指定資格等要求者；日本籍、永住者及獎學金另有條件。"
-      },
-      "summary": {
-        "en": "All applicants submit a self-researched study plan explaining an issue and their intended learning approach, with citations. This demonstrates inquiry planning rather than completed research achievements.",
-        "ja": "全員が学習計画書を提出し、関心のある地球規模課題と学び方を説明。自ら調査・執筆し出典を示すことが必要です。",
-        "zh-CN": "全员提交学习计划，阐明学术兴趣、一个全球问题及拟学习路径；须自行调研撰写并注明引文。属于探究规划要求，不等于已有科研成果。",
-        "zh-TW": "全員提交學習計畫，闡明學術興趣、一個全球問題及擬學習路徑；須自行調研撰寫並註明引文。屬於探究規劃要求，不等於已有科研成果。"
-      },
       "route": {
         "en": "General Track / optional combined MEXT track",
         "ja": "一般枠・国費併願枠",
         "zh-CN": "General Track／可并申MEXT通道",
         "zh-TW": "General Track／可並申MEXT通道"
       },
-      "program": {
-        "en": "Bachelor’s Program in Global Issues (BPGI)",
-        "ja": "地球規模課題学位プログラム（学士）",
-        "zh-CN": "全球课题学士项目 BPGI",
-        "zh-TW": "全球課題學士項目 BPGI"
+      "scope": {
+        "en": "Eligible overseas-school or designated-qualification applicants; extra conditions apply to Japanese nationals, permanent residents and MEXT applicants.",
+        "ja": "海外中等教育・指定資格等の要件を満たす者。日本国籍・永住者や国費併願には追加条件あり。",
+        "zh-CN": "满足海外中等教育或指定资格等要求者；日本籍、永住者及奖学金另有条件。",
+        "zh-TW": "滿足海外中等教育或指定資格等要求者；日本籍、永住者及獎學金另有條件。"
       },
       "university": {
         "en": "University of Tsukuba",
@@ -150,10 +138,22 @@
         "zh-CN": "筑波大学",
         "zh-TW": "筑波大學"
       },
+      "program": {
+        "en": "Bachelor’s Program in Global Issues (BPGI)",
+        "ja": "地球規模課題学位プログラム（学士）",
+        "zh-CN": "全球课题学士项目 BPGI",
+        "zh-TW": "全球課題學士項目 BPGI"
+      },
+      "summary": {
+        "en": "All applicants submit a self-researched study plan explaining an issue and their intended learning approach, with citations. This demonstrates inquiry planning rather than completed research achievements.",
+        "ja": "全員が学習計画書を提出し、関心のある地球規模課題と学び方を説明。自ら調査・執筆し出典を示すことが必要です。",
+        "zh-CN": "全员提交学习计划，阐明学术兴趣、一个全球问题及拟学习路径；须自行调研撰写并注明引文。属于探究规划要求，不等于已有科研成果。",
+        "zh-TW": "全員提交學習計畫，闡明學術興趣、一個全球問題及擬學習路徑；須自行調研撰寫並註明引文。屬於探究規劃要求，不等於已有科研成果。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://bpgi.tsukuba.ac.jp/en/wp-content/uploads/2026/07/500c89d22064ed5262b38e2f9037440c.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Required study plan",
@@ -177,29 +177,17 @@
       "id": "waseda-taisi-experience-2027",
       "level": "undergraduate",
       "status": "verified",
-      "scope": {
-        "en": "Applicants worldwide meeting the educational criteria; separate provisions cover Japanese and other education systems.",
-        "ja": "各国の志願者が対象。日本・外国の教育制度別に学歴要件を確認。",
-        "zh-CN": "面向满足要项学历条件的各国申请者；日本和非日本教育体系各有资格规定。",
-        "zh-TW": "面向滿足要項學歷條件的各國申請者；日本和非日本教育體系各有資格規定。"
-      },
-      "summary": {
-        "en": "Applicants connect personal experience to a social issue they wish to address and may document up to three related achievements. These need not be research achievements.",
-        "ja": "志望説明では自身の経験と取り組みたい社会課題を関連づけます。関連実績は最大3件、証明資料を提出可能。研究歴に限定されません。",
-        "zh-CN": "申请说明需联系自身经历与想解决的社会问题；可列最多3项相关成果并上传证明。科研、志愿活动或获奖并非统一的指定经历。",
-        "zh-TW": "申請說明需聯繫自身經歷與想解決的社會問題；可列最多3項相關成果並上傳證明。科研、志願活動或獲獎並非統一的指定經歷。"
-      },
       "route": {
         "en": "English-based September 2027 admission",
         "ja": "英語学位プログラム・2027年9月入学",
         "zh-CN": "英语学位课程 2027年9月入学",
         "zh-TW": "英語學位課程 2027年9月入學"
       },
-      "program": {
-        "en": "School of Social Sciences: TAISI",
-        "ja": "社会科学部 TAISI",
-        "zh-CN": "社会科学部 TAISI",
-        "zh-TW": "社會科學部 TAISI"
+      "scope": {
+        "en": "Applicants worldwide meeting the educational criteria; separate provisions cover Japanese and other education systems.",
+        "ja": "各国の志願者が対象。日本・外国の教育制度別に学歴要件を確認。",
+        "zh-CN": "面向满足要项学历条件的各国申请者；日本和非日本教育体系各有资格规定。",
+        "zh-TW": "面向滿足要項學歷條件的各國申請者；日本和非日本教育體系各有資格規定。"
       },
       "university": {
         "en": "Waseda University",
@@ -207,10 +195,22 @@
         "zh-CN": "早稻田大学",
         "zh-TW": "早稻田大學"
       },
+      "program": {
+        "en": "School of Social Sciences: TAISI",
+        "ja": "社会科学部 TAISI",
+        "zh-CN": "社会科学部 TAISI",
+        "zh-TW": "社會科學部 TAISI"
+      },
+      "summary": {
+        "en": "Applicants connect personal experience to a social issue they wish to address and may document up to three related achievements. These need not be research achievements.",
+        "ja": "志望説明では自身の経験と取り組みたい社会課題を関連づけます。関連実績は最大3件、証明資料を提出可能。研究歴に限定されません。",
+        "zh-CN": "申请说明需联系自身经历与想解决的社会问题；可列最多3项相关成果并上传证明。科研、志愿活动或获奖并非统一的指定经历。",
+        "zh-TW": "申請說明需聯繫自身經歷與想解決的社會問題；可列最多3項相關成果並上傳證明。科研、志願活動或獲獎並非統一的指定經歷。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://www.waseda.jp/fsss/sss/assets/uploads/2026/09/01_2027_Application_Guidelines_v1.0.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Experience narrative",
@@ -234,29 +234,17 @@
       "id": "utokyo-cbms-masters-plan-2027",
       "level": "graduate",
       "status": "verified",
-      "scope": {
-        "en": "Eligible master’s applicants, including foreign nationals, use general selection; this department does not offer the special international selection route.",
-        "ja": "修士出願資格を満たす者。外国籍も一般選抜で受験。外国人等特別選考は実施しません。",
-        "zh-CN": "符合修士资格者，含外国籍；本专攻不实施外国人等特别选考。海外外国籍者另核对入学时期。",
-        "zh-TW": "符合修士資格者，含外國籍；本專攻不實施外國人等特別選考。海外外國籍者另核對入學時期。"
-      },
-      "summary": {
-        "en": "A research plan is assessed; field-switchers may describe relevant knowledge and skills. Consult the intended supervisor, but do not send this plan to them before applying.",
-        "ja": "研究計画書を提出・審査。分野変更時は既習内容・技能の記述も可能。教員に事前相談しつつ、出願前に当該計画書を送付することは禁止。",
-        "zh-CN": "研究计划书必交并参与审查；转专业等情形可说明已学知识技能。须事前咨询导师，但禁止出愿前把该计划书发给志望导师。",
-        "zh-TW": "研究計畫書必交並參與審查；轉專業等情形可說明已學知識技能。須事前諮詢導師，但禁止出願前把該計畫書寄給志望導師。"
-      },
       "route": {
         "en": "Master’s general selection (Schedules A / B)",
         "ja": "修士課程・一般選抜（A／B日程）",
         "zh-CN": "修士 一般选拔（A／B日程）",
         "zh-TW": "修士 一般選拔（A／B日程）"
       },
-      "program": {
-        "en": "Graduate School of Frontier Sciences: Computational Biology and Medical Sciences",
-        "ja": "新領域創成科学研究科 メディカル情報生命専攻",
-        "zh-CN": "新领域创成科学研究科·医疗信息生命专攻",
-        "zh-TW": "新領域創成科學研究科·醫療資訊生命專攻"
+      "scope": {
+        "en": "Eligible master’s applicants, including foreign nationals, use general selection; this department does not offer the special international selection route.",
+        "ja": "修士出願資格を満たす者。外国籍も一般選抜で受験。外国人等特別選考は実施しません。",
+        "zh-CN": "符合修士资格者，含外国籍；本专攻不实施外国人等特别选考。海外外国籍者另核对入学时期。",
+        "zh-TW": "符合修士資格者，含外國籍；本專攻不實施外國人等特別選考。海外外國籍者另核對入學時期。"
       },
       "university": {
         "en": "The University of Tokyo",
@@ -264,10 +252,22 @@
         "zh-CN": "东京大学",
         "zh-TW": "東京大學"
       },
+      "program": {
+        "en": "Graduate School of Frontier Sciences: Computational Biology and Medical Sciences",
+        "ja": "新領域創成科学研究科 メディカル情報生命専攻",
+        "zh-CN": "新领域创成科学研究科·医疗信息生命专攻",
+        "zh-TW": "新領域創成科學研究科·醫療資訊生命專攻"
+      },
+      "summary": {
+        "en": "A research plan is assessed; field-switchers may describe relevant knowledge and skills. Consult the intended supervisor, but do not send this plan to them before applying.",
+        "ja": "研究計画書を提出・審査。分野変更時は既習内容・技能の記述も可能。教員に事前相談しつつ、出願前に当該計画書を送付することは禁止。",
+        "zh-CN": "研究计划书必交并参与审查；转专业等情形可说明已学知识技能。须事前咨询导师，但禁止出愿前把该计划书发给志望导师。",
+        "zh-TW": "研究計畫書必交並參與審查；轉專業等情形可說明已學知識技能。須事前諮詢導師，但禁止出願前把該計畫書寄給志望導師。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://www.cbms.k.u-tokyo.ac.jp/media/files/admission/2027_CBMS_Guidelines_J.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Required research plan",
@@ -291,29 +291,17 @@
       "id": "utokyo-integrated-biosciences-2027b",
       "level": "graduate",
       "status": "verified",
-      "scope": {
-        "en": "Master’s applicants qualifying for the special international-and-other category; no general master’s selection is offered in Schedule B.",
-        "ja": "外国人等特別選考の要件を満たす修士志願者。B日程では修士一般選抜なし。",
-        "zh-CN": "仅符合外国人等特别选考资格的修士申请者；B日程不招一般选拔修士。",
-        "zh-TW": "僅符合外國人等特別選考資格的修士申請者；B日程不招一般選拔修士。"
-      },
-      "summary": {
-        "en": "Consult the intended supervisor and obtain a completed contact certificate before applying. Oral assessment covers subject understanding, knowledge, originality and communication.",
-        "ja": "出願前に希望教員へ研究内容を相談し、連絡証明への記入を依頼。口述では専門理解・知識・独創性・対話力などを評価します。",
-        "zh-CN": "出愿前须与希望导师商谈研究内容，并请导师填写联系证明；口试评价专业理解、知识、独创性及沟通能力。",
-        "zh-TW": "出願前須與希望導師商談研究內容，並請導師填寫聯繫證明；口試評價專業理解、知識、獨創性及溝通能力。"
-      },
       "route": {
         "en": "AY2027 Schedule B: special master’s selection for international applicants and others",
         "ja": "2027年度B日程・修士外国人等特別選考",
         "zh-CN": "2027年度B日程 修士外国人等特别选考",
         "zh-TW": "2027年度B日程 修士外國人等特別選考"
       },
-      "program": {
-        "en": "Graduate School of Frontier Sciences: Integrated Biosciences",
-        "ja": "新領域創成科学研究科 先端生命科学専攻",
-        "zh-CN": "新领域创成科学研究科·先端生命科学专攻",
-        "zh-TW": "新領域創成科學研究科·先端生命科學專攻"
+      "scope": {
+        "en": "Master’s applicants qualifying for the special international-and-other category; no general master’s selection is offered in Schedule B.",
+        "ja": "外国人等特別選考の要件を満たす修士志願者。B日程では修士一般選抜なし。",
+        "zh-CN": "仅符合外国人等特别选考资格的修士申请者；B日程不招一般选拔修士。",
+        "zh-TW": "僅符合外國人等特別選考資格的修士申請者；B日程不招一般選拔修士。"
       },
       "university": {
         "en": "The University of Tokyo",
@@ -321,10 +309,22 @@
         "zh-CN": "东京大学",
         "zh-TW": "東京大學"
       },
+      "program": {
+        "en": "Graduate School of Frontier Sciences: Integrated Biosciences",
+        "ja": "新領域創成科学研究科 先端生命科学専攻",
+        "zh-CN": "新领域创成科学研究科·先端生命科学专攻",
+        "zh-TW": "新領域創成科學研究科·先端生命科學專攻"
+      },
+      "summary": {
+        "en": "Consult the intended supervisor and obtain a completed contact certificate before applying. Oral assessment covers subject understanding, knowledge, originality and communication.",
+        "ja": "出願前に希望教員へ研究内容を相談し、連絡証明への記入を依頼。口述では専門理解・知識・独創性・対話力などを評価します。",
+        "zh-CN": "出愿前须与希望导师商谈研究内容，并请导师填写联系证明；口试评价专业理解、知识、独创性及沟通能力。",
+        "zh-TW": "出願前須與希望導師商談研究內容，並請導師填寫聯繫證明；口試評價專業理解、知識、獨創性及溝通能力。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://www.ib.k.u-tokyo.ac.jp/admission/2027information/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Required contact certificate",
@@ -348,29 +348,17 @@
       "id": "science-tokyo-igpa-consent-2027",
       "level": "graduate",
       "status": "verified",
-      "scope": {
-        "en": "Eligible IGP(A) applicants; Japanese nationals face additional overseas-residence conditions. Only listed programs and supervisors qualify.",
-        "ja": "IGP(A)の学歴要件を満たす者。日本国籍には海外在留等の条件、所属課程・教員の指定あり。",
-        "zh-CN": "符合IGP(A)学历资格者；日本籍另有海外居留等条件，课程和导师须属指定名单。",
-        "zh-TW": "符合IGP(A)學歷資格者；日本籍另有海外居留等條件，課程和導師須屬指定名單。"
-      },
-      "summary": {
-        "en": "Contact a listed supervisor and obtain consent before applying. Applications without supervisor consent are not considered; consent is distinct from a blanket prior-publication requirement.",
-        "ja": "出願前に希望教員へ直接連絡し、受入同意書を取得。教員の同意がない出願は審査対象外です。既存論文の一律要件とは別です。",
-        "zh-CN": "出愿前须直接联系拟接收导师并取得同意书；未获导师同意的申请不予审查。这是接收手续要求，并非统一的既有论文要求。",
-        "zh-TW": "出願前須直接聯繫擬接收導師並取得同意書；未獲導師同意的申請不予審查。這是接收手續要求，並非統一的既有論文要求。"
-      },
       "route": {
         "en": "Fall 2027 master’s / integrated doctoral admission",
         "ja": "2027年秋入学・修士／修博一貫",
         "zh-CN": "2027秋季 修士／修博一贯课程",
         "zh-TW": "2027秋季 修士／修博一貫課程"
       },
-      "program": {
-        "en": "International Graduate Program (A)",
-        "ja": "国際大学院プログラム（A）",
-        "zh-CN": "International Graduate Program (A)",
-        "zh-TW": "International Graduate Program (A)"
+      "scope": {
+        "en": "Eligible IGP(A) applicants; Japanese nationals face additional overseas-residence conditions. Only listed programs and supervisors qualify.",
+        "ja": "IGP(A)の学歴要件を満たす者。日本国籍には海外在留等の条件、所属課程・教員の指定あり。",
+        "zh-CN": "符合IGP(A)学历资格者；日本籍另有海外居留等条件，课程和导师须属指定名单。",
+        "zh-TW": "符合IGP(A)學歷資格者；日本籍另有海外居留等條件，課程和導師須屬指定名單。"
       },
       "university": {
         "en": "Institute of Science Tokyo",
@@ -378,10 +366,22 @@
         "zh-CN": "东京科学大学",
         "zh-TW": "東京科學大學"
       },
+      "program": {
+        "en": "International Graduate Program (A)",
+        "ja": "国際大学院プログラム（A）",
+        "zh-CN": "International Graduate Program (A)",
+        "zh-TW": "International Graduate Program (A)"
+      },
+      "summary": {
+        "en": "Contact a listed supervisor and obtain consent before applying. Applications without supervisor consent are not considered; consent is distinct from a blanket prior-publication requirement.",
+        "ja": "出願前に希望教員へ直接連絡し、受入同意書を取得。教員の同意がない出願は審査対象外です。既存論文の一律要件とは別です。",
+        "zh-CN": "出愿前须直接联系拟接收导师并取得同意书；未获导师同意的申请不予审查。这是接收手续要求，并非统一的既有论文要求。",
+        "zh-TW": "出願前須直接聯繫擬接收導師並取得同意書；未獲導師同意的申請不予審查。這是接收手續要求，並非統一的既有論文要求。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Supervisor consent required",
@@ -405,29 +405,17 @@
       "id": "tohoku-life-masters-consent-2027",
       "level": "graduate",
       "status": "verified",
-      "scope": {
-        "en": "General selection and special routes for working, returnee and international applicants; route eligibility and available fields must be checked.",
-        "ja": "一般・社会人・帰国学生・外国人の各選抜。区分別資格と当期募集分野を確認。",
-        "zh-CN": "一般及社会人、归国学生、外国人特别选拔；须满足所选类别资格并确认当期募集领域。",
-        "zh-TW": "一般及社會人、歸國學生、外國人特別選拔；須滿足所選類別資格並確認當期募集領域。"
-      },
-      "summary": {
-        "en": "Submit an email or document confirming supervisor consent. Early discussion of research fit is recommended; selection uses document screening and an interview.",
-        "ja": "受入予定教員の同意を示すメール・書面の写しが必要。早期に研究関心を相談し、書類審査と面接で選考します。",
-        "zh-CN": "需提交拟指导教员同意接收的邮件或文件副本；建议尽早沟通研究兴趣与方向匹配。选考采用申请材料审查和面试。",
-        "zh-TW": "需提交擬指導教員同意接收的郵件或文件副本；建議儘早溝通研究興趣與方向匹配。選考採用申請材料審查和面試。"
-      },
       "route": {
         "en": "Third-term selection for April 2027 entry",
         "ja": "2027年4月入学・Ⅲ期募集",
         "zh-CN": "2027年4月入学 第III期",
         "zh-TW": "2027年4月入學 第III期"
       },
-      "program": {
-        "en": "Graduate School of Life Sciences: master’s program",
-        "ja": "生命科学研究科 博士課程前期2年の課程",
-        "zh-CN": "生命科学研究科 博士前期2年课程",
-        "zh-TW": "生命科學研究科 博士前期2年課程"
+      "scope": {
+        "en": "General selection and special routes for working, returnee and international applicants; route eligibility and available fields must be checked.",
+        "ja": "一般・社会人・帰国学生・外国人の各選抜。区分別資格と当期募集分野を確認。",
+        "zh-CN": "一般及社会人、归国学生、外国人特别选拔；须满足所选类别资格并确认当期募集领域。",
+        "zh-TW": "一般及社會人、歸國學生、外國人特別選拔；須滿足所選類別資格並確認當期募集領域。"
       },
       "university": {
         "en": "Tohoku University",
@@ -435,10 +423,22 @@
         "zh-CN": "东北大学",
         "zh-TW": "東北大學"
       },
+      "program": {
+        "en": "Graduate School of Life Sciences: master’s program",
+        "ja": "生命科学研究科 博士課程前期2年の課程",
+        "zh-CN": "生命科学研究科 博士前期2年课程",
+        "zh-TW": "生命科學研究科 博士前期2年課程"
+      },
+      "summary": {
+        "en": "Submit an email or document confirming supervisor consent. Early discussion of research fit is recommended; selection uses document screening and an interview.",
+        "ja": "受入予定教員の同意を示すメール・書面の写しが必要。早期に研究関心を相談し、書類審査と面接で選考します。",
+        "zh-CN": "需提交拟指导教员同意接收的邮件或文件副本；建议尽早沟通研究兴趣与方向匹配。选考采用申请材料审查和面试。",
+        "zh-TW": "需提交擬指導教員同意接收的郵件或文件副本；建議儘早溝通研究興趣與方向匹配。選考採用申請材料審查和面試。"
+      },
       "academicYear": "2027",
       "sourceUrl": "https://www.lifesci.tohoku.ac.jp/en/admission/schedule/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-13T11:01:31+09:00",
+      "checkedAt": "2026-11-13T11:17:59+09:00",
       "tags": {
         "en": [
           "Evidence of consent",
