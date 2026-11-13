@@ -38,6 +38,10 @@ html[lang] .hero-description{font-size:18px;color:#c0cddd;line-height:1.9;max-wi
 .button,.hero-actions .button{font-size:17px;min-height:54px;padding:13px 22px;gap:22px}
 .hero-note{font-size:15px;color:#abbdd0;line-height:1.8}
 .hero-art{margin-left:0;margin-right:0}
+.tag-four{top:10%;right:0;max-width:46%;animation:float 9s -2s ease-in-out infinite}
+.tag-five{bottom:12%;right:0;max-width:46%;animation:float 11s -4s ease-in-out infinite}
+.tag-dot.amber{background:#e8c391}
+.tag-dot.rose{background:#eea7bc}
 .art-tag{font-size:15px;padding:12px 15px;white-space:normal}
 .art-tag small{font-size:11px;letter-spacing:.02em;color:#a6bfd4}
 .orbital-label{font-size:11px;letter-spacing:.05em;color:#9ab4ca}
@@ -120,6 +124,7 @@ html[lang] .topic-card h3{font-size:23px;line-height:1.55;margin-bottom:15px}
   html[lang] .hero h1{font-size:45px}
   .hero-program{font-size:21px}
   .hero-art{margin:0}
+  .tag-five{bottom:4%}
   .art-tag{font-size:13px;padding:10px 12px}
   .art-tag small{font-size:10px}
   .top-label{font-size:9px}
@@ -165,6 +170,12 @@ html[lang] .topic-card h3{font-size:23px;line-height:1.55;margin-bottom:15px}
   .hero-actions .button{font-size:16px;padding:12px 16px;gap:16px;min-height:50px}
   .hero-note{font-size:14px;gap:9px;margin-top:25px}
   .hero-art{width:84%;max-width:365px}
+  .hero-art{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;max-width:420px;aspect-ratio:auto}
+  .hero-art .orbital{grid-column:1/-1;height:auto;aspect-ratio:1}
+  .hero-art .art-tag{position:static;min-width:0;max-width:none;animation:none;transform:none;align-self:stretch}
+  .hero-art .art-tag>span[data-i18n],.hero-art .art-tag small{min-width:0;overflow-wrap:anywhere}
+  .hero-art .tag-five{grid-column:1/-1}
+  .hero-art .orbital-label,.hero-art .art-cross{display:none}
   .art-tag{font-size:13px;padding:9px 11px}
   .art-tag small{font-size:10px}
   .top-label{font-size:8px}
