@@ -2,11 +2,12 @@
 
 公开网站：https://ai-research.coach-ai-assist.com/
 
-单页网站提供研究方向目录、科研实践路径、升学申请中的经历表达、官方大学招生要求动态、合格成果和咨询方式，支持简体中文、繁体中文、日语与英语。
+分页网站提供研究方向目录、科研实践路径、升学申请中的经历表达、官方大学招生要求动态、合格成果和咨询方式，支持简体中文、繁体中文、日语与英语。
 
 ## 内容维护
 
-- `index.html`：页面结构与默认中文内容。
+- `index.html`：简洁首页与各栏目入口。
+- `topics.html`、`practice.html`、`programs.html`、`applications.html`、`admissions.html`、`honors.html`、`contact.html`：独立栏目页面；共同使用四语脚本与样式。旧首页栏目锚点自动跳转到对应页面，跨页链接保留语言。
 - `assets/site.css`、`assets/site.js`：视觉样式、四语言文案、目录搜索及分类。
 - `data/catalog.json`：经过人工审核的公开目录及录取结果，仅包含明确允许公开的字段。
 - `data/admissions.json`：大学官方要求的适用项目、通道、摘要、来源及最近核对状态。

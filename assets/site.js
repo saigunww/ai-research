@@ -479,6 +479,8 @@
   languages.forEach(language => Object.assign(copy[language], programPracticeCopy[language]));
   const presentationCopy = {"zh-CN": {"maTitle": "马同学 · 发表练习", "maDescription": "从读懂文献，到把思路讲清楚。在发表练习中梳理内容、组织表达，让理解逐步转化为清晰的讲述。", "maAlt": "马同学在教室屏幕旁进行发表练习", "maLabel": "文献理解 · 内容梳理 · 口头表达"}, "zh-TW": {"maTitle": "馬同學 · 發表練習", "maDescription": "從讀懂文獻，到把思路講清楚。在發表練習中梳理內容、組織表達，讓理解逐步轉化為清晰的講述。", "maAlt": "馬同學在教室螢幕旁進行發表練習", "maLabel": "文獻理解 · 內容梳理 · 口頭表達"}, "ja": {"maTitle": "馬さん · 発表練習", "maDescription": "文献を読み、考えをわかりやすく伝える。発表練習を通じて内容を整理し、理解したことを自分の言葉で説明する力を磨きます。", "maAlt": "教室のスクリーンの横で発表練習をする馬さん", "maLabel": "文献理解 · 内容の整理 · 口頭発表"}, "en": {"maTitle": "Student Ma · Presentation practice", "maDescription": "From reading a paper to explaining its ideas. Presentation practice brings structure to the material and helps turn understanding into a clear explanation.", "maAlt": "Student Ma practising a presentation beside a classroom screen", "maLabel": "Read the literature · Organise ideas · Present clearly"}};
   languages.forEach(language => Object.assign(copy[language], presentationCopy[language]));
+  const multipageCopy = {"zh-CN": {"homeNav": "首页", "navPractice": "科研实践", "exploreTitle": "选择你想了解的内容", "exploreDescription": "按主题浏览，让每一次探索更清晰。", "pageExplore": "继续了解", "entryPractice": "学习路径、真实照片与课堂发表练习。", "entryTopics": "按领域搜索研究方向与实践概览。", "entryPrograms": "了解不同基础与目标对应的项目安排。", "entryApplications": "把科研经历转化为清晰的申请材料与面试表达。", "entryAdmissions": "查看大学官方要求与最近核对状态。", "entryHonors": "浏览合格成果及公开记录。", "entryContact": "沟通兴趣、学习基础与下一步计划。"}, "zh-TW": {"homeNav": "首頁", "navPractice": "科研實踐", "exploreTitle": "選擇你想了解的內容", "exploreDescription": "按主題瀏覽，讓每一次探索更清晰。", "pageExplore": "繼續了解", "entryPractice": "學習路徑、真實照片與課堂發表練習。", "entryTopics": "按領域搜尋研究方向與實踐概覽。", "entryPrograms": "了解不同基礎與目標對應的項目安排。", "entryApplications": "將科研經歷轉化為清晰的申請材料與面試表達。", "entryAdmissions": "查看大學官方要求與最近核對狀態。", "entryHonors": "瀏覽合格成果及公開記錄。", "entryContact": "溝通興趣、學習基礎與下一步計畫。"}, "ja": {"homeNav": "ホーム", "navPractice": "研究実践", "exploreTitle": "知りたい内容から、探してみる。", "exploreDescription": "テーマごとに、必要な情報へ。", "pageExplore": "詳しく見る", "entryPractice": "学習の流れ、実践風景、発表練習をご紹介。", "entryTopics": "分野から研究テーマと実践の概要を検索。", "entryPrograms": "学習経験と目標に合わせたプログラム。", "entryApplications": "研究経験を出願書類や面接で伝えるために。", "entryAdmissions": "大学の公式要件と確認状況をご覧いただけます。", "entryHonors": "合格実績と公開記録をご紹介。", "entryContact": "興味や学習経験、次の一歩をご相談ください。"}, "en": {"homeNav": "Home", "navPractice": "Research practice", "exploreTitle": "Find what you want to explore.", "exploreDescription": "A focused page for each part of your journey.", "pageExplore": "Explore", "entryPractice": "Learning pathways, real practice and classroom presentations.", "entryTopics": "Search research areas and practical overviews.", "entryPrograms": "Programs for different starting points and goals.", "entryApplications": "Explain your research experience in applications and interviews.", "entryAdmissions": "Official university requirements and their latest review status.", "entryHonors": "Explore admissions outcomes and public records.", "entryContact": "Discuss your interests, experience and next steps."}};
+  languages.forEach(language => Object.assign(copy[language], multipageCopy[language]));
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   let catalog = null;
@@ -494,7 +496,7 @@
   const readStorage = key => { try { return localStorage.getItem(key); } catch (_) { return null; } };
   const writeStorage = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
   function fromHash() {
-    const candidate = location.hash.slice(1);
+    const candidate = new URLSearchParams(location.search).get('lang') || location.hash.slice(1);
     return languages.includes(candidate) ? candidate : null;
   }
   const storedLanguage = readStorage('coach-ai-language');
@@ -517,22 +519,24 @@
     if (!languages.includes(language)) return;
     currentLanguage = language;
     document.documentElement.lang = language;
-    document.title = t('pageTitle');
+    document.title = document.body.dataset.page === 'index' ? t('pageTitle') : `${t(document.body.dataset.pageTitle)} | ${t('headerProgram')}`;
     $('.brand').setAttribute('aria-label', `${t('heroLine1')} · ${t('headerProgram')}`);
     $('meta[name="description"]').content = t('pageDescription');
     $$('[data-i18n]').forEach(node => { node.textContent = t(node.dataset.i18n); });
     $$('[data-i18n-alt]').forEach(node => { node.alt = t(node.dataset.i18nAlt); });
     $$('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
     $('#main-nav').setAttribute('aria-label', t('mainNavigation'));
-    $('#topic-filters').setAttribute('aria-label', t('filterLabel'));
-    $('#admissions-filters').setAttribute('aria-label', t('admissionsFilterLabel'));
-    $('#topic-search').placeholder = t('searchPlaceholder');
-    $('.hero-bottom>a').setAttribute('aria-label', t('heroExplore'));
-    $('.qr-card img[src*="wechat"]').alt = t('wechatAlt');
-    $('.qr-card img[src*="xiaohongshu"]').alt = t('rednoteAlt');
+    $('#topic-filters')?.setAttribute('aria-label', t('filterLabel'));
+    $('#admissions-filters')?.setAttribute('aria-label', t('admissionsFilterLabel'));
+    if ($('#topic-search')) $('#topic-search').placeholder = t('searchPlaceholder');
+    $('.hero-bottom>a')?.setAttribute('aria-label', t('heroExplore'));
+    if ($('.qr-card img[src*="wechat"]')) $('.qr-card img[src*="wechat"]').alt = t('wechatAlt');
+    if ($('.qr-card img[src*="xiaohongshu"]')) $('.qr-card img[src*="xiaohongshu"]').alt = t('rednoteAlt');
     setMenu(false);
     writeStorage('coach-ai-language', language);
-    if (changeHash) history.replaceState(null, '', '#' + language);
+    const currentURL = new URL(location.href); currentURL.searchParams.set('lang', language);
+    if (changeHash) { if (languages.includes(currentURL.hash.slice(1))) currentURL.hash = ''; history.replaceState(null, '', currentURL); }
+    $$('a[href]').forEach(link => { const raw = link.getAttribute('href'); if (raw.startsWith('#')) return; const url = new URL(raw, location.href); if (url.origin === location.origin && /\.html$/.test(url.pathname)) { url.searchParams.set('lang', language); link.href = url.pathname + url.search + url.hash; } });
     if (catalog) renderCatalog();
     else if (loadFailed) renderLoadError();
     if (admissionsData) renderAdmissions();
@@ -612,6 +616,7 @@
   }
   function renderHonors() {
     const grid = $('#honors-grid');
+    if (!grid) return;
     grid.replaceChildren();
     catalog.honors.forEach(honor => {
       const card = element('article', 'honor-card');
@@ -654,14 +659,16 @@
     });
   }
   function renderCatalog() {
-    $('#topic-total').textContent = `${catalog.topics.length} ${t('count')}`;
-    $('#topic-total').hidden = false;
-    $('#catalog-date').textContent = `${t('updated')} ${catalog.updatedAt}`;
-    renderFilters();
-    renderTopics();
+    if ($('#topic-grid')) {
+      $('#topic-total').textContent = `${catalog.topics.length} ${t('count')}`;
+      $('#topic-total').hidden = false;
+      $('#catalog-date').textContent = `${t('updated')} ${catalog.updatedAt}`;
+      renderFilters(); renderTopics();
+    }
     renderHonors();
   }
   function renderLoadError() {
+    if (!$('#topic-grid')) { const grid = $('#honors-grid'); if (grid) { grid.replaceChildren(element('p', 'catalog-placeholder', t('loadError'))); const retry = element('button', 'reset-search', t('retry')); retry.onclick = loadCatalog; grid.append(retry); } return; }
     $('#catalog-status').textContent = t('loadError');
     const grid = $('#topic-grid');
     const fallback = element('div', 'catalog-placeholder');
@@ -673,6 +680,7 @@
     grid.replaceChildren(fallback);
   }
   async function loadCatalog() {
+    if (!$('#topic-grid') && !$('#honors-grid')) return;
     if (pendingRequest) return pendingRequest;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 12000);
@@ -789,12 +797,13 @@
     retry.type = 'button';
     retry.addEventListener('click', loadAdmissions);
     const guide = element('a', 'text-link', t('applicationGuide'));
-    guide.href = '#applications';
+    guide.href = 'applications.html?lang=' + currentLanguage;
     actions.append(retry, guide);
     fallback.append(actions);
     $('#admissions-grid').replaceChildren(fallback);
   }
   async function loadAdmissions() {
+    if (!$('#admissions-grid')) return;
     if (pendingAdmissions) return pendingAdmissions;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 12000);
@@ -826,14 +835,8 @@
   document.addEventListener('click', event => { if (!event.target.closest('.site-header')) setMenu(false); });
   const wideScreen = matchMedia('(min-width:1201px)');
   if (wideScreen.addEventListener) wideScreen.addEventListener('change', () => setMenu(false));
-  $('#topic-search').addEventListener('input', () => { if (catalog) renderTopics(); });
+  $('#topic-search')?.addEventListener('input', () => { if (catalog) renderTopics(); });
   window.addEventListener('hashchange', () => { const language = fromHash(); if (language) applyLanguage(language); });
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => { if (entry.isIntersecting) $$('#main-nav a').forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`)); });
-    }, {rootMargin:'-15% 0px -55% 0px',threshold:0});
-    ['topics','pathway','programs','applications','admissions','honors','contact'].forEach(id => observer.observe(document.getElementById(id)));
-  }
   $$('#admissions-filters [data-level]').forEach(button => button.addEventListener('click', () => {
     selectedLevel = button.dataset.level;
     $$('#admissions-filters [data-level]').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.level === selectedLevel)));

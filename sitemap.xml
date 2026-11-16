@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ai-research.coach-ai-assist.com/</loc>
-  </url>
+<url><loc>https://ai-research.coach-ai-assist.com/</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/topics.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/practice.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/programs.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/applications.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/admissions.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/honors.html</loc></url>
+<url><loc>https://ai-research.coach-ai-assist.com/contact.html</loc></url>
 </urlset>
