@@ -477,6 +477,8 @@
   }
 };
   languages.forEach(language => Object.assign(copy[language], programPracticeCopy[language]));
+  const presentationCopy = {"zh-CN": {"maTitle": "马同学 · 发表练习", "maDescription": "从读懂文献，到把思路讲清楚。在发表练习中梳理内容、组织表达，让理解逐步转化为清晰的讲述。", "maAlt": "马同学在教室屏幕旁进行发表练习", "maLabel": "文献理解 · 内容梳理 · 口头表达"}, "zh-TW": {"maTitle": "馬同學 · 發表練習", "maDescription": "從讀懂文獻，到把思路講清楚。在發表練習中梳理內容、組織表達，讓理解逐步轉化為清晰的講述。", "maAlt": "馬同學在教室螢幕旁進行發表練習", "maLabel": "文獻理解 · 內容梳理 · 口頭表達"}, "ja": {"maTitle": "馬さん · 発表練習", "maDescription": "文献を読み、考えをわかりやすく伝える。発表練習を通じて内容を整理し、理解したことを自分の言葉で説明する力を磨きます。", "maAlt": "教室のスクリーンの横で発表練習をする馬さん", "maLabel": "文献理解 · 内容の整理 · 口頭発表"}, "en": {"maTitle": "Student Ma · Presentation practice", "maDescription": "From reading a paper to explaining its ideas. Presentation practice brings structure to the material and helps turn understanding into a clear explanation.", "maAlt": "Student Ma practising a presentation beside a classroom screen", "maLabel": "Read the literature · Organise ideas · Present clearly"}};
+  languages.forEach(language => Object.assign(copy[language], presentationCopy[language]));
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   let catalog = null;

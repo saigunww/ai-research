@@ -366,3 +366,13 @@ html[lang] .topic-card h3{font-size:23px;line-height:1.55;margin-bottom:15px}
 /* Keep navigation comfortable as program labels vary across languages. */
 @media(min-width:1201px) and (max-width:1320px){html[lang] .main-nav{position:absolute;left:0;right:0;top:103px;display:none;background:#fff;border-bottom:1px solid #dae4ed;box-shadow:0 18px 20px #0d20370b;padding:18px 32px;flex-direction:column;align-items:stretch;gap:0}html[lang] .main-nav.open{display:flex}html[lang] .main-nav a{font-size:17px!important;padding:13px 0}.main-nav a:after{bottom:6px;right:auto;width:24px}.header-tools{margin-left:auto}.menu-toggle{display:block}}
 @media(min-width:1321px) and (max-width:1600px){html[lang=en] .main-nav{position:absolute;left:0;right:0;top:103px;display:none;background:#fff;border-bottom:1px solid #dae4ed;box-shadow:0 18px 20px #0d20370b;padding:18px 32px;flex-direction:column;align-items:stretch;gap:0}html[lang=en] .main-nav.open{display:flex}html[lang=en] .main-nav a{font-size:17px!important;padding:13px 0}html[lang=en] .header-tools{margin-left:auto}html[lang=en] .menu-toggle{display:block}}
+
+/* Classroom presentation: a wide editorial feature, full original archived. */
+.presentation-feature{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);margin:28px 0 0;border:1px solid #e2eaf0;border-radius:13px;overflow:hidden;background:#f5f7f7}
+.presentation-photo{min-width:0;overflow:hidden;background:#e9e9e4}
+.presentation-photo img{display:block;width:100%;height:100%;min-height:370px;aspect-ratio:16/10;object-fit:cover;object-position:50% 80%}
+.presentation-feature figcaption{padding:38px;align-self:center;min-width:0}
+.presentation-feature h3{font-size:27px;line-height:1.5;margin:14px 0 20px;letter-spacing:-.02em}
+.presentation-feature figcaption>p:not(.eyebrow){font-size:17px;line-height:1.95;color:#61758a;margin:0 0 26px}
+.presentation-label{display:block;padding-top:18px;border-top:1px solid #d9e2e6;font-size:13px;line-height:1.8;color:#48776b;letter-spacing:.04em}
+@media(max-width:800px){.presentation-feature{grid-template-columns:1fr}.presentation-photo img{height:auto;min-height:0;aspect-ratio:16/10}.presentation-feature figcaption{padding:28px}.presentation-feature h3{font-size:24px}.presentation-feature figcaption>p:not(.eyebrow){font-size:16px}}
