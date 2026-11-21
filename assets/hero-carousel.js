@@ -68,7 +68,7 @@
   function schedule() {
     stopTimer();
     if (userPaused || ((hovering || focused) && !allowPlaybackDuringInteraction) || document.hidden || states[active] !== 'ready' || ready().length < 2) return;
-    timer = window.setTimeout(() => step(1), 6000);
+    timer = window.setTimeout(() => step(1), 2000);
   }
 
   function render() {
