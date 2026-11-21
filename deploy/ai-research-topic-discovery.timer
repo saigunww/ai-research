@@ -1,0 +1,11 @@
+[Unit]
+Description=Check server research projects and proposals every morning
+
+[Timer]
+OnCalendar=*-*-* 09:10:00 Asia/Tokyo
+Persistent=true
+RandomizedDelaySec=60
+Unit=ai-research-topic-discovery.service
+
+[Install]
+WantedBy=timers.target

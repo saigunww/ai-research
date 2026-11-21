@@ -1,0 +1,15 @@
+[Unit]
+Description=Discover server research topics and publish the research catalog daily
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Documents/AI科研背景提升网页/github
+ExecStart=%h/Documents/大学院生化网页/.sync-venv/bin/python scripts/discover_topics.py --publish
+Environment=PYTHONUNBUFFERED=1
+Environment=GIT_TERMINAL_PROMPT=0
+UMask=0077
+TimeoutStartSec=45min
+
+[Install]
+WantedBy=default.target

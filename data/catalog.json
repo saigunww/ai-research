@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-21",
   "categories": [
     {
       "id": "life",
@@ -44,6 +44,24 @@
         "ja": "健康・医療",
         "zh-CN": "健康与医学",
         "zh-TW": "健康與醫學"
+      }
+    },
+    {
+      "id": "computing",
+      "label": {
+        "en": "Computing & AI",
+        "ja": "知能計算",
+        "zh-CN": "智能计算",
+        "zh-TW": "智慧運算"
+      }
+    },
+    {
+      "id": "economics",
+      "label": {
+        "en": "Economics & business",
+        "ja": "経済・経営",
+        "zh-CN": "经济与经营",
+        "zh-TW": "經濟與經營"
       }
     }
   ],
@@ -490,7 +508,7 @@
     },
     {
       "id": "economics-data",
-      "category": "society",
+      "category": "economics",
       "stage": "proposal",
       "title": {
         "en": "Economic & social data",
@@ -527,6 +545,1166 @@
         ]
       },
       "updatedAt": "2026-11-12"
+    },
+    {
+      "id": "psychology-emotion-ai",
+      "category": "society",
+      "stage": "proposal",
+      "title": {
+        "en": "Psychology & emotion AI",
+        "ja": "心理学とテキスト感情 AI",
+        "zh-CN": "心理学与文本情绪 AI",
+        "zh-TW": "心理學與文本情緒 AI"
+      },
+      "summary": {
+        "en": "Connect psychology with language data to explore emotion measurement, model judgments and the scope of research findings.",
+        "ja": "心理学と言語データを結び、感情の測定、モデルの判断、研究結果の適用範囲を学びます。",
+        "zh-CN": "结合心理学与语言数据，学习情绪测量、模型判断和研究结论的适用范围。",
+        "zh-TW": "結合心理學與語言資料，學習情緒測量、模型判斷和研究結論的適用範圍。"
+      },
+      "tags": {
+        "en": [
+          "Society & behavior",
+          "Data literacy",
+          "Critical thinking"
+        ],
+        "ja": [
+          "社会・行動",
+          "データ理解",
+          "批判的思考"
+        ],
+        "zh-CN": [
+          "社会与行为",
+          "数据理解",
+          "批判思考"
+        ],
+        "zh-TW": [
+          "社會與行為",
+          "資料理解",
+          "批判思考"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "visual-recognition",
+      "category": "computing",
+      "stage": "proposal",
+      "title": {
+        "en": "Computer vision & image recognition",
+        "ja": "コンピュータビジョンと画像認識",
+        "zh-CN": "计算机视觉与图像识别",
+        "zh-TW": "電腦視覺與影像辨識"
+      },
+      "summary": {
+        "en": "Explore how computer vision learns from images and how to assess the reliability of image recognition.",
+        "ja": "画像認識を題材に、コンピュータビジョンの学習過程と認識の信頼性を考えます。",
+        "zh-CN": "从图像识别问题出发，理解计算机视觉的学习过程与识别可靠性。",
+        "zh-TW": "從影像辨識問題出發，理解電腦視覺的學習過程與辨識可靠性。"
+      },
+      "tags": {
+        "en": [
+          "Artificial intelligence",
+          "Model evaluation",
+          "Computational thinking"
+        ],
+        "ja": [
+          "人工知能",
+          "モデル評価",
+          "計算的思考"
+        ],
+        "zh-CN": [
+          "人工智能",
+          "模型评价",
+          "计算思维"
+        ],
+        "zh-TW": [
+          "人工智慧",
+          "模型評價",
+          "計算思維"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "retrieval-augmented-qa",
+      "category": "computing",
+      "stage": "proposal",
+      "title": {
+        "en": "Knowledge retrieval & AI question answering",
+        "ja": "知識検索と AI 質問応答",
+        "zh-CN": "知识检索与智能问答",
+        "zh-TW": "知識檢索與智慧問答"
+      },
+      "summary": {
+        "en": "Explore how knowledge retrieval supports AI question answering and learn to assess evidence and information quality.",
+        "ja": "知識検索と質問応答の関係を考え、回答の根拠を確認し、情報の質を評価する力を養います。",
+        "zh-CN": "研究知识检索如何支持智能问答，学习核对回答依据与评价信息质量。",
+        "zh-TW": "研究知識檢索如何支援智慧問答，學習核對回答依據與評價資訊品質。"
+      },
+      "tags": {
+        "en": [
+          "Artificial intelligence",
+          "Model evaluation",
+          "Computational thinking"
+        ],
+        "ja": [
+          "人工知能",
+          "モデル評価",
+          "計算的思考"
+        ],
+        "zh-CN": [
+          "人工智能",
+          "模型评价",
+          "计算思维"
+        ],
+        "zh-TW": [
+          "人工智慧",
+          "模型評價",
+          "計算思維"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "recommendation-systems",
+      "category": "computing",
+      "stage": "proposal",
+      "title": {
+        "en": "Recommendation systems & digital content",
+        "ja": "推薦システムとデジタルコンテンツ",
+        "zh-CN": "推荐系统与数字内容",
+        "zh-TW": "推薦系統與數位內容"
+      },
+      "summary": {
+        "en": "Study recommendation algorithms through digital content and user choices, including evaluation methods and social implications.",
+        "ja": "デジタルコンテンツと利用者の選択から、推薦アルゴリズム、評価方法、社会への影響を学びます。",
+        "zh-CN": "结合数字内容与用户选择，理解推荐算法、评价方法及其社会影响。",
+        "zh-TW": "結合數位內容與使用者選擇，理解推薦演算法、評價方法及其社會影響。"
+      },
+      "tags": {
+        "en": [
+          "Artificial intelligence",
+          "Model evaluation",
+          "Computational thinking"
+        ],
+        "ja": [
+          "人工知能",
+          "モデル評価",
+          "計算的思考"
+        ],
+        "zh-CN": [
+          "人工智能",
+          "模型评价",
+          "计算思维"
+        ],
+        "zh-TW": [
+          "人工智慧",
+          "模型評價",
+          "計算思維"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "language-model-adaptation",
+      "category": "computing",
+      "stage": "proposal",
+      "title": {
+        "en": "Language models & task adaptation",
+        "ja": "言語モデルとタスク適応",
+        "zh-CN": "语言模型与任务适配",
+        "zh-TW": "語言模型與任務適配"
+      },
+      "summary": {
+        "en": "Explore how language models adapt to different tasks and learn to compare performance and explain limitations.",
+        "ja": "言語モデルのタスク適応を題材に、性能の比較と能力の限界の説明を学びます。",
+        "zh-CN": "围绕语言模型的任务适配，学习比较模型表现并解释能力边界。",
+        "zh-TW": "圍繞語言模型的任務適配，學習比較模型表現並解釋能力邊界。"
+      },
+      "tags": {
+        "en": [
+          "Artificial intelligence",
+          "Model evaluation",
+          "Computational thinking"
+        ],
+        "ja": [
+          "人工知能",
+          "モデル評価",
+          "計算的思考"
+        ],
+        "zh-CN": [
+          "人工智能",
+          "模型评价",
+          "计算思维"
+        ],
+        "zh-TW": [
+          "人工智慧",
+          "模型評價",
+          "計算思維"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "ai-employment",
+      "category": "society",
+      "stage": "proposal",
+      "title": {
+        "en": "AI & changes in employment",
+        "ja": "AI と雇用の変化",
+        "zh-CN": "AI 与就业变化",
+        "zh-TW": "AI 與就業變化"
+      },
+      "summary": {
+        "en": "Examine the relationship between technology and work through source comparison, social inquiry and evidence-based analysis.",
+        "ja": "技術と仕事の関係を考え、資料比較、社会調査、根拠に基づく分析を学びます。",
+        "zh-CN": "从技术与工作的关系出发，练习资料比较、社会调查与有依据的分析。",
+        "zh-TW": "從技術與工作的關係出發，練習資料比較、社會調查與有依據的分析。"
+      },
+      "tags": {
+        "en": [
+          "Society & behavior",
+          "Data literacy",
+          "Critical thinking"
+        ],
+        "ja": [
+          "社会・行動",
+          "データ理解",
+          "批判的思考"
+        ],
+        "zh-CN": [
+          "社会与行为",
+          "数据理解",
+          "批判思考"
+        ],
+        "zh-TW": [
+          "社會與行為",
+          "資料理解",
+          "批判思考"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "regional-economics",
+      "category": "economics",
+      "stage": "proposal",
+      "title": {
+        "en": "Regional economics & spatial data",
+        "ja": "地域経済と空間データ",
+        "zh-CN": "区域经济与空间数据",
+        "zh-TW": "區域經濟與空間資料"
+      },
+      "summary": {
+        "en": "Connect spatial data with economic indicators to examine differences in regional development and the limits of measurement.",
+        "ja": "空間データと経済指標を結び、地域発展の違いと測定の限界を読み取る力を養います。",
+        "zh-CN": "结合空间数据与经济指标，学习观察区域发展差异和数据测量的局限。",
+        "zh-TW": "結合空間資料與經濟指標，學習觀察區域發展差異和資料測量的局限。"
+      },
+      "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "经济学",
+          "社会数据",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "經濟學",
+          "社會資料",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "industry-clusters",
+      "category": "economics",
+      "stage": "proposal",
+      "title": {
+        "en": "Industry clusters & business networks",
+        "ja": "産業集積と企業ネットワーク",
+        "zh-CN": "产业集群与企业网络",
+        "zh-TW": "產業聚落與企業網絡"
+      },
+      "summary": {
+        "en": "Explore industry clusters through business locations and industrial connections while developing skills in economic data analysis.",
+        "ja": "企業の分布と産業間のつながりから産業集積を考え、経済問題をデータで分析する力を養います。",
+        "zh-CN": "从企业分布和产业联系理解产业集群，培养经济问题的数据分析能力。",
+        "zh-TW": "從企業分布和產業聯繫理解產業聚落，培養經濟問題的資料分析能力。"
+      },
+      "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "经济学",
+          "社会数据",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "經濟學",
+          "社會資料",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "digital-economy-demand",
+      "category": "economics",
+      "stage": "proposal",
+      "title": {
+        "en": "Digital economy & demand analysis",
+        "ja": "デジタル経済と需要分析",
+        "zh-CN": "数字经济与需求分析",
+        "zh-TW": "數位經濟與需求分析"
+      },
+      "summary": {
+        "en": "Use digital platforms and the movement of goods to explore demand changes and data-informed economic analysis.",
+        "ja": "デジタルプラットフォームと流通を題材に、需要の変化とデータに基づく経済分析を学びます。",
+        "zh-CN": "围绕数字平台与商品流通，学习理解需求变化和数据支持的经济分析。",
+        "zh-TW": "圍繞數位平台與商品流通，學習理解需求變化和資料支持的經濟分析。"
+      },
+      "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "经济学",
+          "社会数据",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "經濟學",
+          "社會資料",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "policy-text-analysis",
+      "category": "economics",
+      "stage": "proposal",
+      "title": {
+        "en": "Policy texts & economic evaluation",
+        "ja": "政策テキストと経済評価",
+        "zh-CN": "政策文本与经济评价",
+        "zh-TW": "政策文本與經濟評價"
+      },
+      "summary": {
+        "en": "Connect policy texts with economic questions and learn to distinguish correlation, research hypotheses and causal evidence.",
+        "ja": "政策テキストと経済現象を結び、相関関係、研究仮説、因果的な根拠の違いを学びます。",
+        "zh-CN": "结合政策文本与经济现象，学习区分相关关系、研究假设与因果证据。",
+        "zh-TW": "結合政策文本與經濟現象，學習區分相關關係、研究假設與因果證據。"
+      },
+      "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "经济学",
+          "社会数据",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "經濟學",
+          "社會資料",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "institutions-development",
+      "category": "economics",
+      "stage": "proposal",
+      "title": {
+        "en": "Institutions & economic development",
+        "ja": "制度と経済発展",
+        "zh-CN": "制度与经济发展",
+        "zh-TW": "制度與經濟發展"
+      },
+      "summary": {
+        "en": "Explore institutions and economic development through comparative research and reading, building views supported by evidence.",
+        "ja": "比較研究と文献読解を通じて制度と経済発展の関係を考え、根拠ある見解を組み立てます。",
+        "zh-CN": "从比较研究与文献阅读理解制度和经济发展的关系，练习形成有依据的观点。",
+        "zh-TW": "從比較研究與文獻閱讀理解制度和經濟發展的關係，練習形成有依據的觀點。"
+      },
+      "tags": {
+        "en": [
+          "Economics",
+          "Social data",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "経済学",
+          "社会データ",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "经济学",
+          "社会数据",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "經濟學",
+          "社會資料",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "medical-ct-ai",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Medical imaging & chest CT analysis",
+        "ja": "医用画像と胸部 CT 解析",
+        "zh-CN": "医学影像与胸部 CT 分析",
+        "zh-TW": "醫學影像與胸部 CT 分析"
+      },
+      "summary": {
+        "en": "Explore chest imaging questions to learn about medical data evaluation, model comparison and the limits of clinical interpretation.",
+        "ja": "胸部画像の解析を題材に、医療データの評価、モデル比較、臨床的な解釈の限界を学びます。",
+        "zh-CN": "围绕胸部影像的分析问题，学习医学数据评价、模型比较与临床解释边界。",
+        "zh-TW": "圍繞胸部影像的分析問題，學習醫學資料評價、模型比較與臨床解釋邊界。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "ecg-signal-ai",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "ECG signals & medical AI",
+        "ja": "心電図信号と医療 AI",
+        "zh-CN": "心电信号与医学 AI",
+        "zh-TW": "心電訊號與醫學 AI"
+      },
+      "summary": {
+        "en": "Use ECG signals to understand medical time-series data and learn the foundations of signal analysis and model evaluation.",
+        "ja": "心電図信号を通じて医療の時系列データに触れ、信号解析とモデル評価の基礎を学びます。",
+        "zh-CN": "从心电信号认识医学时序数据，学习信号分析和模型评价的基本方法。",
+        "zh-TW": "從心電訊號認識醫學時序資料，學習訊號分析和模型評價的基本方法。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "skin-image-ai",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Skin imaging & medical AI",
+        "ja": "皮膚画像と医療 AI",
+        "zh-CN": "皮肤影像与医学 AI",
+        "zh-TW": "皮膚影像與醫學 AI"
+      },
+      "summary": {
+        "en": "Connect skin imaging with AI to explore image analysis, differences between datasets and careful interpretation of findings.",
+        "ja": "皮膚画像と AI を結び、画像解析、データの違い、慎重な結果の解釈を学びます。",
+        "zh-CN": "结合皮肤影像与人工智能，学习图像分析、数据差异和谨慎的结果解释。",
+        "zh-TW": "結合皮膚影像與人工智慧，學習影像分析、資料差異和謹慎的結果解釋。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "oral-regeneration",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Oral regeneration & tissue engineering",
+        "ja": "口腔再生と組織工学",
+        "zh-CN": "口腔再生与组织工程",
+        "zh-TW": "口腔再生與組織工程"
+      },
+      "summary": {
+        "en": "Connect dentistry with tissue engineering to explore tissue repair, research evidence and scientific communication.",
+        "ja": "歯科医学と組織工学を結び、組織修復の問い、研究の根拠、学術的な説明を学びます。",
+        "zh-CN": "连接口腔医学与组织工程，学习组织修复相关问题、研究证据与学术表达。",
+        "zh-TW": "連結口腔醫學與組織工程，學習組織修復相關問題、研究證據與學術表達。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "osteoimmunology",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Osteoimmunology & interdisciplinary medicine",
+        "ja": "骨免疫学と学際医学研究",
+        "zh-CN": "骨免疫与医学交叉研究",
+        "zh-TW": "骨免疫與醫學交叉研究"
+      },
+      "summary": {
+        "en": "Examine the relationship between bone tissue and immunity while developing skills in scientific reading and research discussion.",
+        "ja": "骨組織と免疫の関係から医学の学際的な問いを考え、文献読解と研究討論の力を養います。",
+        "zh-CN": "从骨组织与免疫的联系理解医学交叉问题，培养文献阅读和研究讨论能力。",
+        "zh-TW": "從骨組織與免疫的聯繫理解醫學交叉問題，培養文獻閱讀和研究討論能力。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "tumor-molecular-biology",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Tumor molecular biology",
+        "ja": "腫瘍分子生物学",
+        "zh-CN": "肿瘤分子生物学",
+        "zh-TW": "腫瘤分子生物學"
+      },
+      "summary": {
+        "en": "Explore life-science questions about tumors through molecular mechanisms, evidence analysis and communication of research findings.",
+        "ja": "腫瘍に関する生命科学の問いを通じて、分子機構、根拠の分析、結論の説明を学びます。",
+        "zh-CN": "围绕肿瘤相关生命科学问题，学习分子机制、证据分析与研究结论的表达。",
+        "zh-TW": "圍繞腫瘤相關生命科學問題，學習分子機制、證據分析與研究結論的表達。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "stem-cell-regeneration",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Stem cells & cellular regeneration",
+        "ja": "幹細胞と細胞再生",
+        "zh-CN": "干细胞与细胞再生",
+        "zh-TW": "幹細胞與細胞再生"
+      },
+      "summary": {
+        "en": "Use cellular regeneration to explore the concepts, evidence and medical context of stem-cell research.",
+        "ja": "細胞再生を入口に、幹細胞研究の概念、根拠、医療応用の背景を学びます。",
+        "zh-CN": "以细胞再生为入口，理解干细胞研究的概念、证据与医学应用背景。",
+        "zh-TW": "以細胞再生為入口，理解幹細胞研究的概念、證據與醫學應用背景。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "exosome-research",
+      "category": "health",
+      "stage": "proposal",
+      "title": {
+        "en": "Exosomes & life science",
+        "ja": "エクソソームと生命科学",
+        "zh-CN": "外泌体与生命科学",
+        "zh-TW": "外泌體與生命科學"
+      },
+      "summary": {
+        "en": "Explore life-science questions about exosomes while learning to understand research methods, organize literature and interpret evidence.",
+        "ja": "エクソソームに関する生命科学の問いを通じて、研究方法の理解、文献整理、根拠の説明を学びます。",
+        "zh-CN": "围绕外泌体相关生命科学问题，学习理解研究方法、整理文献与解释证据。",
+        "zh-TW": "圍繞外泌體相關生命科學問題，學習理解研究方法、整理文獻與解釋證據。"
+      },
+      "tags": {
+        "en": [
+          "Medicine",
+          "Scientific reading",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "医学",
+          "文献読解",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "医学",
+          "文献阅读",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "醫學",
+          "文獻閱讀",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "robot-video-prediction",
+      "category": "robotics",
+      "stage": "proposal",
+      "title": {
+        "en": "Robot video & motion prediction",
+        "ja": "ロボット映像と動作予測",
+        "zh-CN": "机器人视频与运动预测",
+        "zh-TW": "機器人影片與運動預測"
+      },
+      "summary": {
+        "en": "Explore robot motion videos to understand video prediction, changes over time and the reliability of intelligent systems.",
+        "ja": "ロボットの動作映像を題材に、映像予測、時間変化、知能システムの信頼性を学びます。",
+        "zh-CN": "围绕机器人运动画面，理解视频预测、时间变化与智能系统的可靠性。",
+        "zh-TW": "圍繞機器人運動畫面，理解影片預測、時間變化與智慧系統的可靠性。"
+      },
+      "tags": {
+        "en": [
+          "Robotics",
+          "Engineering thinking",
+          "Model evaluation"
+        ],
+        "ja": [
+          "ロボット",
+          "工学的思考",
+          "モデル評価"
+        ],
+        "zh-CN": [
+          "机器人",
+          "工程思维",
+          "模型评价"
+        ],
+        "zh-TW": [
+          "機器人",
+          "工程思維",
+          "模型評價"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "mrna-stability-ai",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "RNA stability & biological sequence AI",
+        "ja": "RNA 安定性と生物配列 AI",
+        "zh-CN": "RNA 稳定性与生物序列 AI",
+        "zh-TW": "RNA 穩定性與生物序列 AI"
+      },
+      "summary": {
+        "en": "Study biological sequences through RNA stability, compare how models represent biological information, and learn to interpret predictions.",
+        "ja": "RNA の安定性を題材に生物配列を分析し、モデルによる情報の表現を比較しながら、予測結果の解釈を学びます。",
+        "zh-CN": "围绕 RNA 稳定性学习生物序列分析，比较模型对生命信息的表达，并练习解释预测结果。",
+        "zh-TW": "圍繞 RNA 穩定性學習生物序列分析，比較模型對生命資訊的表達，並練習解釋預測結果。"
+      },
+      "tags": {
+        "en": [
+          "RNA",
+          "Biological sequences",
+          "Model comparison"
+        ],
+        "ja": [
+          "RNA",
+          "生物配列",
+          "モデル比較"
+        ],
+        "zh-CN": [
+          "RNA",
+          "生物序列",
+          "模型比较"
+        ],
+        "zh-TW": [
+          "RNA",
+          "生物序列",
+          "模型比較"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "rna-structure-translation",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "RNA structure, translation & multitask learning",
+        "ja": "RNA 構造・翻訳とマルチタスク学習",
+        "zh-CN": "RNA 结构、翻译与多任务学习",
+        "zh-TW": "RNA 結構、翻譯與多任務學習"
+      },
+      "summary": {
+        "en": "Connect RNA structure, translation and stability, and explore how multitask models address different biological questions.",
+        "ja": "RNA の構造・翻訳・安定性を結び、異なる研究目標をマルチタスクモデルで扱う考え方を学びます。",
+        "zh-CN": "连接 RNA 结构、翻译与稳定性等生命信息，理解多任务模型如何处理不同研究目标。",
+        "zh-TW": "連結 RNA 結構、翻譯與穩定性等生命資訊，理解多任務模型如何處理不同研究目標。"
+      },
+      "tags": {
+        "en": [
+          "RNA structure",
+          "Translation",
+          "Multitask learning"
+        ],
+        "ja": [
+          "RNA 構造",
+          "翻訳制御",
+          "マルチタスク学習"
+        ],
+        "zh-CN": [
+          "RNA结构",
+          "翻译调控",
+          "多任务学习"
+        ],
+        "zh-TW": [
+          "RNA結構",
+          "翻譯調控",
+          "多任務學習"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "rbp-rna-regulation",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "RNA-binding proteins & gene regulation",
+        "ja": "RNA 結合タンパク質と遺伝子制御",
+        "zh-CN": "RNA 结合蛋白与基因调控",
+        "zh-TW": "RNA 結合蛋白與基因調控"
+      },
+      "summary": {
+        "en": "Explore gene regulation through RNA-binding proteins, integrating biological information and assessing its value for prediction and interpretation.",
+        "ja": "RNA 結合タンパク質から遺伝子発現の制御を考え、生物情報を統合して予測や解釈への役割を評価します。",
+        "zh-CN": "从 RNA 结合蛋白认识基因表达调控，学习整合生物资料并评估其对预测和解释的价值。",
+        "zh-TW": "從 RNA 結合蛋白認識基因表達調控，學習整合生物資料並評估其對預測和解釋的價值。"
+      },
+      "tags": {
+        "en": [
+          "RNA-binding proteins",
+          "Gene regulation",
+          "Bioinformatics"
+        ],
+        "ja": [
+          "RNA 結合タンパク質",
+          "遺伝子制御",
+          "生命情報"
+        ],
+        "zh-CN": [
+          "RNA结合蛋白",
+          "基因调控",
+          "生物信息"
+        ],
+        "zh-TW": [
+          "RNA結合蛋白",
+          "基因調控",
+          "生物資訊"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "mirna-gene-regulation",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "MicroRNA & gene regulation",
+        "ja": "マイクロ RNA と遺伝子制御",
+        "zh-CN": "微小 RNA 与基因调控",
+        "zh-TW": "微小 RNA 與基因調控"
+      },
+      "summary": {
+        "en": "Use microRNA regulation to learn evidence organization and biological data analysis, examining the relationship between observations and biological explanations.",
+        "ja": "マイクロ RNA の制御作用を題材に資料整理と生物データ解析を学び、観測された情報と生物学的解釈の関係を考えます。",
+        "zh-CN": "围绕微小 RNA 的调控作用学习资料整理与生物数据分析，辨别观测信息和生物学解释之间的联系。",
+        "zh-TW": "圍繞微小 RNA 的調控作用學習資料整理與生物資料分析，辨別觀測資訊和生物學解釋之間的聯繫。"
+      },
+      "tags": {
+        "en": [
+          "MicroRNA",
+          "Expression regulation",
+          "Evidence analysis"
+        ],
+        "ja": [
+          "マイクロ RNA",
+          "発現制御",
+          "根拠の分析"
+        ],
+        "zh-CN": [
+          "微小RNA",
+          "表达调控",
+          "证据分析"
+        ],
+        "zh-TW": [
+          "微小RNA",
+          "表達調控",
+          "證據分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "rna-modification",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "RNA modification & regulation",
+        "ja": "RNA 修飾と制御",
+        "zh-CN": "RNA 修饰与调控",
+        "zh-TW": "RNA 修飾與調控"
+      },
+      "summary": {
+        "en": "Explore the relationship between RNA modifications and function, compare biological annotations from different sources, and interpret model performance carefully.",
+        "ja": "RNA 修飾と機能の関係を考え、異なる情報源の生物学的注釈を比較し、モデルの性能を慎重に解釈します。",
+        "zh-CN": "了解 RNA 修饰与功能之间的关系，学习比较不同来源的生物注释并谨慎解释模型表现。",
+        "zh-TW": "了解 RNA 修飾與功能之間的關係，學習比較不同來源的生物註釋並謹慎解釋模型表現。"
+      },
+      "tags": {
+        "en": [
+          "RNA modification",
+          "Functional analysis",
+          "Data interpretation"
+        ],
+        "ja": [
+          "RNA 修飾",
+          "機能解析",
+          "データ解釈"
+        ],
+        "zh-CN": [
+          "RNA修饰",
+          "功能分析",
+          "数据解释"
+        ],
+        "zh-TW": [
+          "RNA修飾",
+          "功能分析",
+          "資料解釋"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "hypoxia-rna-regulation",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "Cellular environments & RNA regulation",
+        "ja": "細胞環境と RNA 制御",
+        "zh-CN": "细胞环境与 RNA 调控",
+        "zh-TW": "細胞環境與 RNA 調控"
+      },
+      "summary": {
+        "en": "Examine RNA stability and regulation under changing cellular environments, turning biological context into questions for computational research.",
+        "ja": "細胞環境の変化から RNA の安定性と制御を考え、生物学的背景を計算研究の問いにつなげます。",
+        "zh-CN": "从细胞环境变化理解 RNA 稳定性与调控，学习把生物学背景转化为可讨论的计算研究问题。",
+        "zh-TW": "從細胞環境變化理解 RNA 穩定性與調控，學習把生物學背景轉化為可討論的計算研究問題。"
+      },
+      "tags": {
+        "en": [
+          "Cellular environments",
+          "RNA regulation",
+          "Computational biology"
+        ],
+        "ja": [
+          "細胞環境",
+          "RNA 制御",
+          "計算生物学"
+        ],
+        "zh-CN": [
+          "细胞环境",
+          "RNA调控",
+          "计算生物学"
+        ],
+        "zh-TW": [
+          "細胞環境",
+          "RNA調控",
+          "計算生物學"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "tcr-antigen-recognition",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "Immune recognition & AI",
+        "ja": "免疫認識と AI",
+        "zh-CN": "免疫识别与 AI",
+        "zh-TW": "免疫識別與 AI"
+      },
+      "summary": {
+        "en": "Study biological sequences through immune receptor and antigen recognition, examining how evaluation methods shape judgments about AI capabilities.",
+        "ja": "免疫受容体と抗原の認識を題材に生物配列を分析し、評価方法が AI の能力判断に与える影響を学びます。",
+        "zh-CN": "通过免疫受体与抗原识别学习生物序列分析，理解评价方式如何影响对 AI 能力的判断。",
+        "zh-TW": "透過免疫受體與抗原識別學習生物序列分析，理解評估方式如何影響對 AI 能力的判斷。"
+      },
+      "tags": {
+        "en": [
+          "Immune recognition",
+          "Biological sequences",
+          "Model evaluation"
+        ],
+        "ja": [
+          "免疫認識",
+          "生物配列",
+          "モデル評価"
+        ],
+        "zh-CN": [
+          "免疫识别",
+          "生物序列",
+          "模型评价"
+        ],
+        "zh-TW": [
+          "免疫識別",
+          "生物序列",
+          "模型評估"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "antigen-presentation-ai",
+      "category": "life",
+      "stage": "proposal",
+      "title": {
+        "en": "Antigen presentation & AI",
+        "ja": "抗原提示と AI",
+        "zh-CN": "抗原呈递与 AI",
+        "zh-TW": "抗原呈遞與 AI"
+      },
+      "summary": {
+        "en": "Explore individual differences in immunity through antigen presentation, and assess where predictive models can apply to unfamiliar types.",
+        "ja": "抗原提示から免疫の個体差を理解し、未知の型に対するモデルの適用範囲と予測の限界を考えます。",
+        "zh-CN": "围绕抗原呈递理解免疫个体差异，学习分析模型对新类型的适用范围与预测边界。",
+        "zh-TW": "圍繞抗原呈遞理解免疫個體差異，學習分析模型對新類型的適用範圍與預測邊界。"
+      },
+      "tags": {
+        "en": [
+          "Antigen presentation",
+          "Immunoinformatics",
+          "Model generalization"
+        ],
+        "ja": [
+          "抗原提示",
+          "免疫情報学",
+          "モデル汎化"
+        ],
+        "zh-CN": [
+          "抗原呈递",
+          "免疫信息学",
+          "模型泛化"
+        ],
+        "zh-TW": [
+          "抗原呈遞",
+          "免疫資訊學",
+          "模型泛化"
+        ]
+      },
+      "updatedAt": "2026-11-21"
+    },
+    {
+      "id": "robot-learning-generalization",
+      "category": "robotics",
+      "stage": "proposal",
+      "title": {
+        "en": "Robot learning & environmental adaptation",
+        "ja": "ロボット学習と環境適応",
+        "zh-CN": "机器人学习与环境适应",
+        "zh-TW": "機器人學習與環境適應"
+      },
+      "summary": {
+        "en": "Explore robot behavior in changing environments, learning to observe engineering problems, compare learning approaches and explain adaptability.",
+        "ja": "変化する環境でのロボットの行動を題材に、工学的な問題の観察、学習方法の比較、適応能力の説明を学びます。",
+        "zh-CN": "围绕机器人在变化环境中的行为，学习观察工程问题、比较学习方式并解释模型的适应能力。",
+        "zh-TW": "圍繞機器人在變化環境中的行為，學習觀察工程問題、比較學習方式並解釋模型的適應能力。"
+      },
+      "tags": {
+        "en": [
+          "Robot learning",
+          "Environmental change",
+          "Engineering analysis"
+        ],
+        "ja": [
+          "ロボット学習",
+          "環境変化",
+          "工学的分析"
+        ],
+        "zh-CN": [
+          "机器人学习",
+          "环境变化",
+          "工程分析"
+        ],
+        "zh-TW": [
+          "機器人學習",
+          "環境變化",
+          "工程分析"
+        ]
+      },
+      "updatedAt": "2026-11-21"
     }
   ],
   "honors": [
