@@ -23,7 +23,10 @@
   </script>
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="assets/site.css?v=20261116-multipage">
+  <link rel="stylesheet" href="assets/hero-carousel.css?v=20261121">
+  <link rel="preload" as="image" href="images/practice/server-workspace-1400.webp" imagesrcset="images/practice/server-workspace-800.webp 800w, images/practice/server-workspace-1400.webp 1400w" imagesizes="100vw" fetchpriority="high">
   <script src="assets/site.js?v=20261116-multipage" defer></script>
+  <script src="assets/hero-carousel.js?v=20261121" defer></script>
 <script>const legacyRoutes={"topics": "topics.html#topics", "pathway": "practice.html#pathway", "practice": "practice.html#practice", "programs": "programs.html#programs", "applications": "applications.html#applications", "admissions": "admissions.html#admissions", "honors": "honors.html#honors", "contact": "contact.html#contact", "presentation-practice": "practice.html#presentation-practice"};if(legacyRoutes[location.hash.slice(1)]){const target=new URL(legacyRoutes[location.hash.slice(1)],location.href);target.search=location.search;location.replace(target.href);}</script>
 </head>
 <body data-page="index" data-page-title="homeNav">
@@ -47,8 +50,15 @@
   </div>
 </header>
 <main id="main">
-<section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="hero-grid" aria-hidden="true"></div>
+<section class="hero" id="top" aria-labelledby="hero-title" data-hero-carousel>
+    <div class="hero-background" aria-hidden="true">
+      <div class="hero-slide is-active" data-hero-key="server" style="--photo-position:70% 56%;--photo-position-mobile:80% 48%" aria-hidden="true"><img src="images/practice/server-workspace-1400.webp" srcset="images/practice/server-workspace-800.webp 800w, images/practice/server-workspace-1400.webp 1400w" sizes="100vw" width="1400" height="1050" alt="" decoding="async" fetchpriority="high"></div>
+      <div class="hero-slide" data-hero-key="lab" style="--photo-position:50% 28%;--photo-position-mobile:50% 25%" aria-hidden="true"><img src="images/hero/lab-entrance-1400.webp" srcset="images/hero/lab-entrance-800.webp 800w, images/hero/lab-entrance-1400.webp 1400w" sizes="100vw" width="1400" height="1867" alt="" decoding="async" loading="lazy" fetchpriority="low"></div>
+      <div class="hero-slide" data-hero-key="he" style="--photo-position:60% 60%;--photo-position-mobile:70% 52%" aria-hidden="true"><img src="images/practice/he-learning-1400.webp" srcset="images/practice/he-learning-800.webp 800w, images/practice/he-learning-1400.webp 1400w" sizes="100vw" width="1400" height="1050" alt="" decoding="async" loading="lazy" fetchpriority="low"></div>
+      <div class="hero-slide" data-hero-key="jin" style="--photo-position:58% 58%;--photo-position-mobile:64% 50%" aria-hidden="true"><img src="images/practice/jin-cell-culture-1400.webp" srcset="images/practice/jin-cell-culture-800.webp 800w, images/practice/jin-cell-culture-1400.webp 1400w" sizes="100vw" width="1400" height="1050" alt="" decoding="async" loading="lazy" fetchpriority="low"></div>
+      <div class="hero-slide" data-hero-key="ma" style="--photo-position:58% 64%;--photo-position-mobile:69% 62%" aria-hidden="true"><img src="images/practice/ma-presentation-1600.webp" srcset="images/practice/ma-presentation-800.webp 800w, images/practice/ma-presentation-1600.webp 1600w" sizes="100vw" width="1600" height="1200" alt="" decoding="async" loading="lazy" fetchpriority="low"></div>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="eyebrow light"><span class="status-dot"></span> COACH ACADEMY · RESEARCH</p>
@@ -58,30 +68,18 @@
         <div class="hero-actions"><a class="button button-primary" href="topics.html#topics"><span data-i18n="heroExplore">探索研究方向</span><span aria-hidden="true">↗</span></a><a class="button button-ghost" href="honors.html#honors"><span data-i18n="heroHonors">查看合格成果</span><span aria-hidden="true">→</span></a></div>
         <div class="hero-note"><span class="tiny-line"></span><span data-i18n="heroNote">以问题为起点 · 以实践连接知识</span></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
-        <div class="orbital-label top-label">INTERDISCIPLINARY EXPLORATION</div>
-        <svg class="orbital" viewBox="0 0 600 600" fill="none">
-          <defs><radialGradient id="core"><stop stop-color="#7de9f3" stop-opacity=".35"/><stop offset=".4" stop-color="#7f93f7" stop-opacity=".09"/><stop offset="1" stop-color="#5397e5" stop-opacity="0"/></radialGradient><linearGradient id="orbitLine" x1="80" y1="80" x2="520" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#70eee8"/><stop offset=".5" stop-color="#68b9e8"/><stop offset="1" stop-color="#bd9bfb"/></linearGradient><radialGradient id="sphere" cx=".35" cy=".3" r=".7"><stop stop-color="#c6fbf6"/><stop offset=".45" stop-color="#5cd4d6"/><stop offset="1" stop-color="#2a6486"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="4"/></filter></defs>
-          <circle cx="300" cy="300" r="290" fill="url(#core)"/>
-          <g class="orbital-halo" stroke="#6fa5d2"><circle cx="300" cy="300" r="245" opacity=".12" stroke-dasharray="2 9"/><circle cx="300" cy="300" r="210" opacity=".1"/><path d="M35 300H565M300 35V565" opacity=".08"/><circle cx="300" cy="300" r="142" opacity=".1" stroke-dasharray="3 10"/></g>
-          <g class="orbits" stroke="url(#orbitLine)"><ellipse cx="300" cy="300" rx="223" ry="87" transform="rotate(-35 300 300)" opacity=".9"/><ellipse cx="300" cy="300" rx="223" ry="87" transform="rotate(35 300 300)" opacity=".65"/><ellipse cx="300" cy="300" rx="223" ry="87" transform="rotate(90 300 300)" opacity=".65"/><ellipse cx="300" cy="300" rx="179" ry="70" transform="rotate(-35 300 300)" opacity=".2"/></g>
-          <g stroke="#a3d9f4" stroke-width=".7" opacity=".45"><path d="M225 278L267 220 334 230 375 282 345 345 280 368 225 322Z M267 220L280 290 334 230M225 278L280 290 225 322M280 290L345 345 375 282M280 290L280 368M280 290L375 282"/><path d="M174 210L225 278M375 282L441 239M280 368L245 432M334 230L355 167M225 322L162 361"/></g>
-          <g fill="url(#sphere)"><circle cx="280" cy="290" r="33"/><circle cx="225" cy="278" r="14"/><circle cx="267" cy="220" r="15"/><circle cx="334" cy="230" r="18"/><circle cx="375" cy="282" r="13"/><circle cx="345" cy="345" r="21"/><circle cx="280" cy="368" r="14"/><circle cx="225" cy="322" r="12"/></g>
-          <g fill="#aaadff"><circle cx="174" cy="210" r="5"/><circle cx="441" cy="239" r="6"/><circle cx="245" cy="432" r="5"/><circle cx="355" cy="167" r="6"/><circle cx="162" cy="361" r="5"/></g>
-          <g class="orbit-satellite"><circle cx="466" cy="171" r="8" fill="#70eee8" opacity=".4" filter="url(#glow)"/><circle cx="466" cy="171" r="4" fill="#b8fff6"/><circle cx="127" cy="416" r="4" fill="#a8adff"/></g>
-          <g fill="#a6cae1" opacity=".6"><circle cx="104" cy="159" r="2"/><circle cx="452" cy="448" r="2"/><circle cx="367" cy="93" r="2"/><circle cx="496" cy="322" r="2"/></g>
-        </svg>
-        <div class="art-tag tag-one"><span class="tag-dot cyan"></span><span data-i18n="artLife">生命科学</span><small>LIFE SCIENCE</small></div>
-        <div class="art-tag tag-two"><span class="tag-dot violet"></span><span data-i18n="artChemistry">化学与材料</span><small>CHEMISTRY</small></div>
-        <div class="art-tag tag-three"><span class="tag-dot blue"></span><span data-i18n="artAI">智能计算</span><small>COMPUTATION</small></div>
-        <div class="art-tag tag-four"><span class="tag-dot amber"></span><span data-i18n="artHumanities">人文与社会</span><small>HUMANITIES &amp; SOCIETY</small></div>
-        <div class="art-tag tag-five"><span class="tag-dot rose"></span><span data-i18n="artBusiness">经济与经营</span><small>ECONOMICS &amp; BUSINESS</small></div>
-        <div class="orbital-label bottom-label"><span class="status-dot"></span> IDEAS CONNECT. POSSIBILITIES EMERGE.</div>
-      </div>
     </div>
-    <div class="hero-bottom container"><span>RESEARCH / PRACTICE / PERSPECTIVE</span><a href="#explore" aria-label="探索研究方向"><span data-i18n="scroll">向下探索</span><span aria-hidden="true">↓</span></a></div>
-  </section>
+    <div class="hero-bottom container">
+      <div class="hero-photo-meta"><span class="hero-photo-counter" data-hero-counter>01 / 05</span><span data-hero-caption>GPU科研计算环境</span></div>
+      <div class="hero-photo-controls" data-hero-controls role="group" aria-label="科研现场照片">
+        <button class="hero-photo-button" type="button" data-hero-prev aria-label="上一张照片"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg></button>
+        <div class="hero-photo-dots"><button class="hero-photo-dot is-active" type="button" data-hero-dot="0" aria-label="显示第1张照片" aria-pressed="true"><span></span></button><button class="hero-photo-dot" type="button" data-hero-dot="1" aria-label="显示第2张照片" aria-pressed="false"><span></span></button><button class="hero-photo-dot" type="button" data-hero-dot="2" aria-label="显示第3张照片" aria-pressed="false"><span></span></button><button class="hero-photo-dot" type="button" data-hero-dot="3" aria-label="显示第4张照片" aria-pressed="false"><span></span></button><button class="hero-photo-dot" type="button" data-hero-dot="4" aria-label="显示第5张照片" aria-pressed="false"><span></span></button></div>
+        <button class="hero-photo-button" type="button" data-hero-next aria-label="下一张照片"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6"/></svg></button>
+        <button class="hero-photo-button hero-photo-toggle" type="button" data-hero-toggle data-paused="false" aria-label="暂停轮播"><svg class="hero-pause-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6v12M15 6v12"/></svg><svg class="hero-play-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 10 7-10 7Z"/></svg><span class="hero-screen-reader" data-hero-toggle-label>暂停轮播</span></button>
+      </div>
+      <a href="#explore" aria-label="探索研究方向"><span data-i18n="scroll">向下探索</span><span aria-hidden="true">↓</span></a>
+    </div>
+</section>
 <section class="introduction container" aria-labelledby="intro-title">
     <div><p class="eyebrow">A NEW WAY TO EXPLORE</p><h2 id="intro-title" data-i18n="introTitle">把兴趣，连接到更广阔的研究世界。</h2></div>
     <p data-i18n="introDescription">人工智能既能帮助理解生命、探索分子，也能用于分析经济社会数据、理解经营议题、讨论技术公平性与研究伦理。我们从具体学科的问题出发，将证据分析、计算实践与表达能力连接起来。</p>

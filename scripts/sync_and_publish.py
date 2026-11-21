@@ -186,7 +186,7 @@ def integrate_remote():
 
 
 def mirror(commit):
-    allowed_files = {'topics.html', 'practice.html', 'programs.html', 'applications.html', 'admissions.html', 'honors.html', 'contact.html', 'index.html', 'ai-research.html', 'campus.html', 'README.md', CATALOG, ADMISSIONS, 'assets/site.css', 'assets/site.js'}
+    allowed_files = {'topics.html', 'practice.html', 'programs.html', 'applications.html', 'admissions.html', 'honors.html', 'contact.html', 'index.html', 'ai-research.html', 'campus.html', 'README.md', CATALOG, ADMISSIONS, 'assets/site.css', 'assets/site.js', 'assets/hero-carousel.css', 'assets/hero-carousel.js'}
     for name in git('ls-tree', '-r', '--name-only', commit).splitlines():
         if name not in allowed_files and not name.startswith('images/'):
             continue

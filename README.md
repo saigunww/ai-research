@@ -9,10 +9,12 @@
 - `index.html`：简洁首页与各栏目入口。
 - `topics.html`、`practice.html`、`programs.html`、`applications.html`、`admissions.html`、`honors.html`、`contact.html`：独立栏目页面；共同使用四语脚本与样式。旧首页栏目锚点自动跳转到对应页面，跨页链接保留语言。
 - `assets/site.css`、`assets/site.js`：视觉样式、四语言文案、目录搜索及分类。
+- 首页首屏以服务器、AI研究室门面、何同学科研学习、金同学细胞培养、马同学发表练习五张实拍照片作循环背景；每6秒淡入淡出，可前后切换、点选或暂停。`assets/hero-carousel.css`、`assets/hero-carousel.js` 仅在首页加载，沿用四语切换，页面隐藏时暂停，减少动态效果偏好下默认静止；图片失败会跳过，不影响标题和导航。
 - `data/catalog.json`：经过人工审核的公开目录及录取结果，仅包含明确允许公开的字段。
 - `data/admissions.json`：大学官方要求的适用项目、通道、摘要、来源及最近核对状态。
 - `images/`：网站使用的品牌标识、咨询二维码与用户指定公开的两张何同学合格榜。
 - `images/practice/`：用户指定公开的 GPU 服务器、何同学学习背影、金同学细胞培养及马同学发表练习照片的网页编码版本；原素材与来源记录保留在仓库外的资料库中。
+- `images/hero/`：AI研究室门面原片的响应式 WebP 副本；与 `images/practice/` 的既有实拍照片共同用于首页背景，原片不改写，网页副本移除拍摄元数据。
 - 项目方案：按现有宣传册介绍基础档、成果档、专业档及私人定制，展示人群、内容与成果，不列价格。四档内容及照片说明均提供四语。
 - `campus.html`、`ai-research.html`：旧链接兼容入口，跳转到新首页；不再提供大学项目页面。
 
