@@ -41,7 +41,7 @@
 日常运行与检查：
 
 ```bash
-/home/admin-coach-ai/Documents/大学院生化网页/.sync-venv/bin/python scripts/discover_topics.py --publish
+/home/admin-coach-ai/Documents/官网主页/大学院生化网页/.sync-venv/bin/python scripts/discover_topics.py --publish
 systemctl --user status ai-research-topic-discovery.timer
 systemctl --user status ai-research-update.timer
 ```

@@ -4,8 +4,8 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=%h/Documents/AI科研背景提升网页/github
-ExecStart=%h/Documents/大学院生化网页/.sync-venv/bin/python scripts/sync_and_publish.py --publish
+WorkingDirectory=%h/Documents/官网主页/AI科研背景提升网页/github
+ExecStart=%h/Documents/官网主页/大学院生化网页/.sync-venv/bin/python scripts/sync_and_publish.py --publish
 Environment=PYTHONUNBUFFERED=1
 Environment=GIT_TERMINAL_PROMPT=0
 UMask=0077
