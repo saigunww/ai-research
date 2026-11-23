@@ -82,5 +82,6 @@ html[lang] .hero[data-hero-carousel] .hero-description{color:#d6e0e8;text-shadow
   .hero-photo-dot{min-width:25px}
   .hero-photo-toggle{margin-left:3px}
 }
+@media(max-width:480px){.hero[data-hero-carousel] .hero-bottom>a{grid-row:3}}
 @media(max-width:370px){.hero[data-hero-carousel] .hero-bottom>a{grid-row:3}.hero[data-hero-carousel] .hero-actions{align-items:stretch}.hero[data-hero-carousel] .hero-actions .button{justify-content:space-between;gap:9px;font-size:14px;padding-inline:12px}}
 @media(prefers-reduced-motion:reduce){.hero-slide,.hero-photo-dot span{transition:none;will-change:auto}.hero[data-hero-carousel] .hero-art *{animation:none}}

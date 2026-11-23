@@ -19,25 +19,25 @@
     'zh-CN': {
       group: '科研现场照片', previous: '上一张照片', next: '下一张照片',
       pause: '暂停轮播', play: '播放轮播', fallback: '科研现场',
-      scenes: { server: 'GPU科研计算环境', lab: 'AI研究室', he: '何同学 · 科研学习', jin: '金同学 · 细胞培养', ma: '马同学 · 发表练习' },
+      scenes: { server: 'GPU科研计算环境', lab: 'AI研究室', he: '何同学 · 科研学习', jin: '金同学 · 细胞培养', ma: '马同学 · 发表练习', zhao: '赵同学 · 英语发表练习' },
       photo: (number, title) => `显示第${number}张照片：${title}`
     },
     'zh-TW': {
       group: '科研現場照片', previous: '上一張照片', next: '下一張照片',
       pause: '暫停輪播', play: '播放輪播', fallback: '科研現場',
-      scenes: { server: 'GPU科研計算環境', lab: 'AI研究室', he: '何同學 · 科研學習', jin: '金同學 · 細胞培養', ma: '馬同學 · 發表練習' },
+      scenes: { server: 'GPU科研計算環境', lab: 'AI研究室', he: '何同學 · 科研學習', jin: '金同學 · 細胞培養', ma: '馬同學 · 發表練習', zhao: '趙同學 · 英語發表練習' },
       photo: (number, title) => `顯示第${number}張照片：${title}`
     },
     ja: {
       group: '研究現場の写真', previous: '前の写真', next: '次の写真',
       pause: '自動再生を停止', play: '自動再生を開始', fallback: '研究の現場',
-      scenes: { server: '研究用GPUサーバー', lab: 'AI研究室', he: '何さん · 研究活動', jin: '金さん · 細胞培養', ma: '馬さん · 発表練習' },
+      scenes: { server: '研究用GPUサーバー', lab: 'AI研究室', he: '何さん · 研究活動', jin: '金さん · 細胞培養', ma: '馬さん · 発表練習', zhao: '趙さん · 英語での発表練習' },
       photo: (number, title) => `写真${number}を表示：${title}`
     },
     en: {
       group: 'Research in practice', previous: 'Previous photo', next: 'Next photo',
       pause: 'Pause slideshow', play: 'Play slideshow', fallback: 'Research in practice',
-      scenes: { server: 'GPU research computing', lab: 'AI research lab', he: 'Student He · Research in practice', jin: 'Student Jin · Cell culture', ma: 'Student Ma · Presentation practice' },
+      scenes: { server: 'GPU research computing', lab: 'AI research lab', he: 'Student He · Research in practice', jin: 'Student Jin · Cell culture', ma: 'Student Ma · Presentation practice', zhao: 'Student Zhao · English presentation practice' },
       photo: (number, title) => `Show photo ${number}: ${title}`
     }
   };
