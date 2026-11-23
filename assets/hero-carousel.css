@@ -82,20 +82,30 @@ html[lang] .hero[data-hero-carousel] .hero-description{color:#d6e0e8;text-shadow
   .hero-photo-dot{min-width:25px}
   .hero-photo-toggle{margin-left:3px}
 }
-/* Keep desktop artwork in the left text column, below the copy and clear of people. */
+/* Anchor desktop artwork to the page edge, in the clear space beside people. */
 @media(min-width:901px){
-  .hero[data-hero-carousel] .hero-inner{display:block;padding-block:64px 42px}
-  .hero[data-hero-carousel] .hero-copy{width:48%;max-width:610px}
-  .hero[data-hero-carousel] .hero-art{position:relative;top:auto;right:auto;width:min(48%,550px);height:250px;aspect-ratio:auto;margin:28px 0 0;transform:none}
-  .hero[data-hero-carousel] .hero-art .orbital{position:absolute;top:0;left:50%;width:250px;height:250px;transform:translateX(-50%)}
-  .hero[data-hero-carousel] .hero-art .art-tag{max-width:44%;padding:8px 10px;font-size:12px;line-height:1.5;white-space:normal}
+  .hero[data-hero-carousel]>.hero-art{position:absolute;z-index:2;top:24px;right:24px;width:clamp(110px,calc(26vw - 140px),340px);height:340px;aspect-ratio:auto;margin:0;transform:none}
+  .hero[data-hero-carousel] .hero-art .orbital{position:absolute;top:50%;left:50%;width:100%;height:auto;aspect-ratio:1;transform:translate(-50%,-50%)}
+  .hero[data-hero-carousel] .hero-art .art-tag{max-width:48%;padding:8px 10px;font-size:12px;line-height:1.5;white-space:normal;animation:none;transform:none}
   .hero[data-hero-carousel] .hero-art .art-tag small{font-size:8px}
-  .hero[data-hero-carousel] .hero-art .tag-one{top:24px;left:0}
-  .hero[data-hero-carousel] .hero-art .tag-two{top:97px;right:0}
-  .hero[data-hero-carousel] .hero-art .tag-three{bottom:22px;left:0}
-  .hero[data-hero-carousel] .hero-art .tag-four{top:10px;right:0}
-  .hero[data-hero-carousel] .hero-art .tag-five{bottom:6px;right:0}
+  .hero[data-hero-carousel] .hero-art .tag-one{top:65px;left:0}
+  .hero[data-hero-carousel] .hero-art .tag-two{top:145px;right:0}
+  .hero[data-hero-carousel] .hero-art .tag-three{bottom:35px;left:0}
+  .hero[data-hero-carousel] .hero-art .tag-four{top:0;right:0}
+  .hero[data-hero-carousel] .hero-art .tag-five{bottom:0;right:0}
   .hero[data-hero-carousel] .hero-art .orbital-label,.hero[data-hero-carousel] .hero-art .art-cross{display:none}
+}
+@media(min-width:901px) and (max-width:1379px){
+  .hero[data-hero-carousel]>.hero-art{display:flex;flex-direction:column;gap:6px;top:20px;right:12px;height:auto}
+  .hero[data-hero-carousel] .hero-art .orbital{position:static;flex:none;width:100%;height:auto;transform:none;margin-bottom:6px}
+  .hero[data-hero-carousel] .hero-art .art-tag{position:static;width:100%;max-width:none}
+}
+@media(min-width:1800px){.hero[data-hero-carousel]>.hero-art{height:360px}.hero[data-hero-carousel] .hero-art .art-tag{font-size:13px}.hero-slide[data-hero-key=zhao] img{object-position:60% 70%}}
+/* On phones, reserve a right-aligned area after the copy, below the portraits. */
+@media(max-width:900px){
+  .hero[data-hero-carousel]>.hero-art{position:relative;z-index:2;top:auto;right:auto;width:min(340px,calc(100% - 48px));height:240px;aspect-ratio:auto;margin:0 24px 24px auto;transform:none}
+  .hero[data-hero-carousel] .hero-art .orbital{top:10px;width:220px;height:220px}
+  .hero-slide[data-hero-key=he] img,.hero-slide[data-hero-key=jin] img,.hero-slide[data-hero-key=ma] img,.hero-slide[data-hero-key=zhao] img{transform:translateY(-60px)}
 }
 @media(max-width:480px){.hero[data-hero-carousel] .hero-bottom>a{grid-row:3}}
 @media(max-width:370px){.hero[data-hero-carousel] .hero-bottom>a{grid-row:3}.hero[data-hero-carousel] .hero-actions{align-items:stretch}.hero[data-hero-carousel] .hero-actions .button{justify-content:space-between;gap:9px;font-size:14px;padding-inline:12px}}
