@@ -1,16 +1,16 @@
 {
   "updatedAt": "2026-11-27",
-  "checkedAt": "2026-11-27T19:40:35+09:00",
+  "checkedAt": "2026-11-27T20:40:21+09:00",
   "items": [
     {
       "id": "kyoto-iup-activities-2027",
       "level": "undergraduate",
       "status": "verified",
-      "university": {
-        "en": "Kyoto University",
-        "ja": "京都大学",
-        "zh-CN": "京都大学",
-        "zh-TW": "京都大學"
+      "route": {
+        "en": "October 2027 admission",
+        "ja": "2027年10月入学者選抜",
+        "zh-CN": "2027年10月入学选考",
+        "zh-TW": "2027年10月入學選考"
       },
       "program": {
         "en": "Kyoto iUP",
@@ -18,11 +18,11 @@
         "zh-CN": "Kyoto iUP 国际本科项目",
         "zh-TW": "Kyoto iUP 國際本科項目"
       },
-      "route": {
-        "en": "October 2027 admission",
-        "ja": "2027年10月入学者選抜",
-        "zh-CN": "2027年10月入学选考",
-        "zh-TW": "2027年10月入學選考"
+      "university": {
+        "en": "Kyoto University",
+        "ja": "京都大学",
+        "zh-CN": "京都大学",
+        "zh-TW": "京都大學"
       },
       "scope": {
         "en": "Eligible non-Japanese applicants; residence-status and educational conditions apply.",
@@ -39,7 +39,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://www.iup.kyoto-u.ac.jp/faq/application-documents/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Optional evidence",
@@ -63,11 +63,11 @@
       "id": "tohoku-gateway-research-2027",
       "level": "undergraduate",
       "status": "changed",
-      "university": {
-        "en": "Tohoku University",
-        "ja": "東北大学",
-        "zh-CN": "东北大学",
-        "zh-TW": "東北大學"
+      "route": {
+        "en": "Term II fall admission: STEM / Humanities & Social Sciences",
+        "ja": "Ⅱ期・秋入学（STEM／人文社会）",
+        "zh-CN": "Term II 秋季入学（STEM／人文社会）",
+        "zh-TW": "Term II 秋季入學（STEM／人文社會）"
       },
       "program": {
         "en": "Gateway College",
@@ -75,11 +75,11 @@
         "zh-CN": "Gateway College",
         "zh-TW": "Gateway College"
       },
-      "route": {
-        "en": "Term II fall admission: STEM / Humanities & Social Sciences",
-        "ja": "Ⅱ期・秋入学（STEM／人文社会）",
-        "zh-CN": "Term II 秋季入学（STEM／人文社会）",
-        "zh-TW": "Term II 秋季入學（STEM／人文社會）"
+      "university": {
+        "en": "Tohoku University",
+        "ja": "東北大学",
+        "zh-CN": "东北大学",
+        "zh-TW": "東北大學"
       },
       "scope": {
         "en": "Primarily applicants educated outside Japan’s high-school system, including international students; eligibility rules apply.",
@@ -96,7 +96,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://admissions.tohoku.ac.jp/en/adcms/wp-content/uploads/2026/08/ApplicationGuideGWC2027Fall.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Selection policy",
@@ -120,11 +120,11 @@
       "id": "tsukuba-bpgi-studyplan-2027",
       "level": "undergraduate",
       "status": "changed",
-      "university": {
-        "en": "University of Tsukuba",
-        "ja": "筑波大学",
-        "zh-CN": "筑波大学",
-        "zh-TW": "筑波大學"
+      "route": {
+        "en": "General Track / optional combined MEXT track",
+        "ja": "一般枠・国費併願枠",
+        "zh-CN": "General Track／可并申MEXT通道",
+        "zh-TW": "General Track／可並申MEXT通道"
       },
       "program": {
         "en": "Bachelor’s Program in Global Issues (BPGI)",
@@ -132,11 +132,11 @@
         "zh-CN": "全球课题学士项目 BPGI",
         "zh-TW": "全球課題學士項目 BPGI"
       },
-      "route": {
-        "en": "General Track / optional combined MEXT track",
-        "ja": "一般枠・国費併願枠",
-        "zh-CN": "General Track／可并申MEXT通道",
-        "zh-TW": "General Track／可並申MEXT通道"
+      "university": {
+        "en": "University of Tsukuba",
+        "ja": "筑波大学",
+        "zh-CN": "筑波大学",
+        "zh-TW": "筑波大學"
       },
       "scope": {
         "en": "Eligible overseas-school or designated-qualification applicants; extra conditions apply to Japanese nationals, permanent residents and MEXT applicants.",
@@ -153,7 +153,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://bpgi.tsukuba.ac.jp/en/wp-content/uploads/2026/07/500c89d22064ed5262b38e2f9037440c.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Required study plan",
@@ -177,11 +177,11 @@
       "id": "waseda-taisi-experience-2027",
       "level": "undergraduate",
       "status": "verified",
-      "university": {
-        "en": "Waseda University",
-        "ja": "早稲田大学",
-        "zh-CN": "早稻田大学",
-        "zh-TW": "早稻田大學"
+      "route": {
+        "en": "English-based September 2027 admission",
+        "ja": "英語学位プログラム・2027年9月入学",
+        "zh-CN": "英语学位课程 2027年9月入学",
+        "zh-TW": "英語學位課程 2027年9月入學"
       },
       "program": {
         "en": "School of Social Sciences: TAISI",
@@ -189,11 +189,11 @@
         "zh-CN": "社会科学部 TAISI",
         "zh-TW": "社會科學部 TAISI"
       },
-      "route": {
-        "en": "English-based September 2027 admission",
-        "ja": "英語学位プログラム・2027年9月入学",
-        "zh-CN": "英语学位课程 2027年9月入学",
-        "zh-TW": "英語學位課程 2027年9月入學"
+      "university": {
+        "en": "Waseda University",
+        "ja": "早稲田大学",
+        "zh-CN": "早稻田大学",
+        "zh-TW": "早稻田大學"
       },
       "scope": {
         "en": "Applicants worldwide meeting the educational criteria; separate provisions cover Japanese and other education systems.",
@@ -210,7 +210,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://www.waseda.jp/fsss/sss/assets/uploads/2026/09/01_2027_Application_Guidelines_v1.0.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Experience narrative",
@@ -234,11 +234,11 @@
       "id": "utokyo-cbms-masters-plan-2027",
       "level": "graduate",
       "status": "changed",
-      "university": {
-        "en": "The University of Tokyo",
-        "ja": "東京大学",
-        "zh-CN": "东京大学",
-        "zh-TW": "東京大學"
+      "route": {
+        "en": "Master’s general selection (Schedules A / B)",
+        "ja": "修士課程・一般選抜（A／B日程）",
+        "zh-CN": "修士 一般选拔（A／B日程）",
+        "zh-TW": "修士 一般選拔（A／B日程）"
       },
       "program": {
         "en": "Graduate School of Frontier Sciences: Computational Biology and Medical Sciences",
@@ -246,11 +246,11 @@
         "zh-CN": "新领域创成科学研究科·医疗信息生命专攻",
         "zh-TW": "新領域創成科學研究科·醫療資訊生命專攻"
       },
-      "route": {
-        "en": "Master’s general selection (Schedules A / B)",
-        "ja": "修士課程・一般選抜（A／B日程）",
-        "zh-CN": "修士 一般选拔（A／B日程）",
-        "zh-TW": "修士 一般選拔（A／B日程）"
+      "university": {
+        "en": "The University of Tokyo",
+        "ja": "東京大学",
+        "zh-CN": "东京大学",
+        "zh-TW": "東京大學"
       },
       "scope": {
         "en": "Eligible master’s applicants, including foreign nationals, use general selection; this department does not offer the special international selection route.",
@@ -267,7 +267,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://www.cbms.k.u-tokyo.ac.jp/media/files/admission/2027_CBMS_Guidelines_J.pdf",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Required research plan",
@@ -291,11 +291,11 @@
       "id": "utokyo-integrated-biosciences-2027b",
       "level": "graduate",
       "status": "verified",
-      "university": {
-        "en": "The University of Tokyo",
-        "ja": "東京大学",
-        "zh-CN": "东京大学",
-        "zh-TW": "東京大學"
+      "route": {
+        "en": "AY2027 Schedule B: special master’s selection for international applicants and others",
+        "ja": "2027年度B日程・修士外国人等特別選考",
+        "zh-CN": "2027年度B日程 修士外国人等特别选考",
+        "zh-TW": "2027年度B日程 修士外國人等特別選考"
       },
       "program": {
         "en": "Graduate School of Frontier Sciences: Integrated Biosciences",
@@ -303,11 +303,11 @@
         "zh-CN": "新领域创成科学研究科·先端生命科学专攻",
         "zh-TW": "新領域創成科學研究科·先端生命科學專攻"
       },
-      "route": {
-        "en": "AY2027 Schedule B: special master’s selection for international applicants and others",
-        "ja": "2027年度B日程・修士外国人等特別選考",
-        "zh-CN": "2027年度B日程 修士外国人等特别选考",
-        "zh-TW": "2027年度B日程 修士外國人等特別選考"
+      "university": {
+        "en": "The University of Tokyo",
+        "ja": "東京大学",
+        "zh-CN": "东京大学",
+        "zh-TW": "東京大學"
       },
       "scope": {
         "en": "Master’s applicants qualifying for the special international-and-other category; no general master’s selection is offered in Schedule B.",
@@ -324,7 +324,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://www.ib.k.u-tokyo.ac.jp/admission/2027information/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Required contact certificate",
@@ -348,11 +348,11 @@
       "id": "science-tokyo-igpa-consent-2027",
       "level": "graduate",
       "status": "verified",
-      "university": {
-        "en": "Institute of Science Tokyo",
-        "ja": "東京科学大学",
-        "zh-CN": "东京科学大学",
-        "zh-TW": "東京科學大學"
+      "route": {
+        "en": "Fall 2027 master’s / integrated doctoral admission",
+        "ja": "2027年秋入学・修士／修博一貫",
+        "zh-CN": "2027秋季 修士／修博一贯课程",
+        "zh-TW": "2027秋季 修士／修博一貫課程"
       },
       "program": {
         "en": "International Graduate Program (A)",
@@ -360,11 +360,11 @@
         "zh-CN": "International Graduate Program (A)",
         "zh-TW": "International Graduate Program (A)"
       },
-      "route": {
-        "en": "Fall 2027 master’s / integrated doctoral admission",
-        "ja": "2027年秋入学・修士／修博一貫",
-        "zh-CN": "2027秋季 修士／修博一贯课程",
-        "zh-TW": "2027秋季 修士／修博一貫課程"
+      "university": {
+        "en": "Institute of Science Tokyo",
+        "ja": "東京科学大学",
+        "zh-CN": "东京科学大学",
+        "zh-TW": "東京科學大學"
       },
       "scope": {
         "en": "Eligible IGP(A) applicants; Japanese nationals face additional overseas-residence conditions. Only listed programs and supervisors qualify.",
@@ -381,7 +381,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Supervisor consent required",
@@ -405,11 +405,11 @@
       "id": "tohoku-life-masters-consent-2027",
       "level": "graduate",
       "status": "changed",
-      "university": {
-        "en": "Tohoku University",
-        "ja": "東北大学",
-        "zh-CN": "东北大学",
-        "zh-TW": "東北大學"
+      "route": {
+        "en": "Third-term selection for April 2027 entry",
+        "ja": "2027年4月入学・Ⅲ期募集",
+        "zh-CN": "2027年4月入学 第III期",
+        "zh-TW": "2027年4月入學 第III期"
       },
       "program": {
         "en": "Graduate School of Life Sciences: master’s program",
@@ -417,11 +417,11 @@
         "zh-CN": "生命科学研究科 博士前期2年课程",
         "zh-TW": "生命科學研究科 博士前期2年課程"
       },
-      "route": {
-        "en": "Third-term selection for April 2027 entry",
-        "ja": "2027年4月入学・Ⅲ期募集",
-        "zh-CN": "2027年4月入学 第III期",
-        "zh-TW": "2027年4月入學 第III期"
+      "university": {
+        "en": "Tohoku University",
+        "ja": "東北大学",
+        "zh-CN": "东北大学",
+        "zh-TW": "東北大學"
       },
       "scope": {
         "en": "General selection and special routes for working, returnee and international applicants; route eligibility and available fields must be checked.",
@@ -438,7 +438,7 @@
       "academicYear": "2027",
       "sourceUrl": "https://www.lifesci.tohoku.ac.jp/en/admission/schedule/",
       "verifiedAt": "2026-11-12",
-      "checkedAt": "2026-11-27T19:40:35+09:00",
+      "checkedAt": "2026-11-27T20:40:21+09:00",
       "tags": {
         "en": [
           "Evidence of consent",
