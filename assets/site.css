@@ -385,3 +385,8 @@ body:not([data-page="index"]) main>.section-space:first-of-type{padding-top:42px
 .explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.explore-card{display:block;position:relative;text-decoration:none;color:#142c43;border:1px solid #dce6ec;border-radius:12px;padding:28px;background:#f8fafb;transition:transform .2s,background .2s}.explore-card:hover{background:#edf5f5;transform:translateY(-3px)}.explore-card:focus-visible{outline:3px solid #237e91;outline-offset:4px}.explore-index{font-size:12px;letter-spacing:.12em;color:#547b8b}.explore-card h3{font-size:23px;margin:17px 0 10px}.explore-card p{font-size:16px;line-height:1.8;color:#61758a;margin:0 20px 0 0}.explore-arrow{position:absolute;right:24px;top:24px;font-size:24px;color:#387c81}.explore-card:last-child{grid-column:1/-1}.home-explore{padding-top:24px}
 @media(max-width:800px){.explore-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.breadcrumbs{padding-top:25px}.section-heading h1{font-size:30px}}
 @media(max-width:500px){.explore-grid{grid-template-columns:1fr}.explore-card{padding:24px}.explore-card h3{font-size:22px}}
+
+/* University wet-lab feature: portrait photo beside the caption. */
+.lab-feature{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.lab-feature .presentation-photo img{min-height:0;aspect-ratio:4/5;object-position:50% 45%}
+@media(max-width:800px){.lab-feature{grid-template-columns:1fr}.lab-feature .presentation-photo img{aspect-ratio:4/5}}
