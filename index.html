@@ -24,8 +24,9 @@
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="assets/site.css?v=20261127-zhao-lab">
   <link rel="stylesheet" href="assets/hero-carousel.css?v=20261123-atom-larger-lower">
+  <link rel="stylesheet" href="assets/featured-videos.css?v=20261128">
   <link rel="preload" as="image" href="images/practice/server-workspace-1400.webp" imagesrcset="images/practice/server-workspace-800.webp 800w, images/practice/server-workspace-1400.webp 1400w" imagesizes="100vw" fetchpriority="high">
-  <script src="assets/site.js?v=20261127-zhao-lab" defer></script>
+  <script src="assets/site.js?v=20261128-featured-videos" defer></script>
   <script src="assets/hero-carousel.js?v=20261123-zhao" defer></script>
 <script>const legacyRoutes={"topics": "topics.html#topics", "pathway": "practice.html#pathway", "practice": "practice.html#practice", "programs": "programs.html#programs", "applications": "applications.html#applications", "admissions": "admissions.html#admissions", "honors": "honors.html#honors", "contact": "contact.html#contact", "presentation-practice": "practice.html#presentation-practice"};if(legacyRoutes[location.hash.slice(1)]){const target=new URL(legacyRoutes[location.hash.slice(1)],location.href);target.search=location.search;location.replace(target.href);}</script>
 </head>
@@ -101,6 +102,59 @@
       </div>
       <a href="#explore" aria-label="探索研究方向"><span data-i18n="scroll">向下探索</span><span aria-hidden="true">↓</span></a>
     </div>
+</section>
+<section class="featured-videos section-space" id="featured-videos" aria-labelledby="featured-videos-title">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">WATCH / RESEARCH IN FOCUS</p><h2 id="featured-videos-title" data-i18n="videosTitle">从一段视频，走近科研。</h2></div>
+      <p class="section-description" data-i18n="videosDescription">认识科研实践，看看 AI 怎样分析图像，再走进 DNA 复制的微观世界。</p>
+    </div>
+    <p class="featured-videos-note" data-i18n="videosNote">中文视频 · 点击封面播放，可全屏观看</p>
+    <div class="featured-videos-grid">
+      <article class="featured-video-card">
+        <div class="featured-video-media">
+          <video id="featured-video-program" class="featured-video" controls playsinline preload="none" poster="images/videos/research-program.webp" src="videos/research-program.mp4" aria-labelledby="video-program-title">
+            <a href="videos/research-program.mp4" data-i18n="videoOpen">单独打开视频</a>
+          </video>
+          <button class="featured-video-play" type="button" hidden aria-controls="featured-video-program" aria-describedby="video-program-title"><span class="featured-video-play-icon" aria-hidden="true"></span><span class="featured-video-sr" data-i18n="videoPlay">播放视频</span></button>
+        </div>
+        <div class="featured-video-copy">
+          <div class="featured-video-meta"><span data-i18n="videoProgramLabel">项目介绍</span><span><span class="featured-video-sr" data-i18n="videoDuration">时长</span> 0:49</span></div>
+          <h3 id="video-program-title" data-i18n="videoProgramTitle">科研背景提升：从兴趣到实践</h3>
+          <p data-i18n="videoProgramDescription">从选题、动手实践，到研究报告与表达，了解 AI 科研项目的学习过程。</p>
+          <p class="featured-video-error" hidden><span data-i18n="videoError">视频暂时无法播放。</span> <a href="videos/research-program.mp4" target="_blank" rel="noopener" data-i18n="videoOpen">单独打开视频</a></p>
+        </div>
+      </article>
+      <article class="featured-video-card">
+        <div class="featured-video-media">
+          <video id="featured-video-nuclei" class="featured-video" controls playsinline preload="none" poster="images/videos/ai-cell-nuclei.webp" src="videos/ai-cell-nuclei.mp4" aria-labelledby="video-nuclei-title">
+            <a href="videos/ai-cell-nuclei.mp4" data-i18n="videoOpen">单独打开视频</a>
+          </video>
+          <button class="featured-video-play" type="button" hidden aria-controls="featured-video-nuclei" aria-describedby="video-nuclei-title"><span class="featured-video-play-icon" aria-hidden="true"></span><span class="featured-video-sr" data-i18n="videoPlay">播放视频</span></button>
+        </div>
+        <div class="featured-video-copy">
+          <div class="featured-video-meta"><span data-i18n="videoNucleiLabel">AI × 显微图像</span><span><span class="featured-video-sr" data-i18n="videoDuration">时长</span> 0:47</span></div>
+          <h3 id="video-nuclei-title" data-i18n="videoNucleiTitle">AI 怎样圈出挤在一起的细胞核？</h3>
+          <p data-i18n="videoNucleiDescription">从显微图像到细胞核轮廓，用教学动画认识 StarDist 怎样预测边界、对照人工参考。</p>
+          <p class="featured-video-error" hidden><span data-i18n="videoError">视频暂时无法播放。</span> <a href="videos/ai-cell-nuclei.mp4" target="_blank" rel="noopener" data-i18n="videoOpen">单独打开视频</a></p>
+        </div>
+      </article>
+      <article class="featured-video-card">
+        <div class="featured-video-media">
+          <video id="featured-video-dna" class="featured-video" controls playsinline preload="none" poster="images/videos/dna-replication.webp" src="videos/dna-replication.mp4" aria-labelledby="video-dna-title">
+            <a href="videos/dna-replication.mp4" data-i18n="videoOpen">单独打开视频</a>
+          </video>
+          <button class="featured-video-play" type="button" hidden aria-controls="featured-video-dna" aria-describedby="video-dna-title"><span class="featured-video-play-icon" aria-hidden="true"></span><span class="featured-video-sr" data-i18n="videoPlay">播放视频</span></button>
+        </div>
+        <div class="featured-video-copy">
+          <div class="featured-video-meta"><span data-i18n="videoDnaLabel">三维分子机制</span><span><span class="featured-video-sr" data-i18n="videoDuration">时长</span> 3:40</span></div>
+          <h3 id="video-dna-title" data-i18n="videoDnaTitle">DNA 复制：一条双链如何变成两条</h3>
+          <p data-i18n="videoDnaDescription">跟随全貌视角的三维教学动画，观察 DNA 解链、复制与连接的连续过程。</p>
+          <p class="featured-video-error" hidden><span data-i18n="videoError">视频暂时无法播放。</span> <a href="videos/dna-replication.mp4" target="_blank" rel="noopener" data-i18n="videoOpen">单独打开视频</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 <section class="introduction container" aria-labelledby="intro-title">
     <div><p class="eyebrow">A NEW WAY TO EXPLORE</p><h2 id="intro-title" data-i18n="introTitle">把兴趣，连接到更广阔的研究世界。</h2></div>
