@@ -579,11 +579,78 @@
   languages.forEach(language => Object.assign(copy[language], presentationCopy[language]));
   const multipageCopy = {"zh-CN": {"homeNav": "首页", "navPractice": "科研实践", "exploreTitle": "选择你想了解的内容", "exploreDescription": "按主题浏览，让每一次探索更清晰。", "pageExplore": "继续了解", "entryPractice": "学习路径、真实照片与课堂发表练习。", "entryTopics": "按领域搜索研究课题与研究概要。", "entryPrograms": "了解不同基础与目标对应的项目安排。", "entryApplications": "把科研经历转化为清晰的申请材料与面试表达。", "entryAdmissions": "查看大学官方要求与最近核对状态。", "entryHonors": "浏览合格成果及公开记录。", "entryContact": "沟通兴趣、学习基础与下一步计划。"}, "zh-TW": {"homeNav": "首頁", "navPractice": "科研實踐", "exploreTitle": "選擇你想了解的內容", "exploreDescription": "按主題瀏覽，讓每一次探索更清晰。", "pageExplore": "繼續了解", "entryPractice": "學習路徑、真實照片與課堂發表練習。", "entryTopics": "按領域搜尋研究課題與研究概要。", "entryPrograms": "了解不同基礎與目標對應的項目安排。", "entryApplications": "將科研經歷轉化為清晰的申請材料與面試表達。", "entryAdmissions": "查看大學官方要求與最近核對狀態。", "entryHonors": "瀏覽合格成果及公開記錄。", "entryContact": "溝通興趣、學習基礎與下一步計畫。"}, "ja": {"homeNav": "ホーム", "navPractice": "研究実践", "exploreTitle": "知りたい内容から、探してみる。", "exploreDescription": "テーマごとに、必要な情報へ。", "pageExplore": "詳しく見る", "entryPractice": "学習の流れ、実践風景、発表練習をご紹介。", "entryTopics": "分野から研究テーマと研究の概要を検索。", "entryPrograms": "学習経験と目標に合わせたプログラム。", "entryApplications": "研究経験を出願書類や面接で伝えるために。", "entryAdmissions": "大学の公式要件と確認状況をご覧いただけます。", "entryHonors": "合格実績と公開記録をご紹介。", "entryContact": "興味や学習経験、次の一歩をご相談ください。"}, "en": {"homeNav": "Home", "navPractice": "Research practice", "exploreTitle": "Find what you want to explore.", "exploreDescription": "A focused page for each part of your journey.", "pageExplore": "Explore", "entryPractice": "Learning pathways, real practice and classroom presentations.", "entryTopics": "Search research topics and their overviews by area.", "entryPrograms": "Programs for different starting points and goals.", "entryApplications": "Explain your research experience in applications and interviews.", "entryAdmissions": "Official university requirements and their latest review status.", "entryHonors": "Explore admissions outcomes and public records.", "entryContact": "Discuss your interests, experience and next steps."}};
   languages.forEach(language => Object.assign(copy[language], multipageCopy[language]));
+  const footerCopy = {
+  "zh-CN": {
+    "footerNavigation": "网站导航",
+    "footerSummary": "从真实问题出发，连接跨学科学习、科研实践与升学表达。",
+    "footerContactHeading": "AI研究室 · 联系我们",
+    "footerRoom": "行知学园本馆 2 楼 · AI研究室",
+    "footerMap": "在地图中查看",
+    "footerPhone": "电话",
+    "footerEmail": "邮箱",
+    "footerRelatedHeading": "相关网站",
+    "footerOfficial": "行知学园集团官网",
+    "footerJapanese": "行知学园日本语学校",
+    "footerInternational": "行知学园国际学校",
+    "footerGraduate": "大学院生物・化学科目组",
+    "footerPrivacy": "行知学园隐私政策",
+    "footerVideos": "精选科普视频"
+  },
+  "zh-TW": {
+    "footerNavigation": "網站導覽",
+    "footerSummary": "從真實問題出發，連結跨學科學習、科研實踐與升學表達。",
+    "footerContactHeading": "AI研究室 · 聯絡我們",
+    "footerRoom": "行知學園本館 2 樓 · AI研究室",
+    "footerMap": "在地圖中查看",
+    "footerPhone": "電話",
+    "footerEmail": "信箱",
+    "footerRelatedHeading": "相關網站",
+    "footerOfficial": "行知學園集團官網",
+    "footerJapanese": "行知學園日本語學校",
+    "footerInternational": "行知學園國際學校",
+    "footerGraduate": "大學院生物・化學科目組",
+    "footerPrivacy": "行知學園隱私權政策",
+    "footerVideos": "精選科普影片"
+  },
+  "ja": {
+    "footerNavigation": "サイトナビゲーション",
+    "footerSummary": "実際の問いを起点に、分野を越えた学び、研究実践、進学に向けた表現をつなぎます。",
+    "footerContactHeading": "AI研究室・お問い合わせ",
+    "footerRoom": "行知学園 新大久保校本館 2階 AI研究室",
+    "footerMap": "地図で見る",
+    "footerPhone": "電話",
+    "footerEmail": "メール",
+    "footerRelatedHeading": "関連サイト",
+    "footerOfficial": "行知学園グループ公式サイト",
+    "footerJapanese": "行知学園日本語学校",
+    "footerInternational": "行知学園インターナショナルスクール",
+    "footerGraduate": "大学院生物・化学科目組",
+    "footerPrivacy": "行知学園のプライバシーポリシー",
+    "footerVideos": "研究解説動画"
+  },
+  "en": {
+    "footerNavigation": "Site navigation",
+    "footerSummary": "Connect real questions with interdisciplinary learning, research practice and clear communication for university applications.",
+    "footerContactHeading": "AI Research Lab · Contact",
+    "footerRoom": "Coach Academy Main Building, 2F · AI Research Lab",
+    "footerMap": "View map",
+    "footerPhone": "Phone",
+    "footerEmail": "Email",
+    "footerRelatedHeading": "Related websites",
+    "footerOfficial": "Coach Academy Group",
+    "footerJapanese": "Coach Academy Japanese Language School",
+    "footerInternational": "Coach Academy International School",
+    "footerGraduate": "Graduate Biology & Chemistry Program",
+    "footerPrivacy": "Coach Academy privacy policy",
+    "footerVideos": "Research videos"
+  }
+};
+  languages.forEach(language => Object.assign(copy[language], footerCopy[language]));
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   let catalog = null;
   let loadFailed = false;
-  let selectedCategory = 'all';
+  let selectedCategory = new URLSearchParams(location.search).get('category') || 'all';
   let currentLanguage = 'zh-CN';
   let pendingRequest = null;
   let admissionsData = null;
@@ -787,6 +854,7 @@
         const data = await response.json();
         if (!Array.isArray(data.topics) || !Array.isArray(data.categories) || !Array.isArray(data.honors)) throw new Error('Invalid catalog');
         catalog = data;
+        if (!catalog.categories.some(category => category.id === selectedCategory)) selectedCategory = 'all';
         loadFailed = false;
         renderCatalog();
       } catch (_) {

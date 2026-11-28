@@ -23,10 +23,11 @@
   </script>
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="assets/site.css?v=20261127-zhao-lab">
+  <link rel="stylesheet" href="assets/footer.css?v=20261128">
   <link rel="stylesheet" href="assets/hero-carousel.css?v=20261123-atom-larger-lower">
   <link rel="stylesheet" href="assets/featured-videos.css?v=20261128">
   <link rel="preload" as="image" href="images/practice/server-workspace-1400.webp" imagesrcset="images/practice/server-workspace-800.webp 800w, images/practice/server-workspace-1400.webp 1400w" imagesizes="100vw" fetchpriority="high">
-  <script src="assets/site.js?v=20261128-six-featured-videos" defer></script>
+  <script src="assets/site.js?v=20261128-footer" defer></script>
   <script src="assets/hero-carousel.js?v=20261123-zhao" defer></script>
 <script>const legacyRoutes={"topics": "topics.html#topics", "pathway": "practice.html#pathway", "practice": "practice.html#practice", "programs": "programs.html#programs", "applications": "applications.html#applications", "admissions": "admissions.html#admissions", "honors": "honors.html#honors", "contact": "contact.html#contact", "presentation-practice": "practice.html#presentation-practice"};if(legacyRoutes[location.hash.slice(1)]){const target=new URL(legacyRoutes[location.hash.slice(1)],location.href);target.search=location.search;location.replace(target.href);}</script>
 </head>
@@ -203,6 +204,56 @@
     <p data-i18n="introDescription">人工智能既能帮助理解生命、探索分子，也能用于分析经济社会数据、理解经营议题、讨论技术公平性与研究伦理。我们从具体学科的问题出发，将证据分析、计算实践与表达能力连接起来。</p>
   </section><section class="home-explore section-space" id="explore"><div class="container"><div class="section-heading"><div><p class="eyebrow">EXPLORE / YOUR NEXT STEP</p><h2 data-i18n="exploreTitle">选择你想了解的内容</h2></div><p class="section-description" data-i18n="exploreDescription">按主题浏览，让每一次探索更清晰。</p></div><div class="explore-grid"><a class="explore-card" href="topics.html"><span class="explore-index">01</span><h3 data-i18n="navTopics">研究方向</h3><p data-i18n="entryTopics">按领域搜索研究方向与实践概览。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="practice.html"><span class="explore-index">02</span><h3 data-i18n="navPractice">科研实践</h3><p data-i18n="entryPractice">学习路径、真实照片与课堂发表练习。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="programs.html"><span class="explore-index">03</span><h3 data-i18n="navPrograms">项目方案</h3><p data-i18n="entryPrograms">了解不同基础与目标对应的项目安排。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="applications.html"><span class="explore-index">04</span><h3 data-i18n="navApplications">升学应用</h3><p data-i18n="entryApplications">把科研经历转化为清晰的申请材料与面试表达。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="admissions.html"><span class="explore-index">05</span><h3 data-i18n="navAdmissions">招生要求</h3><p data-i18n="entryAdmissions">查看大学官方要求与最近核对状态。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="honors.html"><span class="explore-index">06</span><h3 data-i18n="navHonors">合格成果</h3><p data-i18n="entryHonors">浏览合格成果及公开记录。</p><span class="explore-arrow" aria-hidden="true">↗</span></a><a class="explore-card" href="contact.html"><span class="explore-index">07</span><h3 data-i18n="navContact">咨询我们</h3><p data-i18n="entryContact">沟通兴趣、学习基础与下一步计划。</p><span class="explore-arrow" aria-hidden="true">↗</span></a></div></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-inner"><div><span class="footer-brand" data-i18n="footerBrand">行知学园 · COACH ACADEMY</span><p data-i18n="footerProgram">科研背景提升</p></div><p>© <span id="copyright-year">2026</span> Coach Academy</p><a href="#top" class="back-top"><span data-i18n="backTop">返回顶部</span><span aria-hidden="true">↑</span></a></div></footer>
+<footer class="site-footer site-footer-expanded" id="site-footer">
+  <div class="container">
+    <h2 class="sr-only" id="footer-navigation-title" data-i18n="footerNavigation">网站导航</h2>
+    <nav class="footer-navigation" aria-labelledby="footer-navigation-title">
+      <a href="topics.html" data-i18n="navTopics">研究方向</a>
+      <a href="practice.html" data-i18n="navPractice">科研实践</a>
+      <a href="programs.html" data-i18n="navPrograms">项目方案</a>
+      <a href="applications.html" data-i18n="navApplications">升学应用</a>
+      <a href="admissions.html" data-i18n="navAdmissions">大学招生要求</a>
+      <a href="honors.html" data-i18n="navHonors">合格成果</a>
+      <a href="index.html#featured-videos" data-i18n="footerVideos">精选科普视频</a>
+      <a href="contact.html" data-i18n="navContact">咨询我们</a>
+    </nav>
+    <div class="footer-details">
+      <div class="footer-identity">
+        <a class="footer-logo" href="index.html"><img src="images/logo.png" width="1011" height="367" alt="行知学园 Coach Academy" loading="lazy"></a>
+        <p class="footer-program" data-i18n="footerProgram">科研背景提升</p>
+        <p class="footer-summary" data-i18n="footerSummary">从真实问题出发，连接跨学科学习、科研实践与升学表达。</p>
+        <div class="footer-keywords">
+          <a href="topics.html?category=life#topics" data-i18n="artLife">生命科学</a>
+          <a href="topics.html?category=materials#topics" data-i18n="artChemistry">化学与材料</a>
+          <a href="topics.html?category=computing#topics" data-i18n="artAI">智能计算</a>
+          <a href="topics.html?category=society#topics" data-i18n="artHumanities">人文与社会</a>
+          <a href="topics.html?category=economics#topics" data-i18n="artBusiness">经济与经营</a>
+        </div>
+      </div>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title" data-i18n="footerContactHeading">AI研究室 · 联系我们</h2>
+        <address><span class="footer-room" data-i18n="footerRoom">行知学园本馆 2 楼 · AI研究室</span><span lang="ja">〒169-0073<br>東京都新宿区百人町2-8-15<br>ダヴィンチ北新宿 2F</span></address>
+        <a class="footer-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%99%BE%E4%BA%BA%E7%94%BA2-8-15%20%E3%83%80%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%81%E5%8C%97%E6%96%B0%E5%AE%BF" target="_blank" rel="noopener" data-i18n="footerMap">在地图中查看</a>
+        <dl>
+          <div><dt data-i18n="footerPhone">电话</dt><dd><a href="tel:+818041839260">080-4183-9260</a></dd></div>
+          <div><dt data-i18n="footerEmail">邮箱</dt><dd><a href="mailto:zhangzaijun@koyo-mail.com">zhangzaijun@koyo-mail.com</a></dd></div>
+        </dl>
+      </section>
+      <section class="footer-related" aria-labelledby="footer-related-title">
+        <h2 id="footer-related-title" data-i18n="footerRelatedHeading">相关网站</h2>
+        <ul>
+          <li><a href="https://coach-ac.co.jp/" target="_blank" rel="noopener" data-i18n="footerOfficial">行知学园集团官网</a></li>
+          <li><a href="https://jp.coach-japanese.com/" target="_blank" rel="noopener" data-i18n="footerJapanese">行知学园日本语学校</a></li>
+          <li><a href="https://www.coach-international.jp/jp" target="_blank" rel="noopener" data-i18n="footerInternational">行知学园国际学校</a></li>
+          <li><a href="https://daigakuin.coach-ai-assist.com/" target="_blank" rel="noopener" data-i18n="footerGraduate">大学院生物・化学科目组</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal"><p>© <span id="copyright-year">2026</span> Coach Academy · 行知学園株式会社</p><a href="https://coach-ac.co.jp/privacy-policy" target="_blank" rel="noopener" data-i18n="footerPrivacy">行知学园隐私政策</a></div>
+      <a class="footer-top-link" href="#top" data-i18n="backTop">返回顶部</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
