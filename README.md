@@ -7,7 +7,7 @@
 ## 内容维护
 
 - `index.html`：简洁首页与各栏目入口。
-- 首页照片轮播下方的 `#featured-videos` 展示三条中文精选视频：科研背景提升项目介绍、StarDist 细胞核分割、DNA 复制全貌修订版。标题、说明及播放提示随四语切换，视频保留原中文内容；这些科普动画用于原理讲解。`videos/` 保存三份原成片，`images/videos/` 保存轻量 WebP 封面，`assets/featured-videos.css` 仅在首页加载。播放器使用原生控件、`playsinline` 和 `preload="none"`，点击播放时加载媒体；开始播放一条时暂停其他视频。原素材、SHA256 对照和上线检查保存在仓库外的维护记录中。
+- 首页照片轮播下方的 `#featured-videos` 展示六条中文精选视频：科研背景提升项目介绍、StarDist 细胞核分割、DNA 复制全貌修订版，以及夜光与经济活动、企业空间聚类、文字情绪评分。电脑端为三列两行，手机端依次排列。标题、说明及播放提示随四语切换，视频保留原中文内容；这些科普动画用于原理讲解。`videos/` 保存六份原成片，`images/videos/` 保存轻量 WebP 封面，`assets/featured-videos.css` 仅在首页加载。播放器使用原生控件、`playsinline` 和 `preload="none"`，点击播放时加载媒体；开始播放一条时暂停其他视频。原素材、SHA256 对照和上线检查保存在仓库外的维护记录中。
 - 科研实践页在何同学、金同学两张卡片后，以竖幅专题展示赵同学在大学研究室做湿实验（四语）；该照片不进入首页轮播。
 - `topics.html`、`practice.html`、`programs.html`、`applications.html`、`admissions.html`、`honors.html`、`contact.html`：独立栏目页面；共同使用四语脚本与样式。旧首页栏目锚点自动跳转到对应页面，跨页链接保留语言。
 - `assets/site.css`、`assets/site.js`：视觉样式、四语言文案、目录搜索及分类。

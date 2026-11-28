@@ -480,7 +480,7 @@
   const featuredVideoCopy = {
     'zh-CN': {
       videosTitle:'从一段视频，走近科研。',
-      videosDescription:'认识科研实践，看看 AI 怎样分析图像，再走进 DNA 复制的微观世界。',
+      videosDescription:'从生命科学到经济经营与人文社会，看看研究怎样连接日常。',
       videosNote:'中文视频 · 点击封面播放，可全屏观看',
       videoDuration:'时长',videoPlay:'播放视频',videoOpen:'单独打开视频',videoError:'视频暂时无法播放。',
       videoProgramLabel:'项目介绍',videoProgramTitle:'科研背景提升：从兴趣到实践',
@@ -492,7 +492,7 @@
     },
     'zh-TW': {
       videosTitle:'從一段影片，走近科研。',
-      videosDescription:'認識科研實踐，看看 AI 怎樣分析影像，再走進 DNA 複製的微觀世界。',
+      videosDescription:'從生命科學到經濟經營與人文社會，看看研究怎樣連結日常。',
       videosNote:'中文影片 · 點擊封面播放，可全螢幕觀看',
       videoDuration:'片長',videoPlay:'播放影片',videoOpen:'單獨開啟影片',videoError:'影片暫時無法播放。',
       videoProgramLabel:'項目介紹',videoProgramTitle:'科研背景提升：從興趣到實踐',
@@ -504,7 +504,7 @@
     },
     ja: {
       videosTitle:'動画で、研究を身近に。',
-      videosDescription:'研究実践の流れ、AIによる画像解析、DNA複製のミクロな世界を紹介します。',
+      videosDescription:'生命科学から経済・経営、人文・社会科学まで。研究と日常のつながりを紹介します。',
       videosNote:'中国語の動画です。表紙をタップして再生・全画面表示できます。',
       videoDuration:'再生時間',videoPlay:'動画を再生',videoOpen:'動画を別に開く',videoError:'動画を再生できません。',
       videoProgramLabel:'プログラム紹介',videoProgramTitle:'興味から実践へ：研究プログラム',
@@ -516,7 +516,7 @@
     },
     en: {
       videosTitle:'See research in action.',
-      videosDescription:'Discover research practice, AI image analysis and the microscopic world of DNA replication.',
+      videosDescription:'From life science to economics, business and the humanities, see how research connects with everyday life.',
       videosNote:'Videos in Chinese. Select a cover to play; full-screen viewing is available.',
       videoDuration:'Duration',videoPlay:'Play video',videoOpen:'Open video separately',videoError:'This video could not be played.',
       videoProgramLabel:'Program introduction',videoProgramTitle:'From curiosity to research practice',
@@ -528,6 +528,53 @@
     }
   };
   languages.forEach(language => Object.assign(copy[language], featuredVideoCopy[language]));
+  const humanitiesVideoCopy = {
+  "zh-CN": {
+    "videoLightsLabel": "经济 × 城市观察",
+    "videoLightsTitle": "夜光怎样成为经济线索？",
+    "videoLightsDescription": "卫星看到的灯光，怎样成为观察经济活动的线索？用一张教学地图，看看夜光数据怎样与统计资料相互核对。",
+    "videoClustersLabel": "经营 × 空间分析",
+    "videoClustersTitle": "企业扎堆，怎样找出来？",
+    "videoClustersDescription": "把同类企业的位置放到地图上，跟着搜索圆圈找出密集区域，认识空间聚类怎样发现分布线索。",
+    "videoEmotionsLabel": "人文社会 × 语言心理",
+    "videoEmotionsTitle": "文字里的情绪，AI 怎样打分？",
+    "videoEmotionsDescription": "换几个词，感受就不同。用英文例句看看 AI 怎样学习文字情绪，并与人工评分对照。"
+  },
+  "zh-TW": {
+    "videoLightsLabel": "經濟 × 城市觀察",
+    "videoLightsTitle": "夜光怎樣成為經濟線索？",
+    "videoLightsDescription": "衛星看到的燈光，怎樣成為觀察經濟活動的線索？用一張教學地圖，看看夜光資料怎樣與統計資料相互核對。",
+    "videoClustersLabel": "經營 × 空間分析",
+    "videoClustersTitle": "企業扎堆，怎樣找出來？",
+    "videoClustersDescription": "把同類企業的位置放到地圖上，跟著搜尋圓圈找出密集區域，認識空間分群怎樣發現分布線索。",
+    "videoEmotionsLabel": "人文社會 × 語言心理",
+    "videoEmotionsTitle": "文字裡的情緒，AI 怎樣評分？",
+    "videoEmotionsDescription": "換幾個詞，感受就不同。用英文例句看看 AI 怎樣學習文字情緒，並與人工評分對照。"
+  },
+  "ja": {
+    "videoLightsLabel": "経済 × 都市の観察",
+    "videoLightsTitle": "夜の光は、経済の手がかりになる？",
+    "videoLightsDescription": "衛星から見た夜の光と経済活動の関係とは。解説用の地図で、夜間光データと統計資料を照らし合わせる方法を紹介します。",
+    "videoClustersLabel": "経営 × 空間分析",
+    "videoClustersTitle": "企業が集まる場所を、どう見つける？",
+    "videoClustersDescription": "同じ業種の企業を地図に置き、探索範囲の円を動かして密集した地域を探します。空間クラスタリングの考え方を紹介します。",
+    "videoEmotionsLabel": "人文・社会 × 言語と心理",
+    "videoEmotionsTitle": "文章に表れる感情を、AIはどう数値化する？",
+    "videoEmotionsDescription": "言葉が変わると、受ける印象も変わります。英語の例文で、AIが文章の感情を学び、人の評価と比べる方法を紹介します。"
+  },
+  "en": {
+    "videoLightsLabel": "Economics × Cities",
+    "videoLightsTitle": "What can nighttime lights tell us about the economy?",
+    "videoLightsDescription": "Explore how satellite observations of nighttime lights can provide clues about economic activity, using an illustrative map and comparisons with statistics.",
+    "videoClustersLabel": "Business × Spatial analysis",
+    "videoClustersTitle": "How do we find clusters of businesses?",
+    "videoClustersDescription": "Plot businesses on a map and follow a search circle to find dense areas. Discover how spatial clustering reveals patterns in their locations.",
+    "videoEmotionsLabel": "Humanities & society × Language",
+    "videoEmotionsTitle": "How does AI score emotion in a sentence?",
+    "videoEmotionsDescription": "A few words can change how a sentence feels. Follow English examples to see how AI learns emotional cues and compares its scores with human ratings."
+  }
+};
+  languages.forEach(language => Object.assign(copy[language], humanitiesVideoCopy[language]));
   const presentationCopy = {"zh-CN": {"maTitle": "马同学 · 发表练习", "maDescription": "从读懂文献，到把思路讲清楚。在发表练习中梳理内容、组织表达，让理解逐步转化为清晰的讲述。", "maAlt": "马同学在教室屏幕旁进行发表练习", "maLabel": "文献理解 · 内容梳理 · 口头表达", "zhaoTitle": "赵同学 · 英语发表练习", "zhaoDescription": "用英语讲解研究思路，在课堂发表中练习梳理内容、说明方法与组织表达。", "zhaoAlt": "赵同学在教室屏幕旁进行英语发表练习", "zhaoLabel": "研究理解 · 英语讲解 · 发表练习", "zhaoLabTitle": "赵同学 · 在顶尖大学研究室做湿实验", "zhaoLabDescription": "走进大学研究室，在安全柜内动手完成实验操作。从无菌操作到试剂与样本处理，在真实的科研现场体会规范与严谨。", "zhaoLabAlt": "赵同学在大学研究室的安全柜内进行湿实验操作", "zhaoLabLabel": "湿实验 · 无菌操作 · 研究室实践"}, "zh-TW": {"maTitle": "馬同學 · 發表練習", "maDescription": "從讀懂文獻，到把思路講清楚。在發表練習中梳理內容、組織表達，讓理解逐步轉化為清晰的講述。", "maAlt": "馬同學在教室螢幕旁進行發表練習", "maLabel": "文獻理解 · 內容梳理 · 口頭表達", "zhaoTitle": "趙同學 · 英語發表練習", "zhaoDescription": "用英語講解研究思路，在課堂發表中練習梳理內容、說明方法與組織表達。", "zhaoAlt": "趙同學在教室螢幕旁進行英語發表練習", "zhaoLabel": "研究理解 · 英語講解 · 發表練習", "zhaoLabTitle": "趙同學 · 在頂尖大學研究室做濕實驗", "zhaoLabDescription": "走進大學研究室，在安全櫃內動手完成實驗操作。從無菌操作到試劑與樣本處理，在真實的科研現場體會規範與嚴謹。", "zhaoLabAlt": "趙同學在大學研究室的安全櫃內進行濕實驗操作", "zhaoLabLabel": "濕實驗 · 無菌操作 · 研究室實踐"}, "ja": {"maTitle": "馬さん · 発表練習", "maDescription": "文献を読み、考えをわかりやすく伝える。発表練習を通じて内容を整理し、理解したことを自分の言葉で説明する力を磨きます。", "maAlt": "教室のスクリーンの横で発表練習をする馬さん", "maLabel": "文献理解 · 内容の整理 · 口頭発表", "zhaoTitle": "趙さん · 英語での発表練習", "zhaoDescription": "研究の考え方を英語で説明。授業での発表を通じて、内容を整理し、方法を説明し、わかりやすく伝える練習をします。", "zhaoAlt": "教室のスクリーンの横で英語の発表練習をする趙さん", "zhaoLabel": "研究内容の理解 · 英語での説明 · 発表練習", "zhaoLabTitle": "趙さん · トップ大学の研究室でウェット実験", "zhaoLabDescription": "大学の研究室で、安全キャビネット内の実験操作に取り組みます。無菌操作から試薬やサンプルの扱いまで、実際の研究現場で手順の正確さと丁寧さを身につけます。", "zhaoLabAlt": "大学の研究室で安全キャビネットを使いウェット実験を行う趙さん", "zhaoLabLabel": "ウェット実験 · 無菌操作 · 研究室での実践"}, "en": {"maTitle": "Student Ma · Presentation practice", "maDescription": "From reading a paper to explaining its ideas. Presentation practice brings structure to the material and helps turn understanding into a clear explanation.", "maAlt": "Student Ma practising a presentation beside a classroom screen", "maLabel": "Read the literature · Organise ideas · Present clearly", "zhaoTitle": "Student Zhao · English presentation practice", "zhaoDescription": "Explaining research ideas in English, with classroom presentation practice to organise content, describe methods and communicate clearly.", "zhaoAlt": "Student Zhao practising an English presentation beside a classroom screen", "zhaoLabel": "Understand the research · Explain in English · Practise presenting", "zhaoLabTitle": "Student Zhao · Wet-lab work in a leading university laboratory", "zhaoLabDescription": "Hands-on experimental work at a safety cabinet in a university laboratory. From aseptic technique to handling reagents and samples, learning the precision and care that real research requires.", "zhaoLabAlt": "Student Zhao doing wet-lab work at a safety cabinet in a university laboratory", "zhaoLabLabel": "Wet lab · Aseptic technique · Laboratory practice"}};
   languages.forEach(language => Object.assign(copy[language], presentationCopy[language]));
   const multipageCopy = {"zh-CN": {"homeNav": "首页", "navPractice": "科研实践", "exploreTitle": "选择你想了解的内容", "exploreDescription": "按主题浏览，让每一次探索更清晰。", "pageExplore": "继续了解", "entryPractice": "学习路径、真实照片与课堂发表练习。", "entryTopics": "按领域搜索研究课题与研究概要。", "entryPrograms": "了解不同基础与目标对应的项目安排。", "entryApplications": "把科研经历转化为清晰的申请材料与面试表达。", "entryAdmissions": "查看大学官方要求与最近核对状态。", "entryHonors": "浏览合格成果及公开记录。", "entryContact": "沟通兴趣、学习基础与下一步计划。"}, "zh-TW": {"homeNav": "首頁", "navPractice": "科研實踐", "exploreTitle": "選擇你想了解的內容", "exploreDescription": "按主題瀏覽，讓每一次探索更清晰。", "pageExplore": "繼續了解", "entryPractice": "學習路徑、真實照片與課堂發表練習。", "entryTopics": "按領域搜尋研究課題與研究概要。", "entryPrograms": "了解不同基礎與目標對應的項目安排。", "entryApplications": "將科研經歷轉化為清晰的申請材料與面試表達。", "entryAdmissions": "查看大學官方要求與最近核對狀態。", "entryHonors": "瀏覽合格成果及公開記錄。", "entryContact": "溝通興趣、學習基礎與下一步計畫。"}, "ja": {"homeNav": "ホーム", "navPractice": "研究実践", "exploreTitle": "知りたい内容から、探してみる。", "exploreDescription": "テーマごとに、必要な情報へ。", "pageExplore": "詳しく見る", "entryPractice": "学習の流れ、実践風景、発表練習をご紹介。", "entryTopics": "分野から研究テーマと研究の概要を検索。", "entryPrograms": "学習経験と目標に合わせたプログラム。", "entryApplications": "研究経験を出願書類や面接で伝えるために。", "entryAdmissions": "大学の公式要件と確認状況をご覧いただけます。", "entryHonors": "合格実績と公開記録をご紹介。", "entryContact": "興味や学習経験、次の一歩をご相談ください。"}, "en": {"homeNav": "Home", "navPractice": "Research practice", "exploreTitle": "Find what you want to explore.", "exploreDescription": "A focused page for each part of your journey.", "pageExplore": "Explore", "entryPractice": "Learning pathways, real practice and classroom presentations.", "entryTopics": "Search research topics and their overviews by area.", "entryPrograms": "Programs for different starting points and goals.", "entryApplications": "Explain your research experience in applications and interviews.", "entryAdmissions": "Official university requirements and their latest review status.", "entryHonors": "Explore admissions outcomes and public records.", "entryContact": "Discuss your interests, experience and next steps."}};
